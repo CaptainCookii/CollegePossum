@@ -6,7 +6,7 @@ Unity Version: 6.3 LTS (6000.3.22f1)
 FMOD Version: 2.03.08
 
 
-Jacob (JacobDimino) - Lead Designer
+Jacob (JacobDimino) - Lead Designer/Producer
 
 Evan (CaptainCookii) - Lead Programmer
 
