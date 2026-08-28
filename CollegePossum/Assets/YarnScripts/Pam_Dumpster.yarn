@@ -1,16 +1,34 @@
 ﻿title: Pam_Dumpster
 ---
+<<set_left CharacterManager Pamella>>
+<<wait .15>>
+<<set_right CharacterManager Francine>>
+<<wait .15>>
+<<left CharacterManager>>
+<<wait .15>>
 Pamella: Hey, Francine?
 Pam’s smiling, which is somehow worse than if she were glaring at you. Not by much, but still.
 Pamella: Was it you I saw in the dumpster behind the theatre yesterday?
 The smile looks much more like a predator baring her teeth, now. You were, in fact, in the dumpster behind the theatre yesterday – but that’s where you get your stuff! You have a family to disguise!
 -> No, that was someone else.
     Pamella: Really?
+    <<right CharacterManager>>
+    <<wait .15>>
     Francine: Yeah, haha, I saw that too – it was like… a possum– or a raccoon, or something!
+    <<left CharacterManager>>
+    <<wait .15>>
     Pamella: Mhm.
+    <<right CharacterManager>>
+    <<wait .15>>
     Francine: …yeah, there’s a big pest problem here. I mean, have you noticed how many rats are around campus?
+    <<left CharacterManager>>
+    <<wait .15>>
     Pamella: No, I guess I missed that. I must have missed the giant, human-sized rats. And the fact that there’s one that looks exactly like you. Wearing an identical trench coat. That must have just slipped past me.
+    <<right CharacterManager>>
+    <<wait .15>>
     Francine: …haha…someone should…really do something about that.
+    <<left CharacterManager>>
+    <<wait .15>>
     Pamella: Yeaaaah, someone should.
     You soothe how awkward you feel at the following silence with the reassurance that at least you won’t be known as the dumpster girl.
 -> …yes?
@@ -18,12 +36,25 @@ The smile looks much more like a predator baring her teeth, now. You were, in fa
     Cine races to hold up your arms as Pam puts her hands on your shoulders.
     Pamella: and I agree with you completely.
     …what?
+    <<right CharacterManager>>
+    <<wait .15>>
     Francine: What?
+    <<left CharacterManager>>
+    <<wait .15>>
     Pamella: They always toss those costumes as soon as they think the production’s over –
+    <<right CharacterManager>>
+    <<wait .15>>
     Francine: – and sometimes even when there’s only one hole in them –
+    <<left CharacterManager>>
+    <<wait .15>>
     Pamella: –YES– and there’s always leftover fabric. It’s TRAGIC.
+    <<right CharacterManager>>
+    <<wait .15>>
     Francine: Yes! You should come next time!
     The conversation stops, both of you surprised at what you just said.
     Francine: Um.. or not, just–
+    <<left CharacterManager>>
+    <<wait .15>>
     Pamella: Fine, I’ll come. But you’d better save some of the good stuff. I’m good enough to work with scraps, but I don’t deserve them.
+<<ending CharacterManager>>
 ===

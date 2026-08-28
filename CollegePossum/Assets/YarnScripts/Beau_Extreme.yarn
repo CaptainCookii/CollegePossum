@@ -1,12 +1,26 @@
 ﻿title: Beau_Extreme
 ---
+<<set_left CharacterManager Beau>>
+<<wait .15>>
+<<set_right CharacterManager Francine>>
+<<wait .15>>
+<<left CharacterManager>>
+<<wait .15>>
 Beau: Man, this is great, Francine. I feel like we haven’t talked in forever.
 -> Really? I thought we talked recently.
 -> Yeah, it’s been a while!
 Beau: Eeeeverything feels like it was forever ago. I’m beat, dude.
+<<right CharacterManager>>
+<<wait .15>>
 Francine: Are you okay?
+<<left CharacterManager>>
+<<wait .15>>
 Beau: Yeah, I just joined extreme curling, so it’s been a real whirlwind. MUCH different than casual curling. I feel like I got hit by a stone.
+<<right CharacterManager>>
+<<wait .15>>
 Francine: …why are you doing it then?
+<<left CharacterManager>>
+<<wait .15>>
 Beau: Oh, it’s great training for casual curling! I’ve been trying to improve my sweeping technique lately. The terror really adds to it.
-
+<<ending CharacterManager>>
 ===

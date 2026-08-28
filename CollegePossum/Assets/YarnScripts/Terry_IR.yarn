@@ -1,20 +1,46 @@
 ﻿title: Terry_IR
 ---
+<<set_left CharacterManager Terry>>
+<<wait .15>>
+<<set_right CharacterManager Francine>>
+<<wait .15>>
+<<left CharacterManager>>
+<<wait .15>>
 Terry: Say it.
 Terry is actively not looking at you, doing that thing where he wants you to try and make eye contact so that he can not make eye contact.
+<<right CharacterManager>>
+<<wait .15>>
 Francine: Say… what?
+<<left CharacterManager>>
+<<wait .15>>
 Terry: Oh come on. I’m sure you’ve noticed.
+<<right CharacterManager>>
+<<wait .15>>
 Francine: Noticed what?
+<<left CharacterManager>>
+<<wait .15>>
 Terry: I just… never thought it could happen to me, you know?
+<<right CharacterManager>>
+<<wait .15>>
 Francine: That what could happen?
+<<left CharacterManager>>
+<<wait .15>>
 Terry: This.
 Terry gives you a thumbs up.
 Terry: I know. It’s hard to look at.
 His thumb is… kind of red? Maybe?
-Terry: It could be bowler’s thumb. They put me on IR for the week, man. What am I gonna do? 
+Terry: It could be bowler’s thumb. They put me on IR for the week, man. What am I gonna do?
+<<right CharacterManager>>
+<<wait .15>>
 Francine: Well-
+<<left CharacterManager>>
+<<wait .15>>
 Terry: What am I gonna tell my coach? The team? What if I let them down?
+<<right CharacterManager>>
+<<wait .15>>
 Francine: Oh, Terry… maybe–
+<<left CharacterManager>>
+<<wait .15>>
 Terry: And most importantly, what are the babes gonna think, Francy?
 -> What babes?
     Terry: Real mature, Francy. Kicking a man while he’s down. 
@@ -23,7 +49,12 @@ Terry: And most importantly, what are the babes gonna think, Francy?
     Terry: DON’T follow me.
 -> Maybe they’ll be into it?
     Terry: …really?
+    <<right CharacterManager>>
+    <<wait .15>>
     Francine: They might get a kick out of nursing you back to health?
+    <<left CharacterManager>>
+    <<wait .15>>
     Terry: Oh my god. Medical babes. Francy, you’re a genius. 
     He raises his hand for a fistbumb, and it’s only a little awkward when Cine moves your arm too fast and the plastic knuckles make an audible WHAP sound against his.
+<<ending CharacterManager>>
 ===
