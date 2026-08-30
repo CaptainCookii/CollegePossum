@@ -6,6 +6,12 @@ using Yarn.Unity;
 
 public class CharacterDialogue : MonoBehaviour
 {
+
+    /*
+     the purpose of this script is to manage dialogue processes, such as what is interactible and when to start which dialogue when
+     */
+
+    //setup variables like the different dialogues and the interactible boolean to see if an object can be clicked
     public DialogueRunner dialogueRunner;
 
     [Header("Dialogue Nodes")]
@@ -27,6 +33,8 @@ public class CharacterDialogue : MonoBehaviour
     {
         CheckMouseHover();
 
+        //checks if an object can be clicked on then starts appropriate dialogue accordingly
+
         if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
             Vector2 mousePosition = Mouse.current.position.ReadValue();
@@ -42,6 +50,8 @@ public class CharacterDialogue : MonoBehaviour
             }
         }
     }
+
+    // a function in charge of the outline which will highlight a gameobject if it is interactible and the mouse is on it
 
     private void CheckMouseHover()
     {
@@ -64,6 +74,8 @@ public class CharacterDialogue : MonoBehaviour
         }
     }
 
+    // a simple function which orders how dialogue flows
+
     public void StartDialogue()
     {
         if (dialogue == 0)
@@ -75,6 +87,8 @@ public class CharacterDialogue : MonoBehaviour
         {
             dialogueRunner.StartDialogue(dialogue2);
             interactable = false;
+            // changing scene to a pachinko would probably go here
+            // will probably need to figure out a way to store each characters interactable variable as to not repeat dialogue
         }
     }
 }
