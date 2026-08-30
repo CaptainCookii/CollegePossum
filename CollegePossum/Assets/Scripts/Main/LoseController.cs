@@ -48,9 +48,9 @@ public class LoseController : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
-    // public void Party()
-    // {
-    //     GameObject.Find("Main Camera").GetComponent<ThemesChangeTrigger>().Off();
-    //     SceneManager.LoadScene(1);
-    // }
+    public void Party()
+    {
+        GameObject.Find("Main Camera").GetComponent<ThemesChangeTrigger>().Off();
+        SceneManager.LoadScene(1);
+    }
 }
