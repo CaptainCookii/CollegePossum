@@ -39,7 +39,7 @@ public class PinBumper : MonoBehaviour
         float finalForce = baseForce + (sizeFactor * sizeForceMultiplier);
 
         // set previous veloctiy to zero then apply new force
-        ballRb.velocity = Vector2.zero;
+        ballRb.linearVelocity = Vector2.zero;
         ballRb.AddForce(direction * finalForce, ForceMode2D.Impulse);
 
         // take damage... duh
