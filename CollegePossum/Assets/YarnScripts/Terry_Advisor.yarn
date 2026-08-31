@@ -1,0 +1,24 @@
+﻿title: Terry_Advisor
+---
+<<set_left CharacterManager Terry>>
+<<wait .15>>
+<<set_right CharacterManager Francine>>
+<<wait .15>>
+<<left CharacterManager>>
+<<wait .15>>
+Terry: Ugh, Francy, did I tell you I had another meeting with my advisor? Soooooo boring. Are yours like that?
+You have never had a meeting with an advisor from this college, as you are not an enrolled student in this college – in fact, you try to avoid academic advisors at all costs. They can do things like look up your name and realize you have no transcript. Or government ID. Or birth certificate.
+<<right CharacterManager>>
+<<wait .15>>
+Francine: …yes.
+<<left CharacterManager>>
+<<wait .15>>
+Terry: Yeah, I knew you’d get it. She’s always on my ass like, “ooo, Terrence, are you gonna graduate on time,” and “ooo, Terrence, you can’t just take five unrelated electives a semester” and “ooo, Terrence, I don’t understand what you intend to gain out of your academic career with this course load.” Nerd shit like that, you know?
+<<right CharacterManager>>
+<<wait .15>>
+Francine: Are you not going to graduate on time?
+<<left CharacterManager>>
+<<wait .15>>
+Terry: I don’t know, because as established, I’m not a nerd. This is what’s wrong with education, man. You’re so obsessed with grades. You’re just like my advisor.
+<<ending CharacterManager>>
+===

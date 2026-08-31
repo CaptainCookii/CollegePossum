@@ -1,0 +1,35 @@
+﻿title: Beau_Fnname
+---
+<<set_left CharacterManager Beau>>
+<<wait .15>>
+<<set_right CharacterManager Francine>>
+<<wait .15>>
+<<left CharacterManager>>
+<<wait .15>>
+Beau: Francine. Fraaaancine. Hm.
+<<right CharacterManager>>
+<<wait .15>>
+Francine: Beau?
+<<left CharacterManager>>
+<<wait .15>>
+Beau: You ever think about your name? Fran. Cine. Ellis. Francine Ellis. Hm.
+He is at a level of deep contemplation you have never seen from him.
+Beau: You, Francine Ellis… NEED A NICKNAME!
+Oh no.
+<<right CharacterManager>>
+<<wait .15>>
+Francine: Um… that’s okay? I’m not sure I do?
+<<left CharacterManager>>
+<<wait .15>>
+Beau: NO WAY. I have been the premiere nickname maker for 3 years running. 100% satisfaction. Stand still, let me look at you.
+He steps away, holding his hands out in front of him like a photographer. Despite not being able to see Beau’s eyes, you suddenly feel as though you are being stared into.
+Beau: Hmm. You’re gonna be a tough one, Francine. But I can feel it. You’re gonna be my magnum opus.
+<<right CharacterManager>>
+<<wait .15>>
+Francine: I mean, I go by Fran sometimes?
+<<left CharacterManager>>
+<<wait .15>>
+Beau: Oh, that’s actually pretty good.
+Beau: But NOT GOOD ENOUGH. I’m gonna sleep on it. I’m gonna let it marinate. On my life, you will be nicknamed. 
+<<ending CharacterManager>>
+===
