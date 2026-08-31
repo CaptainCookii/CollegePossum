@@ -1,0 +1,35 @@
+﻿title: Pam_Boots
+---
+<<set_left CharacterManager Pamella>>
+<<wait .15>>
+<<set_right CharacterManager Francine>>
+<<wait .15>>
+<<left CharacterManager>>
+<<wait .15>>
+Pamella: I’m just not in the mood today, Francine. I’m in mourning.
+<<right CharacterManager>>
+<<wait .15>>
+Francine: Are you okay?
+<<left CharacterManager>>
+<<wait .15>>
+Pamella: No, obviously. 
+She covers her mouth in a valiant effort to stifle her tears…Then she points down at her feet. 
+Pamella: Just… look!
+You do.
+…you don’t understand what you’re supposed to be looking at. 
+Pamella: Are you blind? The boots, Francine. The boots!
+<<right CharacterManager>>
+<<wait .15>>
+Francine: They… look nice? Like normal?
+<<left CharacterManager>>
+<<wait .15>>
+Pamella: They’re COMPLETELY DIFFERENT. Look – the heel on my normal boots broke last night, so I had to resort to my backups. It’s completely throwing off the outfit – my go-tos are latte brown, and these are all the way to toffee brown.
+<<right CharacterManager>>
+<<wait .15>>
+Francine: I’m sorry for your loss?
+Pam sighs, frowning down at her feet.
+<<left CharacterManager>>
+<<wait .15>>
+Pamella: Thanks, France. I’m not sure how I’ll recover, though.
+<<ending CharacterManager>>
+===
