@@ -47,7 +47,7 @@ public class PinBumper : MonoBehaviour
 
 
         // make sound that you got hit 
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.pegHit, this.transform.position);
+        // AudioManager.instance.PlayOneShot(FMODEvents.instance.pegHit, this.transform.position);
 
         // add score for hitting pin
         GameManager.Instance.AddScore(coolGain);

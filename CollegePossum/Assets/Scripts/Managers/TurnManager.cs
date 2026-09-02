@@ -124,7 +124,7 @@ public class TurnManager : MonoBehaviour
                 LoseController.Instance.Panic();
                 
                 //CHANGE
-                GameObject.Find("Main Camera").GetComponent<ThemesChangeTrigger>().Off();
+                // GameObject.Find("Main Camera").GetComponent<ThemesChangeTrigger>().Off();
             }
         }
     }

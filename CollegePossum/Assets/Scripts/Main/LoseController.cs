@@ -50,7 +50,7 @@ public class LoseController : MonoBehaviour
 
     public void Party()
     {
-        GameObject.Find("Main Camera").GetComponent<ThemesChangeTrigger>().Off();
+        // GameObject.Find("Main Camera").GetComponent<ThemesChangeTrigger>().Off();
         SceneManager.LoadScene(1);
     }
 }
