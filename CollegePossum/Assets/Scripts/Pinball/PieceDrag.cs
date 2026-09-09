@@ -9,6 +9,7 @@ public class PieceDrag : MonoBehaviour
     private Vector3 movementOffset;
 
     private PolygonCollider2D objectCollider;
+    private Vector3 storedPosition;
     
     private void Awake()
     {
@@ -33,24 +34,26 @@ public class PieceDrag : MonoBehaviour
             if (hit != null && hit.gameObject == gameObject)
             {
                 draggingOn = true;
+                storedPosition = transform.position;
                 movementOffset = transform.position - worldCoords;
             }
         }
 
         if (draggingOn && Mouse.current.leftButton.isPressed)
         {
-            Vector3 storedPosition = transform.position;
             transform.position = worldCoords + movementOffset;
-
-            if (IsOverlapping())
-            {
-                transform.position = storedPosition;
-            }
         }
 
         if (draggingOn && Mouse.current.leftButton.wasReleasedThisFrame)
         {
-            draggingOn = false;
+            if (IsOverlapping())
+            {
+                transform.position = storedPosition;
+            }
+            else
+            {
+                draggingOn = false;
+            }
         }
 
         if (draggingOn && Keyboard.current.rKey.wasPressedThisFrame)

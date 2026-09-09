@@ -101,7 +101,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8898578892299277738}
   - component: {fileID: 4437079757400745463}
-  - component: {fileID: 872658504967347769}
   - component: {fileID: 7847376758918226146}
   - component: {fileID: 758091028139209133}
   m_Layer: 0
@@ -155,42 +154,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &872658504967347769
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5230532946772367523}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 16d2bef1852904517969290b708b7613, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
 --- !u!60 &7847376758918226146
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -237,11 +200,16 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
+    - - {x: 0.16856351, y: 0.155324}
+      - {x: 0.029524341, y: 0.23158842}
+      - {x: -0.12332296, y: 0.19399276}
+      - {x: -0.20375305, y: 0.10654557}
+      - {x: -0.22310144, y: -0.054335393}
+      - {x: -0.14492005, y: -0.17916441}
+      - {x: -0.0017323345, y: -0.22387154}
+      - {x: 0.14602959, y: -0.17215234}
+      - {x: 0.2109895, y: -0.09897527}
+      - {x: 0.2221595, y: 0.04028234}
   m_UseDelaunayMesh: 1
 --- !u!212 &758091028139209133
 SpriteRenderer:
