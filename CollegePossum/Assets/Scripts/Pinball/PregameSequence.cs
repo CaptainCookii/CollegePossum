@@ -3,7 +3,7 @@ using TMPro;
 using System.Collections;
 using Unity.VisualScripting;
 
-public class PregameTimer : MonoBehaviour
+public class PregameSequence : MonoBehaviour
 {
 
     [SerializeField] private TMP_Text instructions;
