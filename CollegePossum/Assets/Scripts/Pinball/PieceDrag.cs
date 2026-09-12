@@ -29,18 +29,24 @@ public class PieceDrag : MonoBehaviour
 
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            Collider2D hit = Physics2D.OverlapPoint(worldCoords);
+            Collider2D[] hits = Physics2D.OverlapPointAll(worldCoords);
 
-            if (hit != null && hit.gameObject == gameObject)
+            foreach (Collider2D hit in hits)
             {
-                draggingOn = true;
-                storedPosition = transform.position;
-                movementOffset = transform.position - worldCoords;
+                if (hit.gameObject == gameObject)
+                {
+                    Debug.Log("dragging " + gameObject.name);
+                    draggingOn = true;
+                    storedPosition = transform.position;
+                    movementOffset = transform.position - worldCoords;
+                    break;
+                }  
             }
         }
 
         if (draggingOn && Mouse.current.leftButton.isPressed)
         {
+            Debug.Log("moving " + gameObject.name);
             transform.position = worldCoords + movementOffset;
         }
 
@@ -50,10 +56,9 @@ public class PieceDrag : MonoBehaviour
             {
                 transform.position = storedPosition;
             }
-            else
-            {
-                draggingOn = false;
-            }
+            
+            draggingOn = false;
+            
         }
 
         if (draggingOn && Keyboard.current.rKey.wasPressedThisFrame)
