@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{e2e540b8-5a72-4db4-9a6f-30d7c8fc7cf2}">
+		<property name="name">
+			<value>Pachinko</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5455674c-60f1-4b49-b719-73e8ebcc9fa1}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e562c023-541c-46f1-b403-6ef978062741}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e562c023-541c-46f1-b403-6ef978062741}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

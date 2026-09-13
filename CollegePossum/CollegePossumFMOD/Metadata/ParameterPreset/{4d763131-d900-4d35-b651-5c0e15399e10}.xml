@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{4d763131-d900-4d35-b651-5c0e15399e10}">
+		<property name="name">
+			<value>pachinko_fall_in_param</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5455674c-60f1-4b49-b719-73e8ebcc9fa1}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{d864679b-1138-4b36-8e01-c07d9fce1b5c}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{d864679b-1138-4b36-8e01-c07d9fce1b5c}">
+		<property name="maximum">
+			<value>5</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

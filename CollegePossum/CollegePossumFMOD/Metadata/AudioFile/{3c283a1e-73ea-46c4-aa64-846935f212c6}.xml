@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{3c283a1e-73ea-46c4-aa64-846935f212c6}">
+		<property name="assetPath">
+			<value>kirkwood_vodka.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.2490625</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{957718cf-4622-4d52-9a52-4886473d2504}</destination>
+		</relationship>
+	</object>
+</objects>

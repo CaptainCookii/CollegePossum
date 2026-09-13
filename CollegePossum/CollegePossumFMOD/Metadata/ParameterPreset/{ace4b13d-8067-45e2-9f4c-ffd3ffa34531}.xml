@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{ace4b13d-8067-45e2-9f4c-ffd3ffa34531}">
+		<property name="name">
+			<value>Hollis</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5455674c-60f1-4b49-b719-73e8ebcc9fa1}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{d042df80-bc5c-44db-9ca1-afdac60f6dbb}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{d042df80-bc5c-44db-9ca1-afdac60f6dbb}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
