@@ -218,7 +218,6 @@
 	</object>
 	<object class="GroupTrack" id="{5a46c56a-508a-4ae4-8a57-b2dd00ec2120}">
 		<relationship name="modules">
-			<destination>{8eff2a20-add9-42af-9924-6439b57df2e8}</destination>
 			<destination>{d60e7057-fc42-45e5-80bd-b9ba6b2475a5}</destination>
 			<destination>{0e851b23-3879-4497-8f53-dec2a2422e80}</destination>
 			<destination>{56d8cbd4-b4b1-4529-8014-f83d91f4c76a}</destination>
@@ -494,6 +493,7 @@
 			<destination>{9a404463-f4bb-4796-a818-919c4de7de12}</destination>
 			<destination>{fa2fe825-efb4-42d6-9996-be3b1982f93a}</destination>
 			<destination>{606901ab-9070-4dfc-9221-75829f1d2bed}</destination>
+			<destination>{8eff2a20-add9-42af-9924-6439b57df2e8}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{a19293a0-6ce3-4b6c-abb8-de8cfa89bde6}</destination>
@@ -1488,29 +1488,6 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{77b13a5b-386a-4d35-a6cd-77271bfce421}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{8eff2a20-add9-42af-9924-6439b57df2e8}">
-		<property name="isCutoff">
-			<value>true</value>
-		</property>
-		<property name="start">
-			<value>6.6206874999999998</value>
-		</property>
-		<property name="length">
-			<value>26.610083333333353</value>
-		</property>
-		<property name="looping">
-			<value>true</value>
-		</property>
-		<relationship name="modulators">
-			<destination>{f8bc5839-4e27-4f68-94f0-2bb981d74ace}</destination>
-		</relationship>
-		<relationship name="triggerConditions">
-			<destination>{1edf7922-bfcf-4f35-92bb-74c0e0d5d874}</destination>
-		</relationship>
-		<relationship name="audioFile">
-			<destination>{3df32fb3-058b-4f92-9625-38d8b1f2b9b6}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{d60e7057-fc42-45e5-80bd-b9ba6b2475a5}">
@@ -3416,6 +3393,29 @@
 			<value>0</value>
 		</property>
 	</object>
+	<object class="SingleSound" id="{8eff2a20-add9-42af-9924-6439b57df2e8}">
+		<property name="isCutoff">
+			<value>true</value>
+		</property>
+		<property name="start">
+			<value>46.344833333333334</value>
+		</property>
+		<property name="length">
+			<value>26.610083333333353</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{f8bc5839-4e27-4f68-94f0-2bb981d74ace}</destination>
+		</relationship>
+		<relationship name="triggerConditions">
+			<destination>{1edf7922-bfcf-4f35-92bb-74c0e0d5d874}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{3df32fb3-058b-4f92-9625-38d8b1f2b9b6}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{a19293a0-6ce3-4b6c-abb8-de8cfa89bde6}">
 		<property name="name">
 			<value>Audio 1</value>
@@ -4580,31 +4580,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e27a0b8e-a10a-4bee-afbc-09ee68abf725}" />
-	<object class="ADSRModulator" id="{f8bc5839-4e27-4f68-94f0-2bb981d74ace}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>volume</value>
-		</property>
-		<property name="initialValue">
-			<value>-80</value>
-		</property>
-		<property name="attackTime">
-			<value>0</value>
-		</property>
-		<property name="finalValue">
-			<value>-80</value>
-		</property>
-	</object>
-	<object class="ParameterCondition" id="{1edf7922-bfcf-4f35-92bb-74c0e0d5d874}">
-		<property name="minimum">
-			<value>1</value>
-		</property>
-		<property name="maximum">
-			<value>1</value>
-		</property>
-		<relationship name="parameter">
-			<destination>{5bbc301a-84d9-4473-93f7-795808a260a3}</destination>
-		</relationship>
-	</object>
 	<object class="ADSRModulator" id="{48d75c22-2fe8-48f8-8b61-dded25294611}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>volume</value>
@@ -5334,6 +5309,31 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{79c9bbec-3af9-4ba4-9ab8-f959e989cb00}" />
+	<object class="ADSRModulator" id="{f8bc5839-4e27-4f68-94f0-2bb981d74ace}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
+	<object class="ParameterCondition" id="{1edf7922-bfcf-4f35-92bb-74c0e0d5d874}">
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{5bbc301a-84d9-4473-93f7-795808a260a3}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{d9e73cc9-fcdd-4249-a62b-34a3739b994e}">
 		<relationship name="effects">
 			<destination>{be1968ae-0724-48d0-95fe-225a402b4ffa}</destination>
