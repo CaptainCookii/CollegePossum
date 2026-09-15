@@ -58,6 +58,9 @@ public class PregameSequence : MonoBehaviour
 
             GameObject ball = Instantiate(ballPrefab, chute.position, chute.rotation);
 
+            ScoreCounter sc = FindFirstObjectByType<ScoreCounter>();
+            sc.AddBall();
+
             Rigidbody2D rb = ball.GetComponent<Rigidbody2D>();
             if (rb != null)
             {

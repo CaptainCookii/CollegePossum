@@ -10,15 +10,39 @@ public class ScoreCounter : MonoBehaviour
     private float timer = 0f;
     private int activeBalls = 0;
 
+    private void Start()
+    {
+        UpdateScore();
+    }
+
     private void Update()
     {
+        if (activeBalls > 0)
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= 1f)
+            {
+                score += activeBalls;
+                timer = 0f;
+                UpdateScore();
+            }
+        }
         
     }
-    
 
-    // Update is called once per frame
-    void Update()
+    public void AddBall()
     {
-        
+        activeBalls++;
+    }
+
+    public void RemoveBall()
+    {
+        activeBalls--;
+    }
+
+    private void UpdateScore()
+    {
+        scoreText.text = "Score: " + score;
     }
 }
