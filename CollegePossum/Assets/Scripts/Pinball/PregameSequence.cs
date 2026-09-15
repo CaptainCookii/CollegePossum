@@ -58,6 +58,7 @@ public class PregameSequence : MonoBehaviour
 
             GameObject ball = Instantiate(ballPrefab, chute.position, chute.rotation);
 
+            // Adds active balls in play.
             ScoreCounter sc = FindFirstObjectByType<ScoreCounter>();
             sc.AddBall();
 

@@ -15,6 +15,7 @@ public class ScoreCounter : MonoBehaviour
         UpdateScore();
     }
 
+    // Constantly updating score based on active balls.
     private void Update()
     {
         if (activeBalls > 0)
@@ -31,6 +32,7 @@ public class ScoreCounter : MonoBehaviour
         
     }
 
+    // Adds and removes balls.
     public void AddBall()
     {
         activeBalls++;
@@ -41,6 +43,7 @@ public class ScoreCounter : MonoBehaviour
         activeBalls--;
     }
 
+    // Updates score text.
     private void UpdateScore()
     {
         scoreText.text = "Score: " + score;

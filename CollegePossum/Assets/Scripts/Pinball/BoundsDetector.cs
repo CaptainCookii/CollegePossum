@@ -4,6 +4,8 @@ public class BoundsDetector : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D c)
     {
+        // If the ball is no longer in play, inform our scripts that 
+        // rely on that information.
         if (c.CompareTag("Ball"))
         {
             ScoreCounter sc = FindFirstObjectByType<ScoreCounter>();
