@@ -31,20 +31,24 @@ public class LeverController : MonoBehaviour
     void Update()
     {
         bool keyPressed = false;
+        bool keyPressedThisFrame = false;
 
         if (side == Side.Left)
         {
-            if (Keyboard.current.leftArrowKey.isPressed)
-            {
-                keyPressed = true;
-            }
+            keyPressed = Keyboard.current.leftArrowKey.isPressed;
+            keyPressedThisFrame = Keyboard.current.leftArrowKey.wasPressedThisFrame;
         }
         else if (side == Side.Right)
         {
-            if (Keyboard.current.rightArrowKey.isPressed)
-            {
-                keyPressed = true;
-            }
+            keyPressed = Keyboard.current.rightArrowKey.isPressed;
+            keyPressedThisFrame = Keyboard.current.rightArrowKey.wasPressedThisFrame;
+        }
+
+        // Adds to anxiety per lever hit.
+        if (keyPressedThisFrame)
+        {
+            AnxietyManager am = FindFirstObjectByType<AnxietyManager>();
+            am.LeverHit();
         }
 
         if (keyPressed)

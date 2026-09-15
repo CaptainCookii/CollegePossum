@@ -3,9 +3,10 @@ using UnityEngine;
 public class AnxietyManager : MonoBehaviour
 {
 
-    [SerializeField] private float growthRate = 0.018f;
+    [SerializeField] private float growthRate = 0.0002f;
+    [SerializeField] private float leverGrowthRate = 0.0002f;
     private int activeBalls = 0;
-    private int leverHits = 0;
+    
 
     // Updates the height of the meter based on anxiety calculation.
     void Update()
@@ -22,11 +23,18 @@ public class AnxietyManager : MonoBehaviour
     // activeBalls variable.
     public void AddBall()
     {
-         activeBalls++;
+        activeBalls++;
     }
 
     public void RemoveBall()
     {
         activeBalls--;
     }  
+
+    // Lever anxiety.
+    public void LeverHit()
+    {
+        transform.localScale += new Vector3(0f, leverGrowthRate, 0f); 
+        transform.position += new Vector3(0f, leverGrowthRate / 2f, 0f);
+    }
 }
