@@ -37,4 +37,12 @@ public class AnxietyManager : MonoBehaviour
         transform.localScale += new Vector3(0f, leverGrowthRate, 0f); 
         transform.position += new Vector3(0f, leverGrowthRate / 2f, 0f);
     }
+
+    private void OnTriggerEnter2D(Collider2D c)
+    {
+        if (c.CompareTag("AnxietyLimit") || c.CompareTag("Meter"))
+        {
+            GameManager.Instance.GameOver();
+        }
+    }
 }

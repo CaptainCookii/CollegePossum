@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     public int totalTopicsLeft; // could get/set this instead of public
 
     [Header("[TEMPORARY] Round End & Lose Condition UI")]
-    private int activeBalls = 0;
+    [SerializeField] private int activeBalls = 0;
     private bool gameOver = false;
 
     [SerializeField] private GameObject roundEndUI;
@@ -39,8 +39,8 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            coolMessage.text = "Cool: " + GlobalVars.cool;
-            topicsLeftText.text = "Topics Left: " + totalTopicsPerConversation;
+            // coolMessage.text = "Cool: " + GlobalVars.cool;
+            // topicsLeftText.text = "Topics Left: " + totalTopicsPerConversation;
             totalTopicsLeft = totalTopicsPerConversation;
         }
         else
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     public void SubtractTopic(int amount)
     {
         totalTopicsLeft -= amount;
-        topicsLeftText.text = "Topics Left: " + totalTopicsLeft;
+        //topicsLeftText.text = "Topics Left: " + totalTopicsLeft;
     }
 
 
@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
     {
         GlobalVars.cool += amount;
 
-        coolMessage.text = "Cool: " + GlobalVars.cool;
+        //coolMessage.text = "Cool: " + GlobalVars.cool;
         //Debug.Log("Score: " + GlobalVars.cool);
     }
 
@@ -102,6 +102,32 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    
+    // If the player has not lost and chooses to play Pinball again.
+    public void PlayAgain()
+    {
+        roundEndUI.SetActive(false);
+
+        UnlockPieces();
+
+        ps.RestartSequence();
+    }
+
+    // [FOR MICAH] THIS IS WHERE THEY EXIT THE GAME EARLY.
+    public void ExitPressed()
+    {
+        SceneManager.LoadScene("YarnSpinner");
+    }
+
+    // Unlocks pieces when sequence is restarted.
+    private void UnlockPieces()
+    {
+        PieceDrag[] pieces = FindObjectsByType<PieceDrag>(FindObjectsSortMode.None);
+        foreach (PieceDrag piece in pieces)
+        {
+            piece.enabled = true;
+        }
+    }
+
+
 }
 

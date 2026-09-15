@@ -58,6 +58,7 @@ public class PregameSequence : MonoBehaviour
             }
 
             GameObject ball = Instantiate(ballPrefab, chute.position, chute.rotation);
+            GameManager.Instance.AddBall();
 
             // Adds active balls in play.
             ScoreCounter sc = FindFirstObjectByType<ScoreCounter>();
@@ -90,7 +91,6 @@ public class PregameSequence : MonoBehaviour
     // Restarts the game when called, currently when "Play Again" is selected.
     public void RestartSequence()
     {
-        
-        
+        StartCoroutine(Sequence());
     }
 }

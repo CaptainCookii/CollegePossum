@@ -8,6 +8,8 @@ public class BoundsDetector : MonoBehaviour
         // rely on that information.
         if (c.CompareTag("Ball"))
         {
+            GameManager.Instance.RemoveBall();
+            
             ScoreCounter sc = FindFirstObjectByType<ScoreCounter>();
             sc.RemoveBall();
 
