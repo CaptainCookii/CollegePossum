@@ -43,6 +43,7 @@ public class PregameSequence : MonoBehaviour
         // Removes timer from visibility once it hits 0 seconds.
         timer.gameObject.SetActive(false);
 
+        LockPieces();
         SpawnBalls();
     }
 
@@ -72,5 +73,17 @@ public class PregameSequence : MonoBehaviour
                 rb.AddForce(chute.right * force, ForceMode2D.Impulse);
             }
         }
+    }
+
+    // Locks pieces when timer ends and disables the dragging of them.
+    private void LockPieces()
+    {
+        PieceDrag[] pieces = FindObjectsByType<PieceDrag>(FindObjectsSortMode.None);
+
+        foreach (PieceDrag piece in pieces)
+        {
+            piece.enabled = false;
+        }
+        
     }
 }
