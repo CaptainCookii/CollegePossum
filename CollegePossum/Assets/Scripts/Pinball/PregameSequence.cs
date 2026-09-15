@@ -61,6 +61,10 @@ public class PregameSequence : MonoBehaviour
             ScoreCounter sc = FindFirstObjectByType<ScoreCounter>();
             sc.AddBall();
 
+            AnxietyManager am = FindFirstObjectByType<AnxietyManager>();
+            am.AddBall();
+
+
             Rigidbody2D rb = ball.GetComponent<Rigidbody2D>();
             if (rb != null)
             {

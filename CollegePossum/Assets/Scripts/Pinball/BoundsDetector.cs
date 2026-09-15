@@ -9,6 +9,9 @@ public class BoundsDetector : MonoBehaviour
             ScoreCounter sc = FindFirstObjectByType<ScoreCounter>();
             sc.RemoveBall();
 
+            AnxietyManager am = FindFirstObjectByType<AnxietyManager>();
+            am.RemoveBall();
+
             Destroy(c.gameObject);
         }
     }
