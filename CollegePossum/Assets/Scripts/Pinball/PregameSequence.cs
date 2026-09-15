@@ -86,4 +86,11 @@ public class PregameSequence : MonoBehaviour
         }
         
     }
+
+    // Restarts the game when called, currently when "Play Again" is selected.
+    public void RestartSequence()
+    {
+        
+        
+    }
 }

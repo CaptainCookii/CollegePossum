@@ -26,6 +26,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int totalTopicsPerConversation;
     public int totalTopicsLeft; // could get/set this instead of public
 
+    private int activeBalls = 0;
+    private bool gameOver = false;
+
     void Awake()
     {
         if (Instance == null)
@@ -55,6 +58,27 @@ public class GameManager : MonoBehaviour
 
         coolMessage.text = "Cool: " + GlobalVars.cool;
         //Debug.Log("Score: " + GlobalVars.cool);
+    }
+
+    // [NOTE] This code will not stay like this. This is because we don't have 
+    // topic balls right now.
+
+    // Next two functions: tracking balls in play
+    public void AddBall()
+    {
+        activeBalls++;
+    }
+
+    public void RemoveBall()
+    {
+        activeBalls--;
+
+        if (activeBalls <= 0 && !gameOver)
+        {
+            activeBalls = 0;
+            RoundCompleteUI();
+        }
+        
     }
 }
 
