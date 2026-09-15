@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class LeverController : MonoBehaviour
 {
+
+    // Enum to distinguish which side is which.
     public enum Side
     {
         Left,
