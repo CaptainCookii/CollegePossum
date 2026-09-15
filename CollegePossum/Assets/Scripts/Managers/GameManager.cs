@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,8 +27,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int totalTopicsPerConversation;
     public int totalTopicsLeft; // could get/set this instead of public
 
+    [Header("[TEMPORARY] Round End & Lose Condition UI")]
     private int activeBalls = 0;
     private bool gameOver = false;
+
+    [SerializeField] private GameObject roundEndUI;
+    [SerializeField] private PregameSequence ps;
 
     void Awake()
     {
@@ -76,9 +81,27 @@ public class GameManager : MonoBehaviour
         if (activeBalls <= 0 && !gameOver)
         {
             activeBalls = 0;
-            RoundCompleteUI();
-        }
-        
+            RoundEndUI();
+        } 
     }
+
+    // When round is complete, allow players to restart pregame sequence
+    // or exit the conversation.
+    private void RoundEndUI()
+    {
+        roundEndUI.SetActive(true); 
+    }
+
+    // [FOR MICAH] THIS IS WHERE THEY LOSE.
+    public void GameOver()
+    {
+        if (!gameOver)
+        {
+            gameOver = true;
+            SceneManager.LoadScene("YarnSpinner");
+        }
+    }
+
+    
 }
 
