@@ -4072,11 +4072,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7995296187107172493, guid: 3bf273b8d80384e0fb8068190f3a807b, type: 3}
       propertyPath: m_AngleLimits.m_LowerAngle
-      value: -25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7995296187107172493, guid: 3bf273b8d80384e0fb8068190f3a807b, type: 3}
       propertyPath: m_AngleLimits.m_UpperAngle
-      value: 25
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: -6139991958282308219, guid: 3bf273b8d80384e0fb8068190f3a807b, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
