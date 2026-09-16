@@ -45,43 +45,37 @@ public class PregameSequence : MonoBehaviour
 
         LockPieces();
         yield return StartCoroutine(ShootSequence());
-        // SpawnBalls(); [KEEP FOR NOW]
     }
 
+    // Shoot sequence!! For now, it shoots the first ball when the timer ends.
+    // Then, each ball comes 2.5 seconds after the previous. Change the
+    // value in Line 77 to edit.
     private IEnumerator ShootSequence()
     {
         ScoreCounter sc = FindFirstObjectByType<ScoreCounter>();
         AnxietyManager am = FindFirstObjectByType<AnxietyManager>();
-        
-    }
 
-    // Spawns the balls out of shooter.
-    private void SpawnBalls()
-    {
-        foreach (Transform chute in chutes)
+        for (int i = 0; i < chutes.Length; i++)
         {
-            if (chute == null)
-            {
-                continue;
-            }
+            Transform chute = chutes[i];
 
             GameObject ball = Instantiate(ballPrefab, chute.position, chute.rotation);
             GameManager.Instance.AddBall();
 
-            // Adds active balls in play.
-            ScoreCounter sc = FindFirstObjectByType<ScoreCounter>();
             sc.AddBall();
-
-            AnxietyManager am = FindFirstObjectByType<AnxietyManager>();
             am.AddBall();
-
 
             Rigidbody2D rb = ball.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
                 rb.AddForce(chute.right * force, ForceMode2D.Impulse);
             }
-        }
+
+            if (i < chutes.Length - 1)
+            {
+                yield return new WaitForSeconds(2.5f);
+            }
+        } 
     }
 
     // Locks pieces when timer ends and disables the dragging of them.
