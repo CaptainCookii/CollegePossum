@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{3b402cb7-3a12-449b-be92-a298d72909ef}">
+		<property name="name">
+			<value>pachinko_sounds</value>
+		</property>
+		<relationship name="folder">
+			<destination>{6918a20f-368f-4a17-8a24-8907921f2639}</destination>
+		</relationship>
+	</object>
+</objects>

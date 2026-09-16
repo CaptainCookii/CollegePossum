@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{0d684de4-7c70-493b-a3f0-1ff26b15c2c0}">
+		<property name="name">
+			<value>Terrence</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5455674c-60f1-4b49-b719-73e8ebcc9fa1}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{5bbc301a-84d9-4473-93f7-795808a260a3}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{5bbc301a-84d9-4473-93f7-795808a260a3}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
