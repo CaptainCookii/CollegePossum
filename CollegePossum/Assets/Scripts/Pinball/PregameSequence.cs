@@ -44,7 +44,15 @@ public class PregameSequence : MonoBehaviour
         timer.gameObject.SetActive(false);
 
         LockPieces();
-        SpawnBalls();
+        yield return StartCoroutine(ShootSequence());
+        // SpawnBalls(); [KEEP FOR NOW]
+    }
+
+    private IEnumerator ShootSequence()
+    {
+        ScoreCounter sc = FindFirstObjectByType<ScoreCounter>();
+        AnxietyManager am = FindFirstObjectByType<AnxietyManager>();
+        
     }
 
     // Spawns the balls out of shooter.
