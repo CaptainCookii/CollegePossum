@@ -3,6 +3,15 @@ using System.Collections;
 using Yarn;
 using Yarn.Unity;
 
+public static class GameState
+{
+    public static string pinballScene;
+    public static bool terryInteractable = true;
+    public static bool pamellaInteractable = true;
+    public static bool beauInteractable = true;
+}
+
+
 public class CharacterManager : MonoBehaviour
 {
 
@@ -13,6 +22,9 @@ public class CharacterManager : MonoBehaviour
     //sets up all the gameobjects required as well as a duration for each action
     public float fadeDuration = 1.5f;
     [Header("Characters")]
+    public GameObject Terry;
+    public GameObject Pamella;
+    public GameObject Beau;
     public SpriteRenderer FrancineL;
     public SpriteRenderer FrancineR;
     public SpriteRenderer BeauL;
@@ -154,5 +166,44 @@ public class CharacterManager : MonoBehaviour
         }
 
         overlay.color = targetColor;
+    }
+
+    private void Start()
+    {
+        CharacterDialogue characterDialogue = new CharacterDialogue();
+        if (GameState.pinballScene == "TerryPinball")
+        {
+            characterDialogue = Terry.GetComponent<CharacterDialogue>();
+            GameState.terryInteractable = false;
+            characterDialogue.StartDialogue();
+        }
+        else if (GameState.pinballScene == "PamelaPinball")
+        {
+            characterDialogue = Pamella.GetComponent<CharacterDialogue>();
+            GameState.pamellaInteractable = false;
+            characterDialogue.StartDialogue();
+        }
+        else if(GameState.pinballScene == "BeauPinball")
+        {
+            characterDialogue = Beau.GetComponent<CharacterDialogue>();
+            GameState.beauInteractable = false;
+            characterDialogue.StartDialogue();
+        }
+
+        if (GameState.terryInteractable == false)
+        {
+            characterDialogue = Terry.GetComponent<CharacterDialogue>();
+            characterDialogue.interactable = false;
+        }
+        if (GameState.pamellaInteractable == false)
+        {
+            characterDialogue = Pamella.GetComponent<CharacterDialogue>();
+            characterDialogue.interactable = false;
+        }
+        if (GameState.beauInteractable == false)
+        {
+            characterDialogue = Beau.GetComponent<CharacterDialogue>();
+            characterDialogue.interactable = false;
+        }
     }
 }
