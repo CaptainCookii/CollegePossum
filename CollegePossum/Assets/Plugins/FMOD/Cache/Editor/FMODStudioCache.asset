@@ -360,7 +360,7 @@ MonoBehaviour:
   Path: CollegePossumFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639249194150641443
+  lastModified: 639251851932493814
   FileSizes:
   - Name: Desktop
     Value: 2782528
@@ -460,7 +460,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 2798694070520750146}
   cacheVersion: 131848
-  cacheTime: 639249194150681451
+  cacheTime: 639251851932503818
   SerializableEventsDict:
   - key: event:/SFX/pachinko_sounds/pachinko_clink_6
     index: 0
@@ -645,7 +645,7 @@ MonoBehaviour:
   Path: CollegePossumFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639249194150681451
+  lastModified: 639251851932503818
   FileSizes:
   - Name: Desktop
     Value: 2014

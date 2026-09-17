@@ -98,7 +98,7 @@ public class GameManager : MonoBehaviour
         if (!gameOver)
         {
             gameOver = true;
-            SceneManager.LoadScene("YarnSpinner");
+            SceneManager.LoadScene("YarnSpinnerPrototype");
         }
     }
 
@@ -115,7 +115,7 @@ public class GameManager : MonoBehaviour
     // [FOR MICAH] THIS IS WHERE THEY EXIT THE GAME EARLY.
     public void ExitPressed()
     {
-        SceneManager.LoadScene("YarnSpinner");
+        SceneManager.LoadScene("YarnSpinnerPrototype");
     }
 
     // Unlocks pieces when sequence is restarted.
