@@ -79,6 +79,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 193
+--- !u!114 &-7480347668904211027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/pinball_ejector
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/pinball_ejector
+  Guid:
+    Data1: -870437181
+    Data2: 1104163494
+    Data3: -1026145388
+    Data4: -839334773
+  Banks:
+  - {fileID: -2029576225162637068}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 439
 --- !u!114 &-7231845469569502195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,10 +387,10 @@ MonoBehaviour:
   Path: CollegePossumFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639251830402311834
+  lastModified: 639253521097884018
   FileSizes:
   - Name: Desktop
-    Value: 2782528
+    Value: 2796288
   Exists: 1
 --- !u!114 &-239352558750624732
 MonoBehaviour:
@@ -454,13 +481,16 @@ MonoBehaviour:
   - {fileID: -7169520314790019244}
   - {fileID: 5573376482568150420}
   - {fileID: 137175006395781604}
+  - {fileID: 6363528528982412270}
+  - {fileID: 3750877672176683619}
+  - {fileID: -7480347668904211027}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2029576225162637068}
   StringsBanks:
   - {fileID: 2798694070520750146}
   cacheVersion: 131848
-  cacheTime: 639251830402321922
+  cacheTime: 639253521097894271
   SerializableEventsDict:
   - key: event:/SFX/pachinko_sounds/pachinko_clink_6
     index: 0
@@ -500,6 +530,12 @@ MonoBehaviour:
     index: 17
   - key: event:/Test1
     index: 18
+  - key: event:/SFX/pachinko_sounds/flipperup
+    index: 19
+  - key: event:/SFX/pachinko_sounds/flipperdown
+    index: 20
+  - key: event:/SFX/pachinko_sounds/pinball_ejector
+    index: 21
 --- !u!114 &137175006395781604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -645,11 +681,38 @@ MonoBehaviour:
   Path: CollegePossumFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639251830402321922
+  lastModified: 639253521097894271
   FileSizes:
   - Name: Desktop
-    Value: 2014
+    Value: 2170
   Exists: 1
+--- !u!114 &3750877672176683619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/flipperdown
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/flipperdown
+  Guid:
+    Data1: -1753171566
+    Data2: 1292596879
+    Data3: -266563442
+    Data4: -996550911
+  Banks:
+  - {fileID: -2029576225162637068}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 407
 --- !u!114 &3919236295669830188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,6 +944,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &6363528528982412270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/flipperup
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/flipperup
+  Guid:
+    Data1: -1677464968
+    Data2: 1262700504
+    Data3: 367873205
+    Data4: 810332763
+  Banks:
+  - {fileID: -2029576225162637068}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 333
 --- !u!114 &7350857597653367874
 MonoBehaviour:
   m_ObjectHideFlags: 0

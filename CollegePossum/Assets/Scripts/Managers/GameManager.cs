@@ -50,6 +50,22 @@ public class GameManager : MonoBehaviour
 
     }
 
+    private void OnLevelWasLoaded(int level)
+    {
+        if (!AudioManager.instance.partyOn && level == 1)
+        {
+            AudioManager.instance.ChangeThemeParty();
+            if (AudioManager.instance.pachinkoOn)
+            {
+                AudioManager.instance.ChangeThemePachinko();
+            }
+        }
+        if (!AudioManager.instance.pachinkoOn && (level == 7 || level == 8 || level == 9))
+        {
+            AudioManager.instance.ChangeThemePachinko();
+        }
+    }
+
     public void SubtractTopic(int amount)
     {
         totalTopicsLeft -= amount;

@@ -841,6 +841,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1560669478}
   - component: {fileID: 1560669477}
+  - component: {fileID: 1560669479}
+  - component: {fileID: 1560669480}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -868,6 +870,13 @@ MonoBehaviour:
   socialStudiesValue: 0
   scienceValue: 0
   englishValue: 0
+  coolMessage: {fileID: 0}
+  topicsLeftText: {fileID: 0}
+  totalTopicsPerConversation: 0
+  totalTopicsLeft: 0
+  activeBalls: 0
+  roundEndUI: {fileID: 0}
+  ps: {fileID: 0}
 --- !u!4 &1560669478
 Transform:
   m_ObjectHideFlags: 0
@@ -883,6 +892,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1560669479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560669476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9da217708dfa18c488b7804d65b3bdd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  hollisOn: 0
+  pachinkoOn: 0
+  pamOn: 0
+  partyOn: 0
+  terrenceOn: 0
+  beauOn: 0
+--- !u!114 &1560669480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560669476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc73658a06c7bf4c82f2f066a4b2d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FMODEvents
+  <themes>k__BackingField:
+    Guid:
+      Data1: -254230984
+      Data2: 1137975434
+      Data3: -2052029288
+      Data4: 1430716876
+    Path: event:/Music
+  <pegHit>k__BackingField:
+    Guid:
+      Data1: 2029549815
+      Data2: 1130526324
+      Data3: -416820852
+      Data4: 383369379
+    Path: event:/Test1
 --- !u!1 &1562867525
 GameObject:
   m_ObjectHideFlags: 0
