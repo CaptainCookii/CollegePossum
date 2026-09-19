@@ -33,12 +33,12 @@ public class LeverController : MonoBehaviour
         bool keyPressed = false;
         bool keyPressedThisFrame = false;
 
-        if (side == Side.Left)
+        if (side == Side.Right)
         {
             keyPressed = Keyboard.current.leftArrowKey.isPressed;
             keyPressedThisFrame = Keyboard.current.leftArrowKey.wasPressedThisFrame;
         }
-        else if (side == Side.Right)
+        else if (side == Side.Left)
         {
             keyPressed = Keyboard.current.rightArrowKey.isPressed;
             keyPressedThisFrame = Keyboard.current.rightArrowKey.wasPressedThisFrame;

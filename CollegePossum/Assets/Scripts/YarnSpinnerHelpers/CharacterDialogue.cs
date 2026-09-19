@@ -1,5 +1,7 @@
+using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Yarn;
 using Yarn.Unity;
@@ -13,6 +15,7 @@ public class CharacterDialogue : MonoBehaviour
 
     //setup variables like the different dialogues and the interactible boolean to see if an object can be clicked
     public DialogueRunner dialogueRunner;
+    public string pinball;
 
     [Header("Dialogue Nodes")]
     public string dialogue1;
@@ -20,13 +23,14 @@ public class CharacterDialogue : MonoBehaviour
 
     public GameObject outline;
 
-    private bool interactable = true;
+    public bool interactable = true;
     private int dialogue = 0;
 
     private void Start()
     {
         // Make sure the outline starts invisible
         outline.SetActive(false);
+        dialogue = Random.Range(0, 2);
     }
 
     private void Update()
@@ -46,7 +50,9 @@ public class CharacterDialogue : MonoBehaviour
 
             if (hit != null && hit.gameObject == gameObject && !dialogueRunner.IsDialogueRunning && interactable)
             {
-                StartDialogue();
+                GameState.pinballScene = pinball;
+
+                SceneManager.LoadScene(pinball);
             }
         }
     }
@@ -81,14 +87,11 @@ public class CharacterDialogue : MonoBehaviour
         if (dialogue == 0)
         {
             dialogueRunner.StartDialogue(dialogue1);
-            dialogue += 1;
         }
         else
         {
             dialogueRunner.StartDialogue(dialogue2);
-            interactable = false;
-            // changing scene to a pachinko would probably go here
-            // will probably need to figure out a way to store each characters interactable variable as to not repeat dialogue
         }
+        interactable = false;
     }
 }
