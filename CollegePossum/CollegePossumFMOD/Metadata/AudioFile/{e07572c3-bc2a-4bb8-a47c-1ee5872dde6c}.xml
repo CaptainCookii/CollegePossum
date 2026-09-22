@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{e07572c3-bc2a-4bb8-a47c-1ee5872dde6c}">
+		<property name="assetPath">
+			<value>CollegePossumPartyTheme.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>26.482770833333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{957718cf-4622-4d52-9a52-4886473d2504}</destination>
+		</relationship>
+	</object>
+</objects>

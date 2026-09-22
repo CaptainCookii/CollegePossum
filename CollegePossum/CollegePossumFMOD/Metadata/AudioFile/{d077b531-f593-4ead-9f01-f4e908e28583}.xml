@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{d077b531-f593-4ead-9f01-f4e908e28583}">
+		<property name="assetPath">
+			<value>play_start_redux_nofizz.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.5926303854875283</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{957718cf-4622-4d52-9a52-4886473d2504}</destination>
+		</relationship>
+	</object>
+</objects>

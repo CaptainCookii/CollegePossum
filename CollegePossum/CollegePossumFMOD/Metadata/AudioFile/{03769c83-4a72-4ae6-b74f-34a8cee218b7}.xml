@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{03769c83-4a72-4ae6-b74f-34a8cee218b7}">
+		<property name="assetPath">
+			<value>pinball_ejector.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.4398125</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{957718cf-4622-4d52-9a52-4886473d2504}</destination>
+		</relationship>
+	</object>
+</objects>

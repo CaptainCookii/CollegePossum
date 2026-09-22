@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/EvanTestScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 905aff8748bcbbd48be6ccee0682d1ca
+  - enabled: 1
+    path: Assets/Scenes/YarnSpinnerPrototype.unity
+    guid: 0a5b0c5fd9a51fa47a73a5c88870ecaa
+  - enabled: 1
+    path: Assets/Scenes/EvanTestScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/PartyRoom2D.unity
     guid: b8a272e25e5082141b995a357cf646bb
@@ -23,6 +26,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ClassesMenu.unity
     guid: c77ca1340b7b72b4a9cc943d7d59efd2
+  - enabled: 1
+    path: Assets/Scenes/Pinball/BeauPinball.unity
+    guid: d18ec5b036a9e4f0d886a3f0029424aa
+  - enabled: 1
+    path: Assets/Scenes/Pinball/PamelaPinball.unity
+    guid: 00913227fc2fa4aaab5b2d5d09b00911
+  - enabled: 1
+    path: Assets/Scenes/Pinball/TerryPinball.unity
+    guid: 35f314931e92646969dacf6105cfdc6f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

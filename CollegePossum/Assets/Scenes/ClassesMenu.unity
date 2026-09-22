@@ -427,7 +427,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Band +
+  m_text: 'Science +
 
 '
   m_isRightToLeft: 0
