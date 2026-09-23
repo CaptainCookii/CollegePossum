@@ -5,6 +5,8 @@ public class MainMenuManager : MonoBehaviour
 {
     public void PlayGame()
     {
+        GameState.ResetCharacterInteractable();
+        GameState.pinballScene = null;
         SceneManager.LoadScene("YarnSpinnerPrototype");
     }
 

@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using Yarn;
 using Yarn.Unity;
+using System.Collections.Generic;
 
 public static class GameState
 {
@@ -9,6 +10,29 @@ public static class GameState
     public static bool terryInteractable = true;
     public static bool pamellaInteractable = true;
     public static bool beauInteractable = true;
+
+    private static Dictionary<string, bool> characterInteractable =
+        new Dictionary<string, bool>();
+
+    public static bool GetInteractable(string characterID)
+    {
+        if (characterInteractable.ContainsKey(characterID))
+        {
+            return characterInteractable[characterID];
+        }
+        characterInteractable[characterID] = true;
+        return true;
+    }
+
+    public static void SetInteractable(string characterID, bool value)
+    {
+        characterInteractable[characterID] = value;
+    }
+
+    public static void ResetCharacterInteractable()
+    {
+        characterInteractable.Clear();
+    }
 }
 
 
@@ -22,18 +46,8 @@ public class CharacterManager : MonoBehaviour
     //sets up all the gameobjects required as well as a duration for each action
     public float fadeDuration = 1.5f;
     [Header("Characters")]
-    public GameObject Terry;
-    public GameObject Pamella;
-    public GameObject Beau;
-    public SpriteRenderer FrancineL;
-    public SpriteRenderer FrancineR;
-    public SpriteRenderer BeauL;
-    public SpriteRenderer BeauR;
-    public SpriteRenderer TerryL;
-    public SpriteRenderer TerryR;
-    public SpriteRenderer PamellaL;
-    public SpriteRenderer PamellaR;
-
+    private Character[] characters;
+    
     private SpriteRenderer activeL;
     private SpriteRenderer activeR;
 
@@ -42,25 +56,13 @@ public class CharacterManager : MonoBehaviour
     [YarnCommand("set_left")] //yarn commands allow them to be called in yarn scripts
     public void Set_Left(string character)
     {
-        if (character == "Francine")
+        foreach (Character name in characters)
         {
-            StartCoroutine(FadeTo(1f, FrancineL));
-            activeL = FrancineL;
-        }
-        else if (character == "Beau")
-        {
-            StartCoroutine(FadeTo(1f, BeauL));
-            activeL = BeauL;
-        }
-        else if (character == "Terry")
-        {
-            StartCoroutine(FadeTo(1f, TerryL));
-            activeL = TerryL;
-        }
-        else if (character == "Pamella")
-        {
-            StartCoroutine(FadeTo(1f, PamellaL));
-            activeL = PamellaL;
+            if (name.characterName == character)
+            {
+                StartCoroutine(FadeTo(1f, name.left));
+                activeL = name.left;
+            }
         }
     }
 
@@ -69,25 +71,13 @@ public class CharacterManager : MonoBehaviour
     [YarnCommand("set_right")]
     public void Set_Right(string character)
     {
-        if (character == "Francine")
+        foreach (Character name in characters)
         {
-            StartCoroutine(FadeTo(1f, FrancineR));
-            activeR = FrancineR;
-        }
-        else if (character == "Beau")
-        {
-            StartCoroutine(FadeTo(1f, BeauR));
-            activeR = BeauR;
-        }
-        else if (character == "Terry")
-        {
-            StartCoroutine(FadeTo(1f, TerryR));
-            activeR = TerryR;
-        }
-        else if (character == "Pamella")
-        {
-            StartCoroutine(FadeTo(1f, PamellaR));
-            activeR = PamellaR;
+            if (name.characterName == character)
+            {
+                StartCoroutine(FadeTo(1f, name.right));
+                activeL = name.right;
+            }
         }
     }
 
@@ -170,40 +160,24 @@ public class CharacterManager : MonoBehaviour
 
     private void Start()
     {
-        CharacterDialogue characterDialogue = new CharacterDialogue();
-        if (GameState.pinballScene == "TerryPinball")
-        {
-            characterDialogue = Terry.GetComponent<CharacterDialogue>();
-            GameState.terryInteractable = false;
-            characterDialogue.StartDialogue();
-        }
-        else if (GameState.pinballScene == "PamelaPinball")
-        {
-            characterDialogue = Pamella.GetComponent<CharacterDialogue>();
-            GameState.pamellaInteractable = false;
-            characterDialogue.StartDialogue();
-        }
-        else if(GameState.pinballScene == "BeauPinball")
-        {
-            characterDialogue = Beau.GetComponent<CharacterDialogue>();
-            GameState.beauInteractable = false;
-            characterDialogue.StartDialogue();
-        }
+        characters = FindObjectsByType<Character>(FindObjectsSortMode.None);
 
-        if (GameState.terryInteractable == false)
+        CharacterDialogue characterDialogue = new CharacterDialogue();
+
+        foreach (Character name in characters)
         {
-            characterDialogue = Terry.GetComponent<CharacterDialogue>();
-            characterDialogue.interactable = false;
-        }
-        if (GameState.pamellaInteractable == false)
-        {
-            characterDialogue = Pamella.GetComponent<CharacterDialogue>();
-            characterDialogue.interactable = false;
-        }
-        if (GameState.beauInteractable == false)
-        {
-            characterDialogue = Beau.GetComponent<CharacterDialogue>();
-            characterDialogue.interactable = false;
+            if (GameState.pinballScene == name.pinballScene)
+            {
+                characterDialogue = name.character.GetComponent<CharacterDialogue>();
+                GameState.SetInteractable(name.characterName, false);
+                characterDialogue.StartDialogue();
+            }
+
+            if (GameState.GetInteractable(name.characterName) == false)
+            {
+                characterDialogue = name.character.GetComponent<CharacterDialogue>();
+                characterDialogue.interactable = false;
+            }
         }
     }
 }
