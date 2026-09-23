@@ -76,7 +76,7 @@ public class CharacterManager : MonoBehaviour
             if (name.characterName == character)
             {
                 StartCoroutine(FadeTo(1f, name.right));
-                activeL = name.right;
+                activeR = name.right;
             }
         }
     }
