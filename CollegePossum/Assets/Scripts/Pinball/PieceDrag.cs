@@ -10,6 +10,15 @@ public class PieceDrag : MonoBehaviour
 
     private PolygonCollider2D objectCollider;
     private Vector3 storedPosition;
+    private Quaternion storedRotation; // will be erased when we stop supporting rotation
+
+    [Header("PIECE HEALTH")]
+    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private int currentHealth;
+    [SerializeField] private int damage = 10;
+    private Vector3 spawnPosition;
+    private Quaternion spawnRotation;
+
     
     // Sets and stores camera and PolygonCollider2D components for use later on.
     private void Awake()
