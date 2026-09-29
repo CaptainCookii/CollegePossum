@@ -1,4 +1,5 @@
 using NUnit.Framework.Interfaces;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,12 +11,25 @@ public class PieceDrag : MonoBehaviour
 
     private PolygonCollider2D objectCollider;
     private Vector3 storedPosition;
+    private Quaternion storedRotation; // will be erased when we stop supporting rotation
+
+    [Header("PIECE HEALTH")]
+    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private int pieceHealth;
+    
+    private Vector3 spawnPosition;
+    private Quaternion spawnRotation;
+
     
     // Sets and stores camera and PolygonCollider2D components for use later on.
     private void Awake()
     {
         mainCamera = Camera.main; 
         objectCollider = GetComponent<PolygonCollider2D>();
+
+        spawnPosition = transform.position;
+        spawnRotation = transform.rotation;
+        pieceHealth = maxHealth;
     }
 
     private void Update()
@@ -62,6 +76,7 @@ public class PieceDrag : MonoBehaviour
             if (IsOverlapping())
             {
                 transform.position = storedPosition;
+                transform.rotation = storedRotation;
             }
             
             draggingOn = false;
@@ -74,6 +89,33 @@ public class PieceDrag : MonoBehaviour
         {
             transform.Rotate(0, 0, 45);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D c)
+    {
+        if (c.gameObject.CompareTag("Ball"))
+        {
+            DealDamage(10);
+        }
+    }
+
+    public void DealDamage(int damage)
+    {
+        pieceHealth -= damage;
+
+        if (pieceHealth <= 0)
+        {
+            RespawnPiece();
+        }
+    }
+
+    private void RespawnPiece()
+    {
+        pieceHealth = maxHealth;
+        transform.position = spawnPosition;
+        transform.rotation = spawnRotation;
+        draggingOn = false;
+        
     }
 
     // Helper function that checks if pieces are overlapping with other pieces

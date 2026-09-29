@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -63,6 +65,16 @@ public class GameManager : MonoBehaviour
         if (!AudioManager.instance.pachinkoOn && (level == 7 || level == 8 || level == 9))
         {
             AudioManager.instance.ChangeThemePachinko();
+        }
+    }
+
+    private void Update()
+    {
+        if (Keyboard.current.jKey.isPressed)
+        {
+            GameOver();
+        }
+    }
         }
     }
 
