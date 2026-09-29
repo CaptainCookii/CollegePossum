@@ -83,6 +83,8 @@ public class Piece : MonoBehaviour
         }
     }
 
+    // If a piece is hit by a ball, for now, deal 10 damage. Number is
+    // easily changed.
     private void OnCollisionEnter2D(Collision2D c)
     {
         if (c.gameObject.CompareTag("Ball"))
@@ -118,7 +120,7 @@ public class Piece : MonoBehaviour
     private bool IsOverlapping()
     {
         ContactFilter2D overlapCheck = new ContactFilter2D();
-        overlapCheck.useTriggers = false;
+        overlapCheck.useTriggers = true;
 
         // should hopefully not need 10, can be raised
         PolygonCollider2D[] collisions = new PolygonCollider2D[10];
@@ -129,7 +131,10 @@ public class Piece : MonoBehaviour
         {
             if (collisions[i] != objectCollider)
             {
-                return true;
+                if (collisions[i].CompareTag("Chute") || !collisions[i].isTrigger)
+                {
+                    return true;
+                }
             }
         }
 

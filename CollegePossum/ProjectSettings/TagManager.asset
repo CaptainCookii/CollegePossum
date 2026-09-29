@@ -7,6 +7,8 @@ TagManager:
   - Ball
   - Meter
   - AnxietyLimit
+  - Piece
+  - Chute
   layers:
   - Default
   - TransparentFX
