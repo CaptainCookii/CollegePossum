@@ -11,7 +11,7 @@ public class Piece : MonoBehaviour
 
     private PolygonCollider2D objectCollider;
     private Vector3 storedPosition;
-    private Quaternion storedRotation; // will be erased when we stop supporting rotation
+    
 
     [Header("PIECE HEALTH")]
     [SerializeField] private int maxHealth = 100;
@@ -76,18 +76,10 @@ public class Piece : MonoBehaviour
             if (IsOverlapping())
             {
                 transform.position = storedPosition;
-                transform.rotation = storedRotation;
             }
             
             draggingOn = false;
             
-        }
-
-        // Supports the rotating of pieces. Currently at a 45 degree angle per
-        // rotation, number can easily be changed.
-        if (draggingOn && Keyboard.current.rKey.wasPressedThisFrame)
-        {
-            transform.Rotate(0, 0, 45);
         }
     }
 
