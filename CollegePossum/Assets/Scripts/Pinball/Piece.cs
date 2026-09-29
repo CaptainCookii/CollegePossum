@@ -3,7 +3,7 @@ using Unity.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PieceDrag : MonoBehaviour
+public class Piece : MonoBehaviour
 {
     private Camera mainCamera;
     private bool draggingOn;
@@ -99,6 +99,7 @@ public class PieceDrag : MonoBehaviour
         }
     }
 
+    // Does damage to a piece based on hit
     public void DealDamage(int damage)
     {
         pieceHealth -= damage;
@@ -109,6 +110,8 @@ public class PieceDrag : MonoBehaviour
         }
     }
 
+    // For now, puts piece back into playing field. Can be moved again 
+    // if new round starts.
     private void RespawnPiece()
     {
         pieceHealth = maxHealth;
