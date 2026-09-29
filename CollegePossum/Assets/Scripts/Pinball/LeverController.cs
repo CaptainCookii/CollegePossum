@@ -12,8 +12,10 @@ public class LeverController : MonoBehaviour
     }
 
     [SerializeField] private Side side;
-    [SerializeField] private float force = 1000f;
-    [SerializeField] private float stoppedForce = 500f;
+
+    [SerializeField] private float pressAddAngle = 65f;
+    [SerializeField] private float flippedUpSpeed = 3500f;
+    [SerializeField] private float returnDownSpeed = 1800f;
 
     private HingeJoint2D hinge;
     private JointMotor2D motor;
