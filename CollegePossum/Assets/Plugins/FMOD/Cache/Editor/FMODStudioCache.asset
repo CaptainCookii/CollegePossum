@@ -344,6 +344,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 233
+--- !u!114 &-2900156468042416698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/flipperup
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/flipperup
+  Guid:
+    Data1: -1677464968
+    Data2: 1262700504
+    Data3: 367873205
+    Data4: 810332763
+  Banks:
+  - {fileID: -2029576225162637068}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 333
 --- !u!114 &-2819700857434528096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,6 +399,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 85
+--- !u!114 &-2691461645333783848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/pinball_ejector
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/pinball_ejector
+  Guid:
+    Data1: -870437181
+    Data2: 1104163494
+    Data3: -1026145388
+    Data4: -839334773
+  Banks:
+  - {fileID: -2029576225162637068}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 439
 --- !u!114 &-2029576225162637068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,11 +441,39 @@ MonoBehaviour:
   Path: CollegePossumFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639259760284768891
+  lastModified: 639261292219275895
+>>>>>>> 7f0313a350dbdec2b9b79ef33fcb04d457dec2f4
   FileSizes:
   - Name: Desktop
     Value: 2796288
   Exists: 1
+--- !u!114 &-723189523448811036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/flipperup
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/flipperup
+  Guid:
+    Data1: -1677464968
+    Data2: 1262700504
+    Data3: 367873205
+    Data4: 810332763
+  Banks:
+  - {fileID: -2029576225162637068}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 333
 --- !u!114 &-239352558750624732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,16 +563,18 @@ MonoBehaviour:
   - {fileID: -7169520314790019244}
   - {fileID: 5573376482568150420}
   - {fileID: 137175006395781604}
-  - {fileID: 8367856040462332101}
-  - {fileID: -7758417945882123885}
-  - {fileID: 9190707963032345612}
+  - {fileID: -2900156468042416698}
+  - {fileID: -652115956074258766}
+  - {fileID: -2691461645333783848}
+>>>>>>> 7f0313a350dbdec2b9b79ef33fcb04d457dec2f4
   EditorParameters: []
   MasterBanks:
   - {fileID: -2029576225162637068}
   StringsBanks:
   - {fileID: 2798694070520750146}
   cacheVersion: 131848
-  cacheTime: 639259760284768891
+  cacheTime: 639261292219280127
+>>>>>>> 7f0313a350dbdec2b9b79ef33fcb04d457dec2f4
   SerializableEventsDict:
   - key: event:/SFX/pachinko_sounds/pachinko_clink_6
     index: 0
@@ -681,7 +765,8 @@ MonoBehaviour:
   Path: CollegePossumFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639259760284768891
+  lastModified: 639261292219280127
+>>>>>>> 7f0313a350dbdec2b9b79ef33fcb04d457dec2f4
   FileSizes:
   - Name: Desktop
     Value: 2170
@@ -815,6 +900,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &5122087276916833448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/pinball_ejector
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/pinball_ejector
+  Guid:
+    Data1: -870437181
+    Data2: 1104163494
+    Data3: -1026145388
+    Data4: -839334773
+  Banks:
+  - {fileID: -2029576225162637068}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 439
 --- !u!114 &5573376482568150420
 MonoBehaviour:
   m_ObjectHideFlags: 0
