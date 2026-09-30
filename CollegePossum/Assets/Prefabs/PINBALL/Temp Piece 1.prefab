@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 4824212296198519211}
   m_Layer: 0
   m_Name: Temp Piece 1
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -323,11 +323,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 0.3575964}
-      - {x: -0.22299922, y: 0.09488246}
-      - {x: -0.41647753, y: -0.20944035}
-      - {x: 0.45930463, y: -0.20944032}
-      - {x: 0.2658261, y: 0.052055717}
+    - - {x: 0.23386613, y: 0.17723718}
+      - {x: 0, y: 0.58964276}
+      - {x: -0.23870687, y: 0.1754261}
+      - {x: -0.29101282, y: 0.08688086}
+      - {x: -0.3776542, y: -0.07281914}
+      - {x: -0.5124967, y: -0.29745796}
+      - {x: 0.5033134, y: -0.29345712}
+      - {x: 0.3098349, y: 0.056056514}
   m_UseDelaunayMesh: 1
 --- !u!114 &4824212296198519211
 MonoBehaviour:
@@ -341,3 +344,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2d46ad1a2f64e139831228441ab6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PieceDrop
+  maxHealth: 100
+  pieceHealth: 0

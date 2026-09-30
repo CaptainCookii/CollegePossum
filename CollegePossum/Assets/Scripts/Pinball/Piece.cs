@@ -3,7 +3,7 @@ using Unity.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PieceDrag : MonoBehaviour
+public class Piece : MonoBehaviour
 {
     private Camera mainCamera;
     private bool draggingOn;
@@ -11,7 +11,7 @@ public class PieceDrag : MonoBehaviour
 
     private PolygonCollider2D objectCollider;
     private Vector3 storedPosition;
-    private Quaternion storedRotation; // will be erased when we stop supporting rotation
+    
 
     [Header("PIECE HEALTH")]
     [SerializeField] private int maxHealth = 100;
@@ -76,21 +76,15 @@ public class PieceDrag : MonoBehaviour
             if (IsOverlapping())
             {
                 transform.position = storedPosition;
-                transform.rotation = storedRotation;
             }
             
             draggingOn = false;
             
         }
-
-        // Supports the rotating of pieces. Currently at a 45 degree angle per
-        // rotation, number can easily be changed.
-        if (draggingOn && Keyboard.current.rKey.wasPressedThisFrame)
-        {
-            transform.Rotate(0, 0, 45);
-        }
     }
 
+    // If a piece is hit by a ball, for now, deal 10 damage. Number is
+    // easily changed.
     private void OnCollisionEnter2D(Collision2D c)
     {
         if (c.gameObject.CompareTag("Ball"))
@@ -99,6 +93,7 @@ public class PieceDrag : MonoBehaviour
         }
     }
 
+    // Does damage to a piece based on hit
     public void DealDamage(int damage)
     {
         pieceHealth -= damage;
@@ -109,6 +104,8 @@ public class PieceDrag : MonoBehaviour
         }
     }
 
+    // For now, puts piece back into playing field. Can be moved again 
+    // if new round starts.
     private void RespawnPiece()
     {
         pieceHealth = maxHealth;
@@ -123,7 +120,7 @@ public class PieceDrag : MonoBehaviour
     private bool IsOverlapping()
     {
         ContactFilter2D overlapCheck = new ContactFilter2D();
-        overlapCheck.useTriggers = false;
+        overlapCheck.useTriggers = true;
 
         // should hopefully not need 10, can be raised
         PolygonCollider2D[] collisions = new PolygonCollider2D[10];
@@ -134,7 +131,10 @@ public class PieceDrag : MonoBehaviour
         {
             if (collisions[i] != objectCollider)
             {
-                return true;
+                if (collisions[i].CompareTag("Chute") || !collisions[i].isTrigger)
+                {
+                    return true;
+                }
             }
         }
 

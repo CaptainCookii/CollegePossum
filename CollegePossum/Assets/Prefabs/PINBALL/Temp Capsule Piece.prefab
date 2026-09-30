@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -607807204240689892}
   m_Layer: 0
   m_Name: Temp Capsule Piece
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,11 +141,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
+    - - {x: 0.26457644, y: 0.7250774}
+      - {x: -0.0073742867, y: 0.82301855}
+      - {x: -0.29475027, y: 0.69985104}
+      - {x: -0.39657784, y: 0.5139668}
+      - {x: -0.40439224, y: 0.10273671}
+      - {x: -0.4059615, y: -0.2790556}
+      - {x: -0.41074514, y: -0.49552917}
+      - {x: -0.31493896, y: -0.66153276}
+      - {x: -0.121017456, y: -0.7964542}
+      - {x: 0.06962347, y: -0.8027084}
+      - {x: 0.25470448, y: -0.7247429}
+      - {x: 0.3665582, y: -0.5656676}
+      - {x: 0.38993406, y: -0.33779335}
+      - {x: 0.38978195, y: 0.08214402}
+      - {x: 0.40195894, y: 0.35362506}
+      - {x: 0.39798975, y: 0.5081212}
   m_UseDelaunayMesh: 1
 --- !u!114 &-607807204240689892
 MonoBehaviour:
@@ -159,6 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2d46ad1a2f64e139831228441ab6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PieceDrag
+  maxHealth: 100
+  pieceHealth: 0
 --- !u!1 &4851788692779636183
 GameObject:
   m_ObjectHideFlags: 0

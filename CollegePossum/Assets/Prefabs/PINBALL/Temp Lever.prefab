@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2313143148708467517}
   - component: {fileID: -6139991958282308219}
   - component: {fileID: 3139655799602179858}
-  - component: {fileID: -7995296187107172493}
   - component: {fileID: 3416994442001569871}
   m_Layer: 0
   m_Name: Temp Lever
@@ -142,11 +141,25 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.04250796, y: 2.9978743}
-      - {x: -1.3336284, y: 2.816987}
-      - {x: -1.1403887, y: 2.4640963}
-      - {x: 1.3954368, y: 2.421589}
-      - {x: 1.6736921, y: 2.8169873}
+    - - {x: 1.508292, y: 2.8826458}
+      - {x: 1.3120799, y: 2.93349}
+      - {x: 0.9001604, y: 2.973079}
+      - {x: 0.04250796, y: 2.9534802}
+      - {x: -0.5800331, y: 2.9637673}
+      - {x: -0.9403612, y: 2.9346766}
+      - {x: -1.1566341, y: 2.8701727}
+      - {x: -1.2903993, y: 2.7783022}
+      - {x: -1.3075956, y: 2.6432467}
+      - {x: -1.1987758, y: 2.5594747}
+      - {x: -1.0404079, y: 2.494166}
+      - {x: -0.73451525, y: 2.4553623}
+      - {x: 0.39956504, y: 2.4457698}
+      - {x: 1.0060921, y: 2.4531615}
+      - {x: 1.3237765, y: 2.4813056}
+      - {x: 1.5443517, y: 2.540515}
+      - {x: 1.6413858, y: 2.600724}
+      - {x: 1.7124989, y: 2.7090096}
+      - {x: 1.6514951, y: 2.802189}
   m_UseDelaunayMesh: 1
 --- !u!50 &3139655799602179858
 Rigidbody2D:
@@ -156,7 +169,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3241486895053602841}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -175,32 +188,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!233 &-7995296187107172493
-HingeJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3241486895053602841}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: -30, y: 30}
-  m_ConnectedAnchor: {x: -30, y: 30}
-  m_UseConnectedAnchor: 1
-  m_UseMotor: 1
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 1
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
 --- !u!114 &3416994442001569871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,8 +201,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LeverController
   side: 0
-  force: 1000
-  stoppedForce: 500
+  pivot: {fileID: 0}
+  pressAddAngle: 65
+  flippedUpSpeed: 3500
+  returnDownSpeed: 1800
 --- !u!1 &8957357280184162932
 GameObject:
   m_ObjectHideFlags: 0
