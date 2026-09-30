@@ -81,9 +81,9 @@ public class PregameSequence : MonoBehaviour
     // Locks pieces when timer ends and disables the dragging of them.
     private void LockPieces()
     {
-        PieceDrag[] pieces = FindObjectsByType<PieceDrag>(FindObjectsSortMode.None);
+        Piece[] pieces = FindObjectsByType<Piece>(FindObjectsSortMode.None);
 
-        foreach (PieceDrag piece in pieces)
+        foreach (Piece piece in pieces)
         {
             piece.enabled = false;
         }

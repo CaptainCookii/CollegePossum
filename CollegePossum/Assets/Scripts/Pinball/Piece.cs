@@ -1,8 +1,9 @@
 using NUnit.Framework.Interfaces;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PieceDrag : MonoBehaviour
+public class Piece : MonoBehaviour
 {
     private Camera mainCamera;
     private bool draggingOn;
@@ -11,11 +12,24 @@ public class PieceDrag : MonoBehaviour
     private PolygonCollider2D objectCollider;
     private Vector3 storedPosition;
     
+
+    [Header("PIECE HEALTH")]
+    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private int pieceHealth;
+    
+    private Vector3 spawnPosition;
+    private Quaternion spawnRotation;
+
+    
     // Sets and stores camera and PolygonCollider2D components for use later on.
     private void Awake()
     {
         mainCamera = Camera.main; 
         objectCollider = GetComponent<PolygonCollider2D>();
+
+        spawnPosition = transform.position;
+        spawnRotation = transform.rotation;
+        pieceHealth = maxHealth;
     }
 
     private void Update()
@@ -67,13 +81,38 @@ public class PieceDrag : MonoBehaviour
             draggingOn = false;
             
         }
+    }
 
-        // Supports the rotating of pieces. Currently at a 45 degree angle per
-        // rotation, number can easily be changed.
-        if (draggingOn && Keyboard.current.rKey.wasPressedThisFrame)
+    // If a piece is hit by a ball, for now, deal 10 damage. Number is
+    // easily changed.
+    private void OnCollisionEnter2D(Collision2D c)
+    {
+        if (c.gameObject.CompareTag("Ball"))
         {
-            transform.Rotate(0, 0, 45);
+            DealDamage(10);
         }
+    }
+
+    // Does damage to a piece based on hit
+    public void DealDamage(int damage)
+    {
+        pieceHealth -= damage;
+
+        if (pieceHealth <= 0)
+        {
+            RespawnPiece();
+        }
+    }
+
+    // For now, puts piece back into playing field. Can be moved again 
+    // if new round starts.
+    private void RespawnPiece()
+    {
+        pieceHealth = maxHealth;
+        transform.position = spawnPosition;
+        transform.rotation = spawnRotation;
+        draggingOn = false;
+        
     }
 
     // Helper function that checks if pieces are overlapping with other pieces
@@ -81,7 +120,7 @@ public class PieceDrag : MonoBehaviour
     private bool IsOverlapping()
     {
         ContactFilter2D overlapCheck = new ContactFilter2D();
-        overlapCheck.useTriggers = false;
+        overlapCheck.useTriggers = true;
 
         // should hopefully not need 10, can be raised
         PolygonCollider2D[] collisions = new PolygonCollider2D[10];
@@ -92,7 +131,10 @@ public class PieceDrag : MonoBehaviour
         {
             if (collisions[i] != objectCollider)
             {
-                return true;
+                if (collisions[i].CompareTag("Chute") || !collisions[i].isTrigger)
+                {
+                    return true;
+                }
             }
         }
 

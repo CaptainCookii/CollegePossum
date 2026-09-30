@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -48,6 +50,14 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+    }
+
+    private void Update()
+    {
+        if (Keyboard.current.jKey.isPressed)
+        {
+            GameOver();
+        }
     }
 
     public void SubtractTopic(int amount)
@@ -121,8 +131,8 @@ public class GameManager : MonoBehaviour
     // Unlocks pieces when sequence is restarted.
     private void UnlockPieces()
     {
-        PieceDrag[] pieces = FindObjectsByType<PieceDrag>(FindObjectsSortMode.None);
-        foreach (PieceDrag piece in pieces)
+        Piece[] pieces = FindObjectsByType<Piece>(FindObjectsSortMode.None);
+        foreach (Piece piece in pieces)
         {
             piece.enabled = true;
         }
