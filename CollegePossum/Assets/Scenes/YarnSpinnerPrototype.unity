@@ -968,6 +968,10 @@ PrefabInstance:
       propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8790380584632356852, guid: 52571f68872914e24837210513edea1d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1060,6 +1064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Beau
       objectReference: {fileID: 0}
+    - target: {fileID: 4483021645874386910, guid: 431acffd1dda06e439fa24bffb3325fb, type: 3}
+      propertyPath: lineAdvancer
+      value: 
+      objectReference: {fileID: 1709466077}
     - target: {fileID: 4483021645874386910, guid: 431acffd1dda06e439fa24bffb3325fb, type: 3}
       propertyPath: dialogueRunner
       value: 
@@ -1158,6 +1166,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5372918225202258096, guid: 359189ca7a1bc464c8e8ceb9aae7d1ae, type: 3}
+      propertyPath: lineAdvancer
+      value: 
+      objectReference: {fileID: 1709466077}
+    - target: {fileID: 5372918225202258096, guid: 359189ca7a1bc464c8e8ceb9aae7d1ae, type: 3}
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 1267990202}
@@ -1182,6 +1194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Francine
       objectReference: {fileID: 0}
+    - target: {fileID: 3479475353358003478, guid: 040f10c2ebf928c4fa2a1d87545a5801, type: 3}
+      propertyPath: lineAdvancer
+      value: 
+      objectReference: {fileID: 1709466077}
     - target: {fileID: 3479475353358003478, guid: 040f10c2ebf928c4fa2a1d87545a5801, type: 3}
       propertyPath: dialogueRunner
       value: 
@@ -1283,6 +1299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pamella
       objectReference: {fileID: 0}
+    - target: {fileID: 8951108752021966429, guid: 06543063106f24747901ca277160d0b7, type: 3}
+      propertyPath: lineAdvancer
+      value: 
+      objectReference: {fileID: 1709466077}
     - target: {fileID: 8951108752021966429, guid: 06543063106f24747901ca277160d0b7, type: 3}
       propertyPath: dialogueRunner
       value: 

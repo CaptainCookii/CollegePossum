@@ -17,6 +17,7 @@ public class CharacterDialogue : MonoBehaviour
     public Character character;
     
     public DialogueRunner dialogueRunner;
+    public LineAdvancer lineAdvancer;
 
     public bool interactable = true;
     private int dialogue = 0;
@@ -48,6 +49,11 @@ public class CharacterDialogue : MonoBehaviour
             {
                 GameState.pinballScene = character.pinballScene;
                 SceneManager.LoadScene(character.pinballScene);
+            }
+
+            if (dialogueRunner.IsDialogueRunning)
+            {
+                lineAdvancer.OnInputHurryUpLines();
             }
         }
     }
