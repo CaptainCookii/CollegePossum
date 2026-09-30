@@ -13,12 +13,15 @@ public class Piece : MonoBehaviour
     private Vector3 storedPosition;
     
 
-    [Header("PIECE HEALTH")]
+    [Header("Piece Health")]
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private int pieceHealth;
     
     private Vector3 spawnPosition;
     private Quaternion spawnRotation;
+
+    private float touchTimer = 0f;
+    private bool ballOnPiece = false;
 
     
     // Sets and stores camera and PolygonCollider2D components for use later on.
@@ -34,6 +37,19 @@ public class Piece : MonoBehaviour
 
     private void Update()
     {
+    
+        if (ballOnPiece)
+        {
+            touchTimer += Time.deltaTime;
+
+            if (touchTimer >= 10f)
+            {
+                RespawnPiece();
+                ballOnPiece = false;
+                touchTimer = 0f;
+            }
+        }
+
         // If the mouse is not in use, nothing happens.
         if (Mouse.current == null)
         {
@@ -81,6 +97,7 @@ public class Piece : MonoBehaviour
             draggingOn = false;
             
         }
+
     }
 
     // If a piece is hit by a ball, for now, deal 10 damage. Number is
@@ -90,6 +107,28 @@ public class Piece : MonoBehaviour
         if (c.gameObject.CompareTag("Ball"))
         {
             DealDamage(10);
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D c) {
+        if (c.gameObject.CompareTag("Ball"))
+        {
+            touchTimer += Time.deltaTime;
+            if (touchTimer >= 10f)
+            {
+                RespawnPiece();
+                touchTimer = 0f;
+            }
+        }
+        
+    }
+
+    // Resets touching piece tag.
+    private void OnCollisionExit2D(Collision2D c)
+    {
+        if (c.gameObject.CompareTag("Ball"))
+        {
+            touchTimer = 0f;
         }
     }
 
