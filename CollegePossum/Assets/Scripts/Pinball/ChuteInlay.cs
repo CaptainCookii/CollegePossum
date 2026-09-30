@@ -12,6 +12,7 @@ public class ChuteInlay : MonoBehaviour
     private Vector3 outPosition;
     private Vector3 inPosition;
 
+    // Determines what is considered "backwards" based on the chute's rotation.
     private void Awake()
     {
         outPosition = transform.localPosition;
@@ -29,18 +30,21 @@ public class ChuteInlay : MonoBehaviour
         inPosition = outPosition + (movementDirection * retractDist);
     }
 
+    // Retracts the chutes.
     public void RetractChute()
     {
         StopAllCoroutines();
         StartCoroutine(AnimateChute(inPosition));
     }
 
+    // Extends the chutes.
     public void ExtendChute()
     {
         StopAllCoroutines();
         StartCoroutine(AnimateChute(outPosition));
     }
 
+    // Actual chute animation.
     private IEnumerator AnimateChute(Vector3 endPosition)
     {
         Vector3 startPosition = transform.localPosition;

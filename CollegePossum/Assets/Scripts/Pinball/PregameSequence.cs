@@ -79,6 +79,7 @@ public class PregameSequence : MonoBehaviour
         RetractChutes();
     }
 
+    // Tells the chutes to retract.
     private void RetractChutes()
     {
         foreach (Transform chute in chutes)
@@ -95,6 +96,7 @@ public class PregameSequence : MonoBehaviour
         }
     }
 
+    // Tells the chutes to extend.
      private void ExtendChutes()
     {
         foreach (Transform chute in chutes)
