@@ -55,8 +55,6 @@ public class PregameSequence : MonoBehaviour
         ScoreCounter sc = FindFirstObjectByType<ScoreCounter>();
         AnxietyManager am = FindFirstObjectByType<AnxietyManager>();
 
-        RetractChutes();
-        
         for (int i = 0; i < chutes.Length; i++)
         {
             Transform chute = chutes[i];
@@ -78,6 +76,7 @@ public class PregameSequence : MonoBehaviour
                 yield return new WaitForSeconds(2.5f);
             }
         } 
+        RetractChutes();
     }
 
     private void RetractChutes()
@@ -103,7 +102,7 @@ public class PregameSequence : MonoBehaviour
             ChuteInlay inlay = chute.GetComponentInParent<ChuteInlay>();
             if (inlay != null)
             {
-                inlay.RetractChute();
+                inlay.ExtendChute();
             }
             else
             {

@@ -15,7 +15,18 @@ public class ChuteInlay : MonoBehaviour
     private void Awake()
     {
         outPosition = transform.localPosition;
-        inPosition = outPosition - (Vector3.up * retractDist);
+
+        Vector3 movementDirection;
+
+        if (transform.parent != null)
+        {
+            movementDirection = transform.parent .InverseTransformDirection(-transform.right);
+        }
+        else
+        {
+            movementDirection = -transform.right;
+        }
+        inPosition = outPosition + (movementDirection * retractDist);
     }
 
     public void RetractChute()
