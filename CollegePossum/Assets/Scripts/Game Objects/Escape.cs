@@ -18,9 +18,7 @@ public class Escape : MonoBehaviour
 
         if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            GameState.terryInteractable = true;
-            GameState.pamellaInteractable = true;
-            GameState.beauInteractable = true;
+            GameState.ResetCharacterInteractable();
             GameState.pinballScene = null;
 
             SceneManager.LoadScene("MainMenu");
