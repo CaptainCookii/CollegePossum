@@ -14,14 +14,9 @@ public class CharacterDialogue : MonoBehaviour
      */
 
     //setup variables like the different dialogues and the interactible boolean to see if an object can be clicked
+    public Character character;
+    
     public DialogueRunner dialogueRunner;
-    public string pinball;
-
-    [Header("Dialogue Nodes")]
-    public string dialogue1;
-    public string dialogue2;
-
-    public GameObject outline;
 
     public bool interactable = true;
     private int dialogue = 0;
@@ -29,7 +24,8 @@ public class CharacterDialogue : MonoBehaviour
     private void Start()
     {
         // Make sure the outline starts invisible
-        outline.SetActive(false);
+        character.outline.SetActive(false);
+
         dialogue = Random.Range(0, 2);
     }
 
@@ -50,9 +46,8 @@ public class CharacterDialogue : MonoBehaviour
 
             if (hit != null && hit.gameObject == gameObject && !dialogueRunner.IsDialogueRunning && interactable)
             {
-                GameState.pinballScene = pinball;
-
-                SceneManager.LoadScene(pinball);
+                GameState.pinballScene = character.pinballScene;
+                SceneManager.LoadScene(character.pinballScene);
             }
         }
     }
@@ -73,10 +68,10 @@ public class CharacterDialogue : MonoBehaviour
 
         bool mouseOver = hit != null && hit.gameObject == gameObject;
 
-        outline.SetActive(false);
+        character.outline.SetActive(false);
         if (interactable && !dialogueRunner.IsDialogueRunning)
         {
-            outline.SetActive(mouseOver);
+            character.outline.SetActive(mouseOver);
         }
     }
 
@@ -86,11 +81,11 @@ public class CharacterDialogue : MonoBehaviour
     {
         if (dialogue == 0)
         {
-            dialogueRunner.StartDialogue(dialogue1);
+            dialogueRunner.StartDialogue(character.dialogue1);
         }
         else
         {
-            dialogueRunner.StartDialogue(dialogue2);
+            dialogueRunner.StartDialogue(character.dialogue2);
         }
         interactable = false;
     }
