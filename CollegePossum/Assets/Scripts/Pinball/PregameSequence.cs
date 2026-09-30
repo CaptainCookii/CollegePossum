@@ -55,6 +55,8 @@ public class PregameSequence : MonoBehaviour
         ScoreCounter sc = FindFirstObjectByType<ScoreCounter>();
         AnxietyManager am = FindFirstObjectByType<AnxietyManager>();
 
+        RetractChutes();
+        
         for (int i = 0; i < chutes.Length; i++)
         {
             Transform chute = chutes[i];
@@ -78,6 +80,38 @@ public class PregameSequence : MonoBehaviour
         } 
     }
 
+    private void RetractChutes()
+    {
+        foreach (Transform chute in chutes)
+        {
+            ChuteInlay inlay = chute.GetComponentInParent<ChuteInlay>();
+            if (inlay != null)
+            {
+                inlay.RetractChute();
+            }
+            else
+            {
+                Debug.Log("no script found");
+            };
+        }
+    }
+
+     private void ExtendChutes()
+    {
+        foreach (Transform chute in chutes)
+        {
+            ChuteInlay inlay = chute.GetComponentInParent<ChuteInlay>();
+            if (inlay != null)
+            {
+                inlay.RetractChute();
+            }
+            else
+            {
+                Debug.Log("no script found");
+            }
+        }
+    }
+
     // Locks pieces when timer ends and disables the dragging of them.
     private void LockPieces()
     {
@@ -93,6 +127,7 @@ public class PregameSequence : MonoBehaviour
     // Restarts the game when called, currently when "Play Again" is selected.
     public void RestartSequence()
     {
+        ExtendChutes();
         StartCoroutine(Sequence());
     }
 }
