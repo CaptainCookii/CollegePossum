@@ -76,6 +76,41 @@ public class PregameSequence : MonoBehaviour
                 yield return new WaitForSeconds(2.5f);
             }
         } 
+        RetractChutes();
+    }
+
+    // Tells the chutes to retract.
+    private void RetractChutes()
+    {
+        foreach (Transform chute in chutes)
+        {
+            ChuteInlay inlay = chute.GetComponentInParent<ChuteInlay>();
+            if (inlay != null)
+            {
+                inlay.RetractChute();
+            }
+            else
+            {
+                Debug.Log("no script found");
+            };
+        }
+    }
+
+    // Tells the chutes to extend.
+     private void ExtendChutes()
+    {
+        foreach (Transform chute in chutes)
+        {
+            ChuteInlay inlay = chute.GetComponentInParent<ChuteInlay>();
+            if (inlay != null)
+            {
+                inlay.ExtendChute();
+            }
+            else
+            {
+                Debug.Log("no script found");
+            }
+        }
     }
 
     // Locks pieces when timer ends and disables the dragging of them.
@@ -85,7 +120,7 @@ public class PregameSequence : MonoBehaviour
 
         foreach (Piece piece in pieces)
         {
-            piece.enabled = false;
+            piece.LockPiece();
         }
         
     }
@@ -93,6 +128,7 @@ public class PregameSequence : MonoBehaviour
     // Restarts the game when called, currently when "Play Again" is selected.
     public void RestartSequence()
     {
+        ExtendChutes();
         StartCoroutine(Sequence());
     }
 }
