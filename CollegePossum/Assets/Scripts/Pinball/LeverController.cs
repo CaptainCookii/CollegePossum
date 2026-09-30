@@ -1,5 +1,7 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 public class LeverController : MonoBehaviour
 {
@@ -12,20 +14,39 @@ public class LeverController : MonoBehaviour
     }
 
     [SerializeField] private Side side;
+    [SerializeField] private Transform pivot;
 
     [SerializeField] private float pressAddAngle = 65f;
     [SerializeField] private float flippedUpSpeed = 3500f;
     [SerializeField] private float returnDownSpeed = 1800f;
 
-    private HingeJoint2D hinge;
-    private JointMotor2D motor;
+    private Rigidbody2D rb;
+    private float restAngle;
+    private float movementAngle;
+    private float currentAngle;
 
 
     // Stores hinge component and attacks motor to hinge.
     private void Awake()
     {
-        hinge = GetComponent<HingeJoint2D>();
-        motor = hinge.motor;
+        rb = GetComponent<Rigidbody2D>();
+        restAngle = transform.eulerAngles.z;
+
+        if (restAngle > 180f)
+        {
+            restAngle -= 360f;
+        }
+
+        if (side == Side.Left)
+        {
+            movementAngle = restAngle + pressAddAngle;
+        }
+        else
+        {
+            movementAngle = restAngle - pressAddAngle;
+        }
+
+        currentAngle = restAngle;
     }
 
     // Moves the levers their respective directions with their respective forces.
@@ -35,12 +56,12 @@ public class LeverController : MonoBehaviour
         bool keyPressed = false;
         bool keyPressedThisFrame = false;
 
-        if (side == Side.Right)
+        if (side == Side.Left)
         {
             keyPressed = Keyboard.current.leftArrowKey.isPressed;
             keyPressedThisFrame = Keyboard.current.leftArrowKey.wasPressedThisFrame;
         }
-        else if (side == Side.Left)
+        else if (side == Side.Right)
         {
             keyPressed = Keyboard.current.rightArrowKey.isPressed;
             keyPressedThisFrame = Keyboard.current.rightArrowKey.wasPressedThisFrame;
@@ -53,29 +74,42 @@ public class LeverController : MonoBehaviour
             am.LeverHit();
         }
 
+        float goalAngle;
         if (keyPressed)
         {
-            if (side == Side.Left)
-            {
-                motor.motorSpeed = force;
-            }
-            else
-            {
-                motor.motorSpeed = -force;
-            }
-        }
+            goalAngle = movementAngle;
+        } 
         else
         {
-            if (side == Side.Left)
-            {
-                motor.motorSpeed = -stoppedForce;
-            }
-            else
-            {
-                motor.motorSpeed = stoppedForce;
-            } 
+            goalAngle = restAngle;
         }
 
-        hinge.motor = motor;  
+        float speed;
+        if (keyPressed)
+        {
+            speed = flippedUpSpeed;
+        } 
+        else
+        {
+            speed = returnDownSpeed;
+        }
+
+        currentAngle = Mathf.MoveTowardsAngle(currentAngle, goalAngle, speed * Time.deltaTime);
+
+    }
+
+    private void FixedUpdate()
+    {
+        if (pivot != null)
+        {
+            Vector3 anchorPosition = pivot.position;
+            Quaternion goalRotation = Quaternion.Euler(0, 0, currentAngle);
+
+            Vector3 direction = transform.position - anchorPosition;
+            Vector3 rotatedDirection = Quaternion.Euler(0, 0, currentAngle - rb.rotation) * direction;
+
+            rb.MovePosition(anchorPosition + rotatedDirection);
+            rb.MoveRotation(goalRotation);
+        }
     }
 }
