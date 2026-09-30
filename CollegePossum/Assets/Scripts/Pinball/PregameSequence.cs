@@ -85,7 +85,7 @@ public class PregameSequence : MonoBehaviour
 
         foreach (Piece piece in pieces)
         {
-            piece.enabled = false;
+            piece.LockPiece();
         }
         
     }

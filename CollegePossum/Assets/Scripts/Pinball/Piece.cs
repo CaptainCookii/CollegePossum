@@ -154,6 +154,17 @@ public class Piece : MonoBehaviour
         
     }
 
+    public void LockPiece()
+    {
+        if (IsOverlapping())
+        {
+            transform.position = storedPosition;
+        }
+
+        draggingOn = false; 
+        enabled = false;
+    }
+
     // Helper function that checks if pieces are overlapping with other pieces
     // or GameObjects when the mouse is released.
     private bool IsOverlapping()
