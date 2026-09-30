@@ -54,17 +54,25 @@ public class GameManager : MonoBehaviour
 
     private void OnLevelWasLoaded(int level)
     {
+        if (AudioManager.instance.pachinkoOn)
+        {
+            AudioManager.instance.ChangeThemePachinko();
+            Debug.Log("PINBALL OFF");
+        }
         if (!AudioManager.instance.partyOn && level == 1)
         {
             AudioManager.instance.ChangeThemeParty();
             if (AudioManager.instance.pachinkoOn)
             {
                 AudioManager.instance.ChangeThemePachinko();
+                Debug.Log("PINBALL OFF");
             }
+            Debug.Log("PARTY ON");
         }
         if (!AudioManager.instance.pachinkoOn && (level == 7 || level == 8 || level == 9))
         {
             AudioManager.instance.ChangeThemePachinko();
+            Debug.Log("PINBALL ON");
         }
     }
 
@@ -73,8 +81,6 @@ public class GameManager : MonoBehaviour
         if (Keyboard.current.jKey.isPressed)
         {
             GameOver();
-        }
-    }
         }
     }
 
