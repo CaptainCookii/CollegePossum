@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class CoolCounter : MonoBehaviour
+public class ScoreCounter : MonoBehaviour
 {
     [SerializeField] private TMP_Text coolText;
 
@@ -15,7 +15,7 @@ public class CoolCounter : MonoBehaviour
         UpdateCool();
     }
 
-    // Constantly updating cool based on active balls.
+    // Constantly updating score based on active balls.
     private void Update()
     {
         if (activeBalls > 0)
