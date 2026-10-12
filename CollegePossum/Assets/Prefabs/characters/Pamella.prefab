@@ -444,6 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character
   characterName: Pamella
+  characterMusicRef: Pam
   character: {fileID: 8281140994064517913}
   outline: {fileID: 786996568899890783}
   left: {fileID: 7364041793638625618}

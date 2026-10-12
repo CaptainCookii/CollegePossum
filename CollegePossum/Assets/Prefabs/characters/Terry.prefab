@@ -307,6 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character
   characterName: Terry
+  characterMusicRef: Terrence
   character: {fileID: 5853841517756235867}
   outline: {fileID: 2656991710728966505}
   left: {fileID: 7650298954033419517}

@@ -46,6 +46,7 @@ public class CharacterDialogue : MonoBehaviour
 
             if (hit != null && hit.gameObject == gameObject && !dialogueRunner.IsDialogueRunning && interactable)
             {
+                MusicManager.Instance.SetMusicLayer(character.characterMusicRef, true);
                 GameState.pinballScene = character.pinballScene;
                 SceneManager.LoadScene(character.pinballScene);
             }

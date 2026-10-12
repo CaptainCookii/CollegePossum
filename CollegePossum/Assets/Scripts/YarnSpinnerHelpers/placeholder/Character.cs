@@ -3,8 +3,9 @@ using System.Collections;
 
 public class Character : MonoBehaviour
 {
-
+    // Public Variables
     public string characterName;
+    public string characterMusicRef;
     public GameObject character;
     public GameObject outline;
     public SpriteRenderer left;
@@ -12,15 +13,4 @@ public class Character : MonoBehaviour
     public string pinballScene;
     public string dialogue1;
     public string dialogue2;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

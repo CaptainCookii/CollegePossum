@@ -1,167 +1,68 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using FMODUnity;
 using FMOD.Studio;
+using FMODUnity;
+using UnityEngine;
+using UnityEngine.TextCore.Text;
 
-public class AudioManager : MonoBehaviour
+public class MusicManager : MonoBehaviour
 {
-    private List<EventInstance> eventInstances;
+    public static MusicManager Instance { get; private set; }
 
-    public static AudioManager instance { get; private set; }
+    [Header("FMOD Music Event")]
+    [SerializeField]
+    private EventReference musicEvent;
 
-    private EventInstance musicEventInstance;
+    private EventInstance musicInstance;
 
     private void Awake()
     {
-        if (instance != null)
+        // Singleton protection
+        if (Instance != null && Instance != this)
         {
-            Debug.LogError("More than one Audio Manager in the scene.");
+            Destroy(gameObject);
+            return;
         }
-        instance = this;
 
-        eventInstances = new List<EventInstance>();
-
-        DontDestroyOnLoad(this.gameObject);
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
     {
-        InitializeMusic(FMODEvents.instance.themes); 
+        StartMusic();
     }
 
-
-    /// <summary>
-    /// plays oneshot sound
-    /// </summary>
-    /// <param name="sound">what am i playing</param>
-    /// <param name="worldPos">where am i playing</param>
-    public void PlayOneShot(EventReference sound, Vector2 worldPos)
+    private void StartMusic()
     {
-        RuntimeManager.PlayOneShot(sound, worldPos);
+        if (musicInstance.isValid())
+            return;
+
+        musicInstance = RuntimeManager.CreateInstance(musicEvent);
+        musicInstance.start();
     }
 
+    // -------------------------
+    // ACTIVATE MUSIC LAYERS
+    // -------------------------
 
-    private void InitializeMusic(EventReference musicEventReference)
+    public void SetMusicLayer(string musicLayer, bool active)
     {
-        musicEventInstance = CreateEventInstance(musicEventReference);
-        musicEventInstance.start();
+        if (!musicInstance.isValid())
+            return;
+
+        musicInstance.setParameterByName(musicLayer, active ? 1f : 0f);
+        Debug.Log("Music Layer: " + musicLayer + " Active: " +  active);
     }
 
-    /// <summary>
-    /// set value of a theme
-    /// </summary>
-    /// <param name="parameterName">what theme</param>
-    /// <param name="parameterValue">value of the theme (0 = off, 1 = on, or more for scale)</param>
-    public void SetThemeParameter(string parameterName, float parameterValue)
-    {
-        musicEventInstance.setParameterByName(parameterName, parameterValue);
-    }
-
-    /// <summary>
-    /// create an instance of a sound
-    /// </summary>
-    /// <param name="eventReference">what sound?</param>
-    /// <returns></returns>
-    public EventInstance CreateEventInstance(EventReference eventReference)
-    {
-        EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
-        eventInstances.Add(eventInstance);
-        return eventInstance;
-    }
-
-    private void CleanUp()
-    {
-        foreach (EventInstance eventInstance in eventInstances)
-        {
-            eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            eventInstance.release();
-        }
-    }
+    // -------------------------
+    // CLEANUP
+    // -------------------------
 
     private void OnDestroy()
     {
-        CleanUp();
-    }
-
-    //which music is on/off
-    public bool hollisOn = false;
-    public bool pachinkoOn = false;
-    public bool pamOn = false;
-    public bool partyOn = false;
-    public bool terrenceOn = false;
-    public bool beauOn = false;
-
-    public void ChangeThemeHollis()
-    {
-        if (hollisOn)
-        {
-            AudioManager.instance.SetThemeParameter("Hollis", 0);
-            hollisOn = false;
+        if (!musicInstance.isValid())
             return;
-        }
-        AudioManager.instance.SetThemeParameter("Hollis", 1);
-        hollisOn = true;
-    }
 
-    public void ChangeThemePachinko()
-    {
-        if (pachinkoOn)
-        {
-            AudioManager.instance.SetThemeParameter("Pachinko", 0);
-            pachinkoOn = false;
-            return;
-        }
-        AudioManager.instance.SetThemeParameter("Pachinko", 1);
-        pachinkoOn = true;
+        musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        musicInstance.release();
     }
-
-    public void ChangeThemePam()
-    {
-        if (pamOn)
-        {
-            AudioManager.instance.SetThemeParameter("Pam", 0);
-            pamOn = false;
-            return;
-        }
-        AudioManager.instance.SetThemeParameter("Pam", 1);
-        pamOn = true;
-    }
-
-    public void ChangeThemeParty()
-    {
-        if (partyOn)
-        {
-            AudioManager.instance.SetThemeParameter("Party", 0);
-            partyOn = false;
-            return;
-        }
-        AudioManager.instance.SetThemeParameter("Party", 1);
-        partyOn = true;
-    }
-
-    public void ChangeThemeTerrence()
-    {
-        if (terrenceOn)
-        {
-            AudioManager.instance.SetThemeParameter("Terrence", 0);
-            terrenceOn = false;
-            return;
-        }
-        AudioManager.instance.SetThemeParameter("Terrence", 1);
-        terrenceOn = true;
-    }
-
-    public void ChangeThemeBeau()
-    {
-        if (beauOn)
-        {
-            AudioManager.instance.SetThemeParameter("Beau", 0);
-            beauOn = false;
-            return;
-        }
-        AudioManager.instance.SetThemeParameter("Beau", 1);
-        beauOn = true;
-    }
-
 }

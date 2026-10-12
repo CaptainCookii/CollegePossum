@@ -52,30 +52,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void OnLevelWasLoaded(int level)
-    {
-        if (AudioManager.instance.pachinkoOn)
-        {
-            AudioManager.instance.ChangeThemePachinko();
-            Debug.Log("PINBALL OFF");
-        }
-        if (!AudioManager.instance.partyOn && level == 1)
-        {
-            AudioManager.instance.ChangeThemeParty();
-            if (AudioManager.instance.pachinkoOn)
-            {
-                AudioManager.instance.ChangeThemePachinko();
-                Debug.Log("PINBALL OFF");
-            }
-            Debug.Log("PARTY ON");
-        }
-        if (!AudioManager.instance.pachinkoOn && (level == 7 || level == 8 || level == 9))
-        {
-            AudioManager.instance.ChangeThemePachinko();
-            Debug.Log("PINBALL ON");
-        }
-    }
-
     private void Update()
     {
         if (Keyboard.current.jKey.isPressed)
@@ -93,7 +69,7 @@ public class GameManager : MonoBehaviour
 
     public void AddScore(int amount)
     {
-        GlobalVars.cool += amount;
+        currCoolPoints += amount;
 
         //coolMessage.text = "Cool: " + GlobalVars.cool;
         //Debug.Log("Score: " + GlobalVars.cool);
@@ -126,14 +102,11 @@ public class GameManager : MonoBehaviour
         roundEndUI.SetActive(true); 
     }
 
-    // [FOR MICAH] THIS IS WHERE THEY LOSE.
+    // This is where they lose.
     public void GameOver()
     {
-        if (!gameOver)
-        {
-            gameOver = true;
+            MusicManager.Instance.SetMusicLayer("Pachinko", false);
             SceneManager.LoadScene("YarnSpinnerPrototype");
-        }
     }
 
     // If the player has not lost and chooses to play Pinball again.
@@ -144,12 +117,6 @@ public class GameManager : MonoBehaviour
         UnlockPieces();
 
         ps.RestartSequence();
-    }
-
-    // [FOR MICAH] THIS IS WHERE THEY EXIT THE GAME EARLY.
-    public void ExitPressed()
-    {
-        SceneManager.LoadScene("YarnSpinnerPrototype");
     }
 
     // Unlocks pieces when sequence is restarted.

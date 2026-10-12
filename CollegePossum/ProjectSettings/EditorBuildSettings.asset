@@ -12,21 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/YarnSpinnerPrototype.unity
     guid: 0a5b0c5fd9a51fa47a73a5c88870ecaa
   - enabled: 1
-    path: Assets/Scenes/EvanTestScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/PartyRoom2D.unity
-    guid: b8a272e25e5082141b995a357cf646bb
-  - enabled: 1
-    path: Assets/Scenes/PartyLoseMenu.unity
-    guid: 6a02d0ff9973eeb438d9cbecb6a4113b
-  - enabled: 1
-    path: Assets/Scenes/Pachinko.unity
-    guid: 755a6a1f2de074f4b8f19df7a69d7f41
-  - enabled: 1
-    path: Assets/Scenes/ClassesMenu.unity
-    guid: c77ca1340b7b72b4a9cc943d7d59efd2
-  - enabled: 1
     path: Assets/Scenes/Pinball/BeauPinball.unity
     guid: d18ec5b036a9e4f0d886a3f0029424aa
   - enabled: 1

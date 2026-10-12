@@ -56,5 +56,5 @@ Terry: And most importantly, what are the babes gonna think, Francy?
     <<wait .15>>
     Terry: Oh my god. Medical babes. Francy, you’re a genius. 
     He raises his hand for a fistbumb, and it’s only a little awkward when Cine moves your arm too fast and the plastic knuckles make an audible WHAP sound against his.
-<<ending CharacterManager>>
+<<ending CharacterManager Terrence>>
 ===

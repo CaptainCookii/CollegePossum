@@ -7,9 +7,6 @@ using System.Collections.Generic;
 public static class GameState
 {
     public static string pinballScene;
-    public static bool terryInteractable = true;
-    public static bool pamellaInteractable = true;
-    public static bool beauInteractable = true;
 
     private static Dictionary<string, bool> characterInteractable =
         new Dictionary<string, bool>();
@@ -102,10 +99,11 @@ public class CharacterManager : MonoBehaviour
     // fades the characters when dialogue ends
 
     [YarnCommand("ending")]
-    public void Ending()
+    public void Ending(string name)
     {
         StartCoroutine(FadeTo(0f, activeL));
         StartCoroutine(FadeTo(0f, activeR));
+        MusicManager.Instance.SetMusicLayer(name, false);
     }
 
     // a function which edits the alpha values

@@ -200,6 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character
   characterName: Francine
+  characterMusicRef: Fran
   character: {fileID: 1852739356394773266}
   outline: {fileID: 5053343188599848847}
   left: {fileID: 4831207427612080544}

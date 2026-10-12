@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character
   characterName: Beau
+  characterMusicRef: Beau
   character: {fileID: 2406578613759571598}
   outline: {fileID: 5282172264799678816}
   left: {fileID: 3895763192940572144}
@@ -386,7 +387,7 @@ Transform:
   m_GameObject: {fileID: 5282172264799678816}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.06, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.07, y: 1.02, z: 1.06}
   m_ConstrainProportionsScale: 0
   m_Children: []

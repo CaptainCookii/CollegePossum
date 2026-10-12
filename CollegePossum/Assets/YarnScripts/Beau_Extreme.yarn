@@ -22,5 +22,5 @@ Francine: …why are you doing it then?
 <<left CharacterManager>>
 <<wait .15>>
 Beau: Oh, it’s great training for casual curling! I’ve been trying to improve my sweeping technique lately. The terror really adds to it.
-<<ending CharacterManager>>
+<<ending CharacterManager Beau>>
 ===
