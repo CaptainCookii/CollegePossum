@@ -36,7 +36,7 @@ public class PregameSequence : MonoBehaviour
         // Ball timer that ticks down one number per second.
         for (int i = 20; i > 0; i--)
         {
-            timer.text = "Balls Drop In: " + i + "s";
+            timer.text = "Balls Launched In: " + i + "s";
             yield return new WaitForSeconds(1f);
         }
 
