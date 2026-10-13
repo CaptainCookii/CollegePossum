@@ -34,7 +34,7 @@ EditorBuildSettings:
     guid: 00913227fc2fa4aaab5b2d5d09b00911
   - enabled: 1
     path: Assets/Scenes/Pinball/TerryPinball.unity
-    guid: 35f314931e92646969dacf6105cfdc6f
+    guid: 4dcd6a216738b4aef8568e6ee1b16d20
   - enabled: 1
     path: Assets/Scenes/Pinball/PamellaPinball.unity
     guid: 753ca6f8b1e484e448a06fd7b9bd1b7f
