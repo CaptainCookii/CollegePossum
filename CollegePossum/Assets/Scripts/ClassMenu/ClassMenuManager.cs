@@ -24,25 +24,25 @@ public class ClassMenuManager : MonoBehaviour
     public void MathUp()
     {
         GameManager.Instance.currSocialPoints -= 1;
-        GameManager.Instance.mathValue += 1;
+        //GameManager.Instance.mathValue += 1;
     }
 
     public void SocialStudiesUp()
     {
         GameManager.Instance.currSocialPoints -= 1;
-        GameManager.Instance.socialStudiesValue += 1;
+        //GameManager.Instance.socialStudiesValue += 1;
     }
 
     public void ScienceUp()
     {
         GameManager.Instance.currSocialPoints -= 1;
-        GameManager.Instance.scienceValue += 1;
+        //GameManager.Instance.scienceValue += 1;
     }
 
     public void EnglishUp()
     {
         GameManager.Instance.currSocialPoints -= 1;
-        GameManager.Instance.englishValue += 1;
+        //GameManager.Instance.englishValue += 1;
     }
 
     public void ActivateMath()

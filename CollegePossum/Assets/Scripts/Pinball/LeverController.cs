@@ -3,9 +3,12 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using FMODUnity;
+
 
 public class LeverController : MonoBehaviour
 {
+    [SerializeField] private EventReference bumperSound;
 
     // Enum to distinguish which side is which.
     public enum Side
@@ -74,8 +77,8 @@ public class LeverController : MonoBehaviour
         // Adds to anxiety per lever hit.
         if (keyPressedThisFrame)
         {
-            AnxietyManager am = FindFirstObjectByType<AnxietyManager>();
-            am.LeverHit();
+            RuntimeManager.PlayOneShot(bumperSound, transform.position);
+            PinballManager.Instance.LeverHit();
         }
 
         float goalAngle;
