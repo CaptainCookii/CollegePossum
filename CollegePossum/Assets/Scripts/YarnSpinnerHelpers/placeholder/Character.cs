@@ -10,9 +10,11 @@ public class Character : MonoBehaviour
     public SpriteRenderer left;
     public SpriteRenderer right;
     public string pinballScene;
+    public string dialogueI;
     public string dialogue1;
     public string dialogue2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         

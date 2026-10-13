@@ -53,8 +53,7 @@ public class CharacterDialogue : MonoBehaviour
 
             if (hit != null && hit.gameObject == gameObject && !dialogueRunner.IsDialogueRunning && interactable)
             {
-                GameState.pinballScene = character.pinballScene;
-                SceneManager.LoadScene(character.pinballScene);
+                dialogueRunner.StartDialogue(character.dialogueI);
             }
 
             if (dialogueRunner.IsDialogueRunning)

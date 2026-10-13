@@ -293,6 +293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   character: {fileID: 1075756980971501237}
   dialogueRunner: {fileID: 0}
+  lineAdvancer: {fileID: 0}
   interactable: 1
 --- !u!114 &1075756980971501237
 MonoBehaviour:
@@ -306,14 +307,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1230e7af6500754ca6c8a1acc0e6363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character
-  characterName: Terry
-  character: {fileID: 5853841517756235867}
-  outline: {fileID: 2656991710728966505}
-  left: {fileID: 7650298954033419517}
-  right: {fileID: 8213941472292843916}
-  pinballScene: TerryPinball
-  dialogue1: Terry_IR
-  dialogue2: Terry_Advisor
+  characterName: 
+  character: {fileID: 0}
+  outline: {fileID: 0}
+  left: {fileID: 0}
+  right: {fileID: 0}
+  pinballScene: 
+  dialogue1: 
+  dialogue2: 
 --- !u!61 &2668797374239059930
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -3,6 +3,8 @@ using System.Collections;
 using Yarn;
 using Yarn.Unity;
 using System.Collections.Generic;
+using UnityEngine.TextCore.Text;
+using UnityEngine.SceneManagement;
 
 public class CharacterManager : MonoBehaviour
 {
@@ -74,6 +76,21 @@ public class CharacterManager : MonoBehaviour
     {
         StartCoroutine(FadeTo(0f, activeL));
         StartCoroutine(FadeTo(0f, activeR));
+    }
+
+    //starts pinball
+
+    [YarnCommand("beginning")]
+    public void Beginning(string charactered)
+    {
+        foreach (Character name in characters)
+        {
+            if (name.characterName == charactered)
+            {
+                GameState.pinballScene = name.pinballScene;
+                SceneManager.LoadScene(name.pinballScene);
+            }
+        }
     }
 
     // a function which edits the alpha values

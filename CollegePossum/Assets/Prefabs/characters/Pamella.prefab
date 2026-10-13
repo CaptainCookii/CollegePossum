@@ -73,6 +73,10 @@ PrefabInstance:
       value: Pam_Boots
       objectReference: {fileID: 0}
     - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: dialogueI
+      value: Pam_Intro
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
       propertyPath: pinballScene
       value: PamelaPinball
       objectReference: {fileID: 0}

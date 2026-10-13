@@ -48,12 +48,68 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: left
+      value: 
+      objectReference: {fileID: 70919649641876985}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: right
+      value: 
+      objectReference: {fileID: 1958343913447532680}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: outline
+      value: 
+      objectReference: {fileID: 5624750417106946157}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 4318286350055954783}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: dialogue1
+      value: Terry_IR
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: dialogue2
+      value: Terry_Advisor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: dialogueI
+      value: Terry_Intro
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: pinballScene
+      value: TerryPinball
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: characterName
+      value: Terry
+      objectReference: {fileID: 0}
     - target: {fileID: 5853841517756235867, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
       propertyPath: m_Name
-      value: CharacterTemplate
+      value: Terry
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+--- !u!212 &70919649641876985 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7650298954033419517, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+  m_PrefabInstance: {fileID: 7696835751803853060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1958343913447532680 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8213941472292843916, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+  m_PrefabInstance: {fileID: 7696835751803853060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4318286350055954783 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5853841517756235867, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+  m_PrefabInstance: {fileID: 7696835751803853060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5624750417106946157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2656991710728966505, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+  m_PrefabInstance: {fileID: 7696835751803853060}
+  m_PrefabAsset: {fileID: 0}
