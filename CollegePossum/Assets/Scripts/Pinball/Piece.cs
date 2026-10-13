@@ -42,7 +42,7 @@ public class Piece : MonoBehaviour
         {
             touchTimer += Time.deltaTime;
 
-            if (touchTimer >= 10f)
+            if (touchTimer >= 3.5f)
             {
                 RespawnPiece();
                 ballOnPiece = false;
