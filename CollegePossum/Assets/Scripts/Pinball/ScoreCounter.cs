@@ -2,20 +2,20 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class ScoreCounter : MonoBehaviour
+public class CoolCounter : MonoBehaviour
 {
-    [SerializeField] private TMP_Text scoreText;
+    [SerializeField] private TMP_Text coolText;
 
-    private int score = 0;
+    private int cool = 0;
     private float timer = 0f;
     private int activeBalls = 0;
 
     private void Start()
     {
-        UpdateScore();
+        UpdateCool();
     }
 
-    // Constantly updating score based on active balls.
+    // Constantly updating cool based on active balls.
     private void Update()
     {
         if (activeBalls > 0)
@@ -24,9 +24,9 @@ public class ScoreCounter : MonoBehaviour
 
             if (timer >= 1f)
             {
-                score += activeBalls;
+                cool += activeBalls;
                 timer = 0f;
-                UpdateScore();
+                UpdateCool();
             }
         }
         
@@ -43,9 +43,9 @@ public class ScoreCounter : MonoBehaviour
         activeBalls--;
     }
 
-    // Updates score text.
-    private void UpdateScore()
+    // Updates cool text.
+    private void UpdateCool()
     {
-        scoreText.text = "Score: " + score;
+        coolText.text = "Cool: " + cool;
     }
 }
