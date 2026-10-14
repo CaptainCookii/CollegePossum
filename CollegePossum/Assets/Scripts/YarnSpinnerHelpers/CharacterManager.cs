@@ -106,6 +106,21 @@ public class CharacterManager : MonoBehaviour
         MusicManager.Instance.SetMusicLayer(name, false);
     }
 
+    //starts pinball
+
+    [YarnCommand("beginning")]
+    public void Beginning(string charactered)
+    {
+        foreach (Character name in characters)
+        {
+            if (name.characterName == charactered)
+            {
+                GameState.pinballScene = name.pinballScene;
+                SceneManager.LoadScene(name.pinballScene);
+            }
+        }
+    }
+
     // a function which edits the alpha values
 
     private IEnumerator FadeTo(float targetAlpha, SpriteRenderer overlay)
