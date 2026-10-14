@@ -195,6 +195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 347928825}
   - component: {fileID: 347928827}
+  - component: {fileID: 347928828}
   m_Layer: 0
   m_Name: CharacterManager
   m_TagString: Untagged
@@ -247,6 +248,19 @@ MonoBehaviour:
   - {fileID: 6337715049508380868, guid: 361f6682702b7c842bf226e7dd1c79d4, type: 3}
   - {fileID: 4318286350055954783, guid: 51208c08eb51c65488c9f0dea819c6d8, type: 3}
   - {fileID: 600712873545842825, guid: 261e7c670a644284fa5aeeaff71ec2f2, type: 3}
+--- !u!114 &347928828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347928823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb40db48071fa94dbeac0f02dc754e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterManager
+  fadeDuration: 0.15
 --- !u!1 &381543060
 GameObject:
   m_ObjectHideFlags: 0
