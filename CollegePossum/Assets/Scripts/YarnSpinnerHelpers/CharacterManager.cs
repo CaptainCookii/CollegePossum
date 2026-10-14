@@ -3,6 +3,7 @@ using System.Collections;
 using Yarn;
 using Yarn.Unity;
 using System.Collections.Generic;
+using UnityEngine.TextCore.Text;
 using UnityEngine.SceneManagement;
 
 public class CharacterManager : MonoBehaviour
@@ -164,5 +165,7 @@ public class CharacterManager : MonoBehaviour
                 characterDialogue.interactable = false;
             }
         }
+
+        Debug.Log(characters.Length);
     }
 }
