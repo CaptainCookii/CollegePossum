@@ -3,38 +3,8 @@ using System.Collections;
 using Yarn;
 using Yarn.Unity;
 using System.Collections.Generic;
-
-public static class GameState
-{
-    public static string pinballScene;
-    public static bool terryInteractable = true;
-    public static bool pamellaInteractable = true;
-    public static bool beauInteractable = true;
-
-    private static Dictionary<string, bool> characterInteractable =
-        new Dictionary<string, bool>();
-
-    public static bool GetInteractable(string characterID)
-    {
-        if (characterInteractable.ContainsKey(characterID))
-        {
-            return characterInteractable[characterID];
-        }
-        characterInteractable[characterID] = true;
-        return true;
-    }
-
-    public static void SetInteractable(string characterID, bool value)
-    {
-        characterInteractable[characterID] = value;
-    }
-
-    public static void ResetCharacterInteractable()
-    {
-        characterInteractable.Clear();
-    }
-}
-
+using UnityEngine.TextCore.Text;
+using UnityEngine.SceneManagement;
 
 public class CharacterManager : MonoBehaviour
 {
@@ -106,6 +76,21 @@ public class CharacterManager : MonoBehaviour
     {
         StartCoroutine(FadeTo(0f, activeL));
         StartCoroutine(FadeTo(0f, activeR));
+    }
+
+    //starts pinball
+
+    [YarnCommand("beginning")]
+    public void Beginning(string charactered)
+    {
+        foreach (Character name in characters)
+        {
+            if (name.characterName == charactered)
+            {
+                GameState.pinballScene = name.pinballScene;
+                SceneManager.LoadScene(name.pinballScene);
+            }
+        }
     }
 
     // a function which edits the alpha values
