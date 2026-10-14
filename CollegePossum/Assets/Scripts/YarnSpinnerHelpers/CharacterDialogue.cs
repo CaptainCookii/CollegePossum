@@ -22,12 +22,6 @@ public class CharacterDialogue : MonoBehaviour
     public bool interactable = true;
     private int dialogue = 0;
 
-    private void Awake()
-    {
-        dialogueRunner = FindFirstObjectByType<DialogueRunner>();
-        lineAdvancer = FindFirstObjectByType<LineAdvancer>();
-    }
-
     private void Start()
     {
         // Make sure the outline starts invisible
@@ -54,7 +48,8 @@ public class CharacterDialogue : MonoBehaviour
             if (hit != null && hit.gameObject == gameObject && !dialogueRunner.IsDialogueRunning && interactable)
             {
                 MusicManager.Instance.SetMusicLayer(character.characterMusicRef, true);
-                dialogueRunner.StartDialogue(character.dialogueI);
+                GameState.pinballScene = character.pinballScene;
+                SceneManager.LoadScene(character.pinballScene);
             }
 
             if (dialogueRunner.IsDialogueRunning)

@@ -17,10 +17,6 @@ public class MainMenuManager : MonoBehaviour
     {
         GameState.ResetCharacterInteractable();
         GameState.pinballScene = null;
-        if (CharacterSpawnManager.Instance != null)
-        {
-            CharacterSpawnManager.Instance.StartNewRun();
-        }
         SceneManager.LoadScene("YarnSpinnerPrototype");
     }
 

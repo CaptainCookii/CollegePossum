@@ -11,7 +11,6 @@ public class Character : MonoBehaviour
     public SpriteRenderer left;
     public SpriteRenderer right;
     public string pinballScene;
-    public string dialogueI;
     public string dialogue1;
     public string dialogue2;
 }
