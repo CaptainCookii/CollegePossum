@@ -5,7 +5,7 @@ public class MainMenuManager : MonoBehaviour
 {
     public void Start()
     {
-        Invoke(nameof(StartMusic), .1f);
+        Invoke(nameof(StartMusic), .5f);
     }
 
     private void StartMusic()

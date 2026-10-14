@@ -200,13 +200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 238e9004df26f4472a02c34936741fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LeverController
-  bumperSound:
-    Guid:
-      Data1: -1677464968
-      Data2: 1262700504
-      Data3: 367873205
-      Data4: 810332763
-    Path: event:/SFX/pachinko_sounds/flipperup
   side: 0
   pivot: {fileID: 0}
   pressAddAngle: 65

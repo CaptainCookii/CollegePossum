@@ -430,7 +430,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   character: {fileID: 1790250926753906834}
   dialogueRunner: {fileID: 0}
-  lineAdvancer: {fileID: 0}
   interactable: 1
 --- !u!114 &1790250926753906834
 MonoBehaviour:
@@ -450,6 +449,6 @@ MonoBehaviour:
   outline: {fileID: 786996568899890783}
   left: {fileID: 7364041793638625618}
   right: {fileID: 8686005085153747580}
-  pinballScene: PamellaPinball
+  pinballScene: PamelaPinball
   dialogue1: Pam_Dumpster
   dialogue2: Pam_Boots

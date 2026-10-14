@@ -1,29 +1,134 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
-    // Instance variable
     public static GameManager Instance;
 
-    // Global variables
-    public float totalSocialPoints = 0;
-    public float currSocialPoints = 0;
-    public float totalCoolPoints = 0;
-    public float currCoolPoints = 0;
-    public float maxAnxiety = 250;
-    public float currAnxiety = 0;
+     // Global Variables
+    public int totalSocialPoints = 0;
+    public int currSocialPoints = 0;
+    public int totalCoolPoints = 0;
+    public int currCoolPoints = 0;
 
-    private void Awake()
+    public int mathValue = 0;
+    public int socialStudiesValue = 0;
+    public int scienceValue = 0;
+    public int englishValue = 0;
+
+    // cool from each conversation
+    [SerializeField] public TextMeshProUGUI coolMessage;
+
+    // topic balls
+    [SerializeField] public TextMeshProUGUI topicsLeftText;
+    [SerializeField] private int totalTopicsPerConversation;
+    public int totalTopicsLeft; // could get/set this instead of public
+
+    [Header("[TEMPORARY] Round End & Lose Condition UI")]
+    [SerializeField] private int activeBalls = 0;
+    private bool gameOver = false;
+
+    [SerializeField] private GameObject roundEndUI;
+    [SerializeField] private PregameSequence ps;
+
+    void Awake()
     {
-        // Singleton protection
-        if (Instance != null && Instance != this)
+        if (Instance == null)
+        {
+            Instance = this;
+            // coolMessage.text = "Cool: " + GlobalVars.cool;
+            // topicsLeftText.text = "Topics Left: " + totalTopicsPerConversation;
+            totalTopicsLeft = totalTopicsPerConversation;
+        }
+        else
         {
             Destroy(gameObject);
-            return;
         }
 
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
     }
+
+    private void Update()
+    {
+        if (Keyboard.current.jKey.isPressed)
+        {
+            GameOver();
+        }
+    }
+
+    public void SubtractTopic(int amount)
+    {
+        totalTopicsLeft -= amount;
+        //topicsLeftText.text = "Topics Left: " + totalTopicsLeft;
+    }
+
+
+    public void AddScore(int amount)
+    {
+        currCoolPoints += amount;
+
+        //coolMessage.text = "Cool: " + GlobalVars.cool;
+        //Debug.Log("Score: " + GlobalVars.cool);
+    }
+
+    // [NOTE] This code will not stay like this. This is because we don't have 
+    // topic balls right now.
+
+    // Next two functions: tracking balls in play
+    public void AddBall()
+    {
+        activeBalls++;
+    }
+
+    public void RemoveBall()
+    {
+        activeBalls--;
+
+        if (activeBalls <= 0 && !gameOver)
+        {
+            activeBalls = 0;
+            RoundEndUI();
+        } 
+    }
+
+    // When round is complete, allow players to restart pregame sequence
+    // or exit the conversation.
+    private void RoundEndUI()
+    {
+        roundEndUI.SetActive(true); 
+    }
+
+    // This is where they lose.
+    public void GameOver()
+    {
+            MusicManager.Instance.SetMusicLayer("Pachinko", false);
+            SceneManager.LoadScene("YarnSpinnerPrototype");
+    }
+
+    // If the player has not lost and chooses to play Pinball again.
+    public void PlayAgain()
+    {
+        roundEndUI.SetActive(false);
+
+        UnlockPieces();
+
+        ps.RestartSequence();
+    }
+
+    // Unlocks pieces when sequence is restarted.
+    private void UnlockPieces()
+    {
+        Piece[] pieces = FindObjectsByType<Piece>(FindObjectsSortMode.None);
+        foreach (Piece piece in pieces)
+        {
+            piece.enabled = true;
+        }
+    }
+
+
 }
 

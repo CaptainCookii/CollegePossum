@@ -2,7 +2,6 @@ using NUnit.Framework.Interfaces;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using FMODUnity;
 
 public class Piece : MonoBehaviour
 {
@@ -24,9 +23,7 @@ public class Piece : MonoBehaviour
     private float touchTimer = 0f;
     private bool ballOnPiece = false;
 
-    [SerializeField] private EventReference[] hitSounds;
-    [SerializeField] private EventReference[] placeSounds;
-
+    
     // Sets and stores camera and PolygonCollider2D components for use later on.
     private void Awake()
     {
@@ -98,8 +95,7 @@ public class Piece : MonoBehaviour
             }
             
             draggingOn = false;
-            RuntimeManager.PlayOneShot(placeSounds[Random.Range(0, placeSounds.Length)], transform.position);
-
+            
         }
 
     }
@@ -110,7 +106,6 @@ public class Piece : MonoBehaviour
     {
         if (c.gameObject.CompareTag("Ball"))
         {
-            RuntimeManager.PlayOneShot(hitSounds[Random.Range(0, hitSounds.Length)], transform.position);
             DealDamage(10);
         }
     }
