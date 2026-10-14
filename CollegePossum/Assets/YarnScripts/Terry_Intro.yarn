@@ -1,0 +1,20 @@
+﻿title: Terry_Intro
+---
+<<set_left CharacterManager Terry>>
+<<wait .15>>
+<<set_right CharacterManager Francine>>
+<<wait .15>>
+<<right CharacterManager>>
+<<wait .15>>
+Francine: Hey Terry
+<<left CharacterManager>>
+<<wait .15>>
+Terry: Ah, Francy, Just the Gal I was lookin for!
+<<right CharacterManager>>
+<<wait .15>>
+Francine: Really?
+<<left CharacterManager>>
+<<wait .15>>
+Terry: Yeah girl, don't be lame. Let's chat!
+<<beginning CharacterManager Terry>>
+===
