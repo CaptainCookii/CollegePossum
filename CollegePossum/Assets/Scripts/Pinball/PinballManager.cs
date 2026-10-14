@@ -258,7 +258,6 @@ public class PinballManager : MonoBehaviour
     {
         activeBalls = 0;
         roundEndUI.SetActive(true);
-        Debug.Log("round ended");
 
         // add lockout function to stop all player unputs except for interacting with the UI
 

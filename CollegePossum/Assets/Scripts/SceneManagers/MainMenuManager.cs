@@ -20,11 +20,7 @@ public class MainMenuManager : MonoBehaviour
         if (CharacterSpawnManager.Instance != null)
         {
             CharacterSpawnManager.Instance.StartNewRun();
-            Debug.Log("Started new run");
-        } else {
-            Debug.Log("null");
         }
-        Debug.Log("no if");
         SceneManager.LoadScene("YarnSpinnerPrototype");
     }
 
