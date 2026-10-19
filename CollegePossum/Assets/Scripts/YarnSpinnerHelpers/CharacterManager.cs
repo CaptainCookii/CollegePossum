@@ -26,6 +26,10 @@ public class CharacterManager : MonoBehaviour
     [YarnCommand("set_left")] //yarn commands allow them to be called in yarn scripts
     public void Set_Left(string character)
     {
+        if (activeL != null)
+        {
+            StartCoroutine(FadeTo(0f, activeL));
+        }
         foreach (Character name in characters)
         {
             if (name.characterName == character)
@@ -41,6 +45,10 @@ public class CharacterManager : MonoBehaviour
     [YarnCommand("set_right")]
     public void Set_Right(string character)
     {
+        if (activeR != null)
+        {
+            StartCoroutine(FadeTo(0f, activeR));
+        }
         foreach (Character name in characters)
         {
             if (name.characterName == character)
