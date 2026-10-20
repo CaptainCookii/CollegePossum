@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 5078270143495192285}
   - component: {fileID: 609877407251796119}
   - component: {fileID: 4824212296198519211}
+  - component: {fileID: 3028716783402393546}
   m_Layer: 0
   m_Name: Temp Piece 1
   m_TagString: Piece
@@ -402,3 +403,17 @@ MonoBehaviour:
       Data3: 426159266
       Data4: -1875677303
     Path: event:/SFX/pachinko_sounds/pachinko_vodka_placement_1
+--- !u!114 &3028716783402393546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7657486254236443474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a0140d526a483f469529bb0e2c65a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DidHit
+  collided: 0
+  bufferTime: 0.1

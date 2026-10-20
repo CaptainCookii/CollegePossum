@@ -8,12 +8,19 @@ public class DidHit : MonoBehaviour
     public float bufferTime = 0.1f;
 
     private Coroutine exitCoroutine;
+    public PinballManager pm;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Cancel the countdown if we touch something again
         if (collision.gameObject.CompareTag("Ball"))
         {
+            if (collision.gameObject.CompareTag("Piece"))
+            {
+                PinballManager.Instance.cool++;
+            }
+            
+
             if (exitCoroutine != null)
             {
                 StopCoroutine(exitCoroutine);

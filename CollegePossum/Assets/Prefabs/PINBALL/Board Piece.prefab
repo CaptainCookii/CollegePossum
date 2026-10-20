@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5722208346533351053}
   - component: {fileID: 6621751687198904255}
+  - component: {fileID: 883623452024900418}
   m_Layer: 0
   m_Name: Board Piece
   m_TagString: Piece
@@ -116,6 +117,20 @@ PolygonCollider2D:
       - {x: 0.122621536, y: 0.034151554}
       - {x: 0.11374664, y: 0.06179899}
   m_UseDelaunayMesh: 1
+--- !u!114 &883623452024900418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2566391328188858090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a0140d526a483f469529bb0e2c65a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DidHit
+  collided: 0
+  bufferTime: 0.1
 --- !u!1 &6970431943421013840
 GameObject:
   m_ObjectHideFlags: 0

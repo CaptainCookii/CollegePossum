@@ -30,7 +30,7 @@ public class PinballManager : MonoBehaviour
 
     //Cool variables
     [SerializeField] private TMP_Text coolText;
-    private float cool;
+    public float cool;
 
     //Anxiety variables
     [SerializeField] private Image anxietyMeter;
@@ -82,19 +82,26 @@ public class PinballManager : MonoBehaviour
         }
 
         // [TEMP SCORING/ANXIETY FUNCTION]
+        // Commented for now.
         // Every second add cool and anxiety equal to number of active balls
-        if (activeBalls > 0)
-        {
-            timer += Time.deltaTime;
 
-            if (timer >= 1f)
-            {
-                cool += activeBalls;
-                timer = 0f;
-            }
+        // Currently: If the ball collides with a piece, increase cool.
 
-            currAnxiety += activeBalls * Time.deltaTime;
-        }
+        // if (activeBalls > 0)
+        // {
+        //     if (hit.collided) {
+        //         cool++;
+        //     }
+        //     // timer += Time.deltaTime;
+
+        //     // if (timer >= 1f)
+        //     // {
+        //     //     cool += activeBalls;
+        //     //     timer = 0f;
+        //     // }
+
+        //     // currAnxiety += activeBalls * Time.deltaTime;
+        // }
 
         //Update UI
         UpdateUI();
