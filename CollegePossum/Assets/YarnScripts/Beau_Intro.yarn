@@ -1,8 +1,29 @@
 ﻿title: Beau_Intro
 ---
-<<set_left CharacterManager Beau>>
+<<set_left CharacterManager Francine>>
 <<wait .15>>
 <<set_right CharacterManager Francine>>
+<<wait .15>>
+<<left CharacterManager>>
+<<wait .15>>
+Ellis: Fran, you should talk to Beau
+<<right CharacterManager>>
+<<wait .15>>
+Fran: I was arleardy planning to do that Ellis
+<<left CharacterManager>>
+<<wait .15>>
+Ellis: oh
+Ellis: then do it
+<<right CharacterManager>>
+<<wait .15>>
+Fran: Well now im not so sure I want to
+<<left CharacterManager>>
+<<wait .15>>
+Ellis: <b>OH MY GOD JUST TALK TO HIM!</b>
+<<right CharacterManager>>
+<<wait .15>>
+Fran: <b>FINE!</b>
+<<set_left CharacterManager Beau>>
 <<wait .15>>
 <<right CharacterManager>>
 <<wait .15>>

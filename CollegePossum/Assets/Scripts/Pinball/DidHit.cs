@@ -1,0 +1,51 @@
+using System;
+using System.Collections;
+using UnityEngine;
+
+public class DidHit : MonoBehaviour
+{
+    public bool collided;
+    public float bufferTime = 0.1f;
+
+    private Coroutine exitCoroutine;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Cancel the countdown if we touch something again
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            if (exitCoroutine != null)
+            {
+                StopCoroutine(exitCoroutine);
+                exitCoroutine = null;
+            }
+
+            collided = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            // Wait before setting collided to false
+            if (exitCoroutine != null)
+                StopCoroutine(exitCoroutine);
+
+            exitCoroutine = StartCoroutine(ResetCollision());
+        }
+    }
+
+    private IEnumerator ResetCollision()
+    {
+        yield return new WaitForSeconds(bufferTime);
+
+        collided = false;
+        exitCoroutine = null;
+    }
+
+    public bool GetCollided()
+    {
+        return collided;
+    }
+}

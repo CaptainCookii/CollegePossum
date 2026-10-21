@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
 using UnityEngine.InputSystem;
 using FMODUnity;
+using TMPro.EditorUtilities;
 
 public class PinballManager : MonoBehaviour
 {
@@ -18,6 +19,14 @@ public class PinballManager : MonoBehaviour
     [SerializeField] private GameObject ballPrefab;
     [SerializeField] private Transform[] chutes;
     [SerializeField] private EventReference chuteLaunchSound;
+
+    [SerializeField] private GameObject francineDialogue;
+    [SerializeField] private GameObject NPCDialogue;
+    [SerializeField] private GameObject[] uhmDialogues;
+    public DidHit hit;
+    private List<GameObject> activeObjects = new List<GameObject>();
+    private Dictionary<GameObject, Coroutine> timers =
+       new Dictionary<GameObject, Coroutine>();
 
     //Cool variables
     [SerializeField] private TMP_Text coolText;
@@ -165,6 +174,7 @@ public class PinballManager : MonoBehaviour
     // value in Line 77 to edit.
     private IEnumerator ShootSequence()
     {
+        NPCDialogue.SetActive(true);
         for (int i = 0; i < chutes.Length; i++)
         {
             Transform chute = chutes[i];
@@ -184,6 +194,7 @@ public class PinballManager : MonoBehaviour
                 yield return new WaitForSeconds(2.5f);
             }
         }
+        francineDialogue.SetActive(true);
         RetractChutes();
     }
 
@@ -250,6 +261,78 @@ public class PinballManager : MonoBehaviour
     public void LeverHit()
     {
         currAnxiety += 2;
+        if (hit.collided)
+        {
+            ActivateFranText();
+        }
+        else
+        {
+            ActivateUhms();
+        }
+    }
+
+    public void ActivateFranText()
+    {
+        StartCoroutine(ActivateForSeconds());
+    }
+
+    private IEnumerator ActivateForSeconds()
+    {
+        francineDialogue.SetActive(true);
+
+        yield return new WaitForSeconds(3f);
+
+        francineDialogue.SetActive(false);
+    }
+
+    public void ActivateUhms()
+    {
+        // Find inactive objects
+        List<GameObject> availableObjects = new List<GameObject>();
+
+        foreach (GameObject obj in uhmDialogues)
+        {
+            if (obj != null && !obj.activeSelf)
+                availableObjects.Add(obj);
+        }
+
+        if (availableObjects.Count == 0)
+            return;
+
+        // Select a random inactive object
+        GameObject selected =
+            availableObjects[Random.Range(0, availableObjects.Count)];
+
+        // If 3 are active, deactivate the oldest immediately
+        if (activeObjects.Count >= 3)
+        {
+            GameObject oldest = activeObjects[0];
+
+            if (timers.TryGetValue(oldest, out Coroutine timer))
+            {
+                StopCoroutine(timer);
+                timers.Remove(oldest);
+            }
+
+            oldest.SetActive(false);
+            activeObjects.RemoveAt(0);
+        }
+
+        // Activate the selected object
+        selected.SetActive(true);
+        activeObjects.Add(selected);
+
+        // Start its 3-second timer
+        timers[selected] = StartCoroutine(DeactivateAfterThreeSeconds(selected));
+    }
+
+    private IEnumerator DeactivateAfterThreeSeconds(GameObject obj)
+    {
+        yield return new WaitForSeconds(3f);
+
+        obj.SetActive(false);
+        activeObjects.Remove(obj);
+        timers.Remove(obj);
     }
 
     // When round is complete, allow players to restart pregame sequence
