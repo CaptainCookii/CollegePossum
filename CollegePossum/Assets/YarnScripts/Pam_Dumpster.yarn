@@ -56,5 +56,5 @@ The smile looks much more like a predator baring her teeth, now. You were, in fa
     <<left CharacterManager>>
     <<wait .15>>
     Pamella: Fine, I’ll come. But you’d better save some of the good stuff. I’m good enough to work with scraps, but I don’t deserve them.
-<<ending CharacterManager>>
+<<ending CharacterManager Pam>>
 ===

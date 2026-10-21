@@ -26,6 +26,10 @@ public class CharacterManager : MonoBehaviour
     [YarnCommand("set_left")] //yarn commands allow them to be called in yarn scripts
     public void Set_Left(string character)
     {
+        if (activeL != null)
+        {
+            StartCoroutine(FadeTo(0f, activeL));
+        }
         foreach (Character name in characters)
         {
             if (name.characterName == character)
@@ -41,6 +45,10 @@ public class CharacterManager : MonoBehaviour
     [YarnCommand("set_right")]
     public void Set_Right(string character)
     {
+        if (activeR != null)
+        {
+            StartCoroutine(FadeTo(0f, activeR));
+        }
         foreach (Character name in characters)
         {
             if (name.characterName == character)
@@ -72,10 +80,11 @@ public class CharacterManager : MonoBehaviour
     // fades the characters when dialogue ends
 
     [YarnCommand("ending")]
-    public void Ending()
+    public void Ending(string name)
     {
         StartCoroutine(FadeTo(0f, activeL));
         StartCoroutine(FadeTo(0f, activeR));
+        MusicManager.Instance.SetMusicLayer(name, false);
     }
 
     //starts pinball
@@ -164,5 +173,7 @@ public class CharacterManager : MonoBehaviour
                 characterDialogue.interactable = false;
             }
         }
+
+        Debug.Log(characters.Length);
     }
 }

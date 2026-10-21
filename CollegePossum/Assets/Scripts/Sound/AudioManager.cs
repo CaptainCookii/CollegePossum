@@ -1,87 +1,68 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using FMODUnity;
 using FMOD.Studio;
+using FMODUnity;
+using UnityEngine;
+using UnityEngine.TextCore.Text;
 
-public class AudioManager : MonoBehaviour
+public class MusicManager : MonoBehaviour
 {
-    private List<EventInstance> eventInstances;
+    public static MusicManager Instance { get; private set; }
 
-    public static AudioManager instance { get; private set; }
+    [Header("FMOD Music Event")]
+    [SerializeField]
+    private EventReference musicEvent;
 
-    private EventInstance musicEventInstance;
+    private EventInstance musicInstance;
 
     private void Awake()
     {
-        if (instance != null)
+        // Singleton protection
+        if (Instance != null && Instance != this)
         {
-            Debug.LogError("More than one Audio Manager in the scene.");
+            Destroy(gameObject);
+            return;
         }
-        instance = this;
 
-        eventInstances = new List<EventInstance>();
-
-        DontDestroyOnLoad(this.gameObject);
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
     {
-        InitializeMusic(FMODEvents.instance.themes); 
+        StartMusic();
     }
 
-
-    /// <summary>
-    /// plays oneshot sound
-    /// </summary>
-    /// <param name="sound">what am i playing</param>
-    /// <param name="worldPos">where am i playing</param>
-    public void PlayOneShot(EventReference sound, Vector2 worldPos)
+    private void StartMusic()
     {
-        RuntimeManager.PlayOneShot(sound, worldPos);
+        if (musicInstance.isValid())
+            return;
+
+        musicInstance = RuntimeManager.CreateInstance(musicEvent);
+        musicInstance.start();
     }
 
+    // -------------------------
+    // ACTIVATE MUSIC LAYERS
+    // -------------------------
 
-    private void InitializeMusic(EventReference musicEventReference)
+    public void SetMusicLayer(string musicLayer, bool active)
     {
-        musicEventInstance = CreateEventInstance(musicEventReference);
-        musicEventInstance.start();
+        if (!musicInstance.isValid())
+            return;
+
+        musicInstance.setParameterByName(musicLayer, active ? 1f : 0f);
+        Debug.Log("Music Layer: " + musicLayer + " Active: " +  active);
     }
 
-    /// <summary>
-    /// set value of a theme
-    /// </summary>
-    /// <param name="parameterName">what theme</param>
-    /// <param name="parameterValue">value of the theme (0 = off, 1 = on, or more for scale)</param>
-    public void SetThemeParameter(string parameterName, float parameterValue)
-    {
-        musicEventInstance.setParameterByName(parameterName, parameterValue);
-    }
-
-    /// <summary>
-    /// create an instance of a sound
-    /// </summary>
-    /// <param name="eventReference">what sound?</param>
-    /// <returns></returns>
-    public EventInstance CreateEventInstance(EventReference eventReference)
-    {
-        EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
-        eventInstances.Add(eventInstance);
-        return eventInstance;
-    }
-
-    private void CleanUp()
-    {
-        foreach (EventInstance eventInstance in eventInstances)
-        {
-            eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            eventInstance.release();
-        }
-    }
+    // -------------------------
+    // CLEANUP
+    // -------------------------
 
     private void OnDestroy()
     {
-        CleanUp();
-    }
+        if (!musicInstance.isValid())
+            return;
 
+        musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        musicInstance.release();
+    }
 }

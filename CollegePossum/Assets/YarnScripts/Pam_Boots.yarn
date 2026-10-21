@@ -31,5 +31,5 @@ Pam sighs, frowning down at her feet.
 <<left CharacterManager>>
 <<wait .15>>
 Pamella: Thanks, France. I’m not sure how I’ll recover, though.
-<<ending CharacterManager>>
+<<ending CharacterManager Pam>>
 ===

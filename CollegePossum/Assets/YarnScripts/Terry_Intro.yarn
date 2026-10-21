@@ -1,8 +1,37 @@
 ﻿title: Terry_Intro
 ---
-<<set_left CharacterManager Terry>>
+<<set_left CharacterManager Francine>>
 <<wait .15>>
 <<set_right CharacterManager Francine>>
+<<wait .15>>
+<<left CharacterManager>>
+<<wait .15>>
+Ellis: oh god Fran, you're talking to..... Terry?
+<<right CharacterManager>>
+<<wait .15>>
+Fran: Yeah?
+<<left CharacterManager>>
+<<wait .15>>
+Ellis: what, do you like him or something?
+<<right CharacterManager>>
+<<wait .15>>
+Cine: Ellis you know she's just being nice
+<<left CharacterManager>>
+<<wait .15>>
+Ellis: oh god Cine, do you like him too?
+<<right CharacterManager>>
+<<wait .15>>
+Cine: Ellis you know it's not like that, just drop it
+<<left CharacterManager>>
+<<wait .15>>
+Ellis: Fine
+<<right CharacterManager>>
+<<wait .15>>
+Fran: .....with how much you talk about him maybe you're the one that likes him
+<<left CharacterManager>>
+<<wait .15>>
+Cine: Fran.....
+<<set_left CharacterManager Terry>>
 <<wait .15>>
 <<right CharacterManager>>
 <<wait .15>>

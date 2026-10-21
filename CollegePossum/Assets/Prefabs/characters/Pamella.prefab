@@ -78,11 +78,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
       propertyPath: pinballScene
-      value: PamelaPinball
+      value: PamellaPinball
       objectReference: {fileID: 0}
     - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
       propertyPath: characterName
       value: Pamella
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: characterMusicRef
+      value: Pam
       objectReference: {fileID: 0}
     - target: {fileID: 2668797374239059930, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
       propertyPath: m_Size.x

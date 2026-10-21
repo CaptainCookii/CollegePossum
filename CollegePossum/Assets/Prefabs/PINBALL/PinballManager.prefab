@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1393127398223843241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3803686109785765843}
+  - component: {fileID: 737722779714403932}
+  - component: {fileID: 3605357337963776036}
+  m_Layer: 0
+  m_Name: PinballManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3803686109785765843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393127398223843241}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &737722779714403932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393127398223843241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147ee12dd7378f6468d6623ea86faeb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PinballManager
+  roundEndUI: {fileID: 0}
+  instructions: {fileID: 0}
+  timerUI: {fileID: 0}
+  ballPrefab: {fileID: 5230532946772367523, guid: 014bf1696738f469fa9f24a57d25c234, type: 3}
+  chutes: []
+  chuteLaunchSound:
+    Guid:
+      Data1: -870437181
+      Data2: 1104163494
+      Data3: -1026145388
+      Data4: -839334773
+    Path: event:/SFX/pachinko_sounds/pinball_ejector
+  coolText: {fileID: 0}
+  anxietyMeter: {fileID: 0}
+  force: 8
+--- !u!114 &3605357337963776036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393127398223843241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3a24d3cb0332f44bad74c1cd6b7d521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PinballSceneManager

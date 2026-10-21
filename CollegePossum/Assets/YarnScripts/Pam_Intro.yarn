@@ -1,8 +1,38 @@
 ﻿title: Pam_Intro
 ---
-<<set_left CharacterManager Pamella>>
+<<set_left CharacterManager Francine>>
 <<wait .15>>
 <<set_right CharacterManager Francine>>
+<<wait .15>>
+<<right CharacterManager>>
+<<wait .15>>
+Fran: <b>OH MY GOD ITS PAMELLA</b>
+<<left CharacterManager>>
+<<wait .15>>
+Cine: Yeah?
+<<right CharacterManager>>
+<<wait .15>>
+Fran: look at that <i>dress</i>
+<<left CharacterManager>>
+<<wait .15>>
+Cine: uhuh?
+<<right CharacterManager>>
+<<wait .15>>
+Fran: look at her <i>hair</i>
+<<left CharacterManager>>
+<<wait .15>>
+Cine: ok?
+<<right CharacterManager>>
+<<wait .15>>
+Fran: I need it Cine
+Fran: I have to look as cool as she does and figure out her <i>fasion secrets</i>
+<<left CharacterManager>>
+<<wait .15>>
+Cine: then how about you try talking to her?
+<<right CharacterManager>>
+<<wait .15>>
+Fran: <b>GENIUS!</b>
+<<set_left CharacterManager Pamella>>
 <<wait .15>>
 <<right CharacterManager>>
 <<wait .15>>
