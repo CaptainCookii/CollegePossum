@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
+
+    [SerializeField] private GameObject settingsMenu;
     public void PlayGame()
     {
         GameState.ResetCharacterInteractable();
@@ -16,7 +18,8 @@ public class MainMenuManager : MonoBehaviour
 
     public void Settings()
     {
-        //SceneManager.LoadScene("SettingsMenu");
+        Debug.Log("Settings button clicked");
+        settingsMenu.SetActive(true);
     }
 
     public void ExitGame()
