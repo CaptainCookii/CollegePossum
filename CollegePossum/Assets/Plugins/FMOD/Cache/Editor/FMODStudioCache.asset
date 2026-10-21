@@ -27,8 +27,64 @@ MonoBehaviour:
   - {fileID: -6782549214139280273}
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 305
 --- !u!114 &-8270871854584104358
+=======
+  Length: 371
+--- !u!114 &-7863144099562541841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Pam
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Pam
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3336904844
+    data2: 2410864520
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-7805907892819879885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MainMenu
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/MainMenu
+  Guid:
+    Data1: -1484329762
+    Data2: 1108893437
+    Data3: -2070047825
+    Data4: 295604148
+  Banks:
+  - {fileID: -3176906994318221121}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 104265
+--- !u!114 &-7470902024006035258
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,8 +159,84 @@ MonoBehaviour:
   - {fileID: -1439368756767793694}
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 193
 --- !u!114 &-7787119362802600885
+=======
+  Length: 740
+--- !u!114 &-3984057261116501331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Terrence
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Terrence
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3404877629
+    data2: 4171738774
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3826650032522264787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/pachinko_lacrosse_net_catch
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/pachinko_lacrosse_net_catch
+  Guid:
+    Data1: -1054947283
+    Data2: 1141631048
+    Data3: -70189155
+    Data4: 148453986
+  Banks:
+  - {fileID: -3176906994318221121}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 529
+--- !u!114 &-3176906994318221121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: CollegePossumFMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639281845069332375
+  FileSizes:
+  - Name: Desktop
+    Value: 4032800
+  Exists: 1
+--- !u!114 &-3048276034033924619
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,10 +326,14 @@ MonoBehaviour:
   Path: CollegePossumFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< Updated upstream
   lastModified: 639281792977552012
+=======
+  lastModified: 639281845069352377
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
-    Value: 2170
+    Value: 2220
   Exists: 1
 --- !u!114 &-5522300664578710709
 MonoBehaviour:
@@ -557,6 +693,7 @@ MonoBehaviour:
   - {fileID: -6753738444815714074}
   - {fileID: -2303996944428092912}
   EditorEvents:
+<<<<<<< Updated upstream
   - {fileID: -2578394929602406637}
   - {fileID: -6936481623324983579}
   - {fileID: 8475829009055768398}
@@ -579,13 +716,42 @@ MonoBehaviour:
   - {fileID: -9034060975531086410}
   - {fileID: -557602875926231031}
   - {fileID: 2951123293968628953}
+=======
+  - {fileID: -2289604727749251927}
+  - {fileID: 1197483510375912}
+  - {fileID: 2547625850042342765}
+  - {fileID: -3826650032522264787}
+  - {fileID: -5471075879926925971}
+  - {fileID: 6075121634484302865}
+  - {fileID: 4902698452597914248}
+  - {fileID: -4219497371790153195}
+  - {fileID: -793418033511023088}
+  - {fileID: -5678061625552752748}
+  - {fileID: 2191125842352084603}
+  - {fileID: 5248116727166042685}
+  - {fileID: 1540061055159612550}
+  - {fileID: 1178191355152282831}
+  - {fileID: -1119352069866973557}
+  - {fileID: -4589603342658387232}
+  - {fileID: -2113547077753817776}
+  - {fileID: 7214253565732111539}
+  - {fileID: 2859991909932318012}
+  - {fileID: 7520443982896830899}
+  - {fileID: -2816601875572621195}
+  - {fileID: -8144297112473562891}
+  - {fileID: -7805907892819879885}
+>>>>>>> Stashed changes
   EditorParameters: []
   MasterBanks:
   - {fileID: -2303996944428092912}
   StringsBanks:
   - {fileID: -6753738444815714074}
   cacheVersion: 131848
+<<<<<<< Updated upstream
   cacheTime: 639281792977552012
+=======
+  cacheTime: 639281845069352377
+>>>>>>> Stashed changes
   SerializableEventsDict:
   - key: event:/SFX/pachinko_sounds/pachinko_clink_6
     index: 0
@@ -631,7 +797,40 @@ MonoBehaviour:
     index: 20
   - key: event:/Test1
     index: 21
+<<<<<<< Updated upstream
 --- !u!114 &247842036252144397
+=======
+  - key: event:/MainMenu
+    index: 22
+--- !u!114 &1197483510375912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/pachinko_vodka_placement_1
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/pachinko_vodka_placement_1
+  Guid:
+    Data1: -530004452
+    Data2: 1314978909
+    Data3: 426159266
+    Data4: -1875677303
+  Banks:
+  - {fileID: -3176906994318221121}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 851
+--- !u!114 &673138617790267462
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
