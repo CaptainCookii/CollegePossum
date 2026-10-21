@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3792917992611117140}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.953, y: 2.992, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -141,22 +141,17 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.26457644, y: 0.7250774}
-      - {x: -0.0073742867, y: 0.82301855}
-      - {x: -0.29475027, y: 0.69985104}
-      - {x: -0.39657784, y: 0.5139668}
-      - {x: -0.40439224, y: 0.10273671}
-      - {x: -0.4059615, y: -0.2790556}
-      - {x: -0.41074514, y: -0.49552917}
-      - {x: -0.31493896, y: -0.66153276}
-      - {x: -0.121017456, y: -0.7964542}
-      - {x: 0.06962347, y: -0.8027084}
-      - {x: 0.25470448, y: -0.7247429}
-      - {x: 0.3665582, y: -0.5656676}
-      - {x: 0.38993406, y: -0.33779335}
-      - {x: 0.38978195, y: 0.08214402}
-      - {x: 0.40195894, y: 0.35362506}
-      - {x: 0.39798975, y: 0.5081212}
+    - - {x: 0, y: 1}
+      - {x: 0.3, y: 0.9}
+      - {x: 0.5, y: 0.55}
+      - {x: 0.5, y: -0.55}
+      - {x: 0.3, y: -0.9}
+      - {x: 0, y: -1}
+      - {x: -0.3, y: -0.9}
+      - {x: -0.5, y: -0.55}
+      - {x: -0.5, y: 0.55}
+      - {x: -0.3, y: 0.9}
+      - {x: 0, y: 1}
   m_UseDelaunayMesh: 1
 --- !u!114 &-607807204240689892
 MonoBehaviour:
@@ -239,7 +234,7 @@ GameObject:
   - component: {fileID: 1661580131461880728}
   - component: {fileID: 1603076772304009065}
   m_Layer: 0
-  m_Name: Background
+  m_Name: OuterCapsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -255,7 +250,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3809120859536417459}
@@ -330,7 +325,7 @@ GameObject:
   - component: {fileID: 138815591689446801}
   - component: {fileID: 750596836614051687}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: InnerCapsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -346,7 +341,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3809120859536417459}

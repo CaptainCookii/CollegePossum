@@ -6621,6 +6621,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anxiety Meter
       objectReference: {fileID: 0}
+    - target: {fileID: 7118295923335748667, guid: 980adb6f1aafd4981b7f720f4139553b, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118295923335748667, guid: 980adb6f1aafd4981b7f720f4139553b, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118295923335748667, guid: 980adb6f1aafd4981b7f720f4139553b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.67058825
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

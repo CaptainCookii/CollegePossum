@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6883610980212438754}
   - component: {fileID: 8588932275564097776}
   m_Layer: 0
-  m_Name: Terry Outline
+  m_Name: Character Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 2283154948114008544}
   - component: {fileID: 8213941472292843916}
   m_Layer: 0
-  m_Name: Terry Right
+  m_Name: Character RIght
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -211,7 +211,7 @@ Transform:
   m_GameObject: {fileID: 5853841517756235867}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.65, y: 0.12, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.27, y: 0.27, z: 0.27}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -308,11 +308,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character
   characterName: 
+  characterMusicRef: 
   character: {fileID: 0}
   outline: {fileID: 0}
   left: {fileID: 0}
   right: {fileID: 0}
   pinballScene: 
+  dialogueI: 
   dialogue1: 
   dialogue2: 
 --- !u!61 &2668797374239059930
@@ -372,7 +374,7 @@ GameObject:
   - component: {fileID: 8884331316758132459}
   - component: {fileID: 7650298954033419517}
   m_Layer: 0
-  m_Name: Terry Left
+  m_Name: Character Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
