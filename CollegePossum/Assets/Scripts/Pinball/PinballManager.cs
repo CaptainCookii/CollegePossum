@@ -89,9 +89,6 @@ public class PinballManager : MonoBehaviour
 
         // if (activeBalls > 0)
         // {
-        //     if (hit.collided) {
-        //         cool++;
-        //     }
         //     // timer += Time.deltaTime;
 
         //     // if (timer >= 1f)

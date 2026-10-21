@@ -7,20 +7,16 @@ public class DidHit : MonoBehaviour
     public bool collided;
     public float bufferTime = 0.1f;
 
-    private Coroutine exitCoroutine;
-    public PinballManager pm;
+    private bool addCool = true;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private Coroutine exitCoroutine;
+    
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         // Cancel the countdown if we touch something again
         if (collision.gameObject.CompareTag("Ball"))
         {
-            if (collision.gameObject.CompareTag("Piece"))
-            {
-                PinballManager.Instance.cool++;
-            }
-            
-
+    
             if (exitCoroutine != null)
             {
                 StopCoroutine(exitCoroutine);
@@ -28,10 +24,15 @@ public class DidHit : MonoBehaviour
             }
 
             collided = true;
+
+            if (addCool)
+            {
+                PinballManager.Instance.cool++;
+            }
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
