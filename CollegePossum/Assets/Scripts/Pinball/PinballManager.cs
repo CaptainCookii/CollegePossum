@@ -43,6 +43,8 @@ public class PinballManager : MonoBehaviour
     private int destroyedBalls = 0;
     private int maxBallsPerRound = 0;
     [SerializeField] private float force = 8f;
+
+    private int currentTopicBalls = 10;
     
     // Single instance per scene, does not persist on load
     void Awake()
@@ -64,7 +66,7 @@ public class PinballManager : MonoBehaviour
         maxAnxiety = GameManager.Instance.maxAnxiety;
         GameManager.Instance.currAnxiety *= .8f;
         currAnxiety = GameManager.Instance.currAnxiety;
-        maxBallsPerRound = chutes.Length;
+        maxBallsPerRound = currentTopicBalls;
 
         //Update cool UI text
         UpdateUI();
@@ -87,18 +89,18 @@ public class PinballManager : MonoBehaviour
 
         // Currently: If the ball collides with a piece, increase cool.
 
-        // if (activeBalls > 0)
-        // {
-        //     // timer += Time.deltaTime;
+        if (activeBalls > 0)
+        {
+            // timer += Time.deltaTime;
 
-        //     // if (timer >= 1f)
-        //     // {
-        //     //     cool += activeBalls;
-        //     //     timer = 0f;
-        //     // }
+            // if (timer >= 1f)
+            // {
+            //     cool += activeBalls;
+            //     timer = 0f;
+            // }
 
-        //     // currAnxiety += activeBalls * Time.deltaTime;
-        // }
+            currAnxiety += activeBalls * Time.deltaTime;
+        }
 
         //Update UI
         UpdateUI();
@@ -179,9 +181,10 @@ public class PinballManager : MonoBehaviour
     private IEnumerator ShootSequence()
     {
         NPCDialogue.SetActive(true);
-        for (int i = 0; i < chutes.Length; i++)
+        for (int i = 0; i < currentTopicBalls; i++)
         {
-            Transform chute = chutes[i];
+            int index = i % chutes.Length;
+            Transform chute = chutes[index];
 
             GameObject ball = Instantiate(ballPrefab, chute.position, chute.rotation);
             RuntimeManager.PlayOneShot(chuteLaunchSound, transform.position);
@@ -193,9 +196,9 @@ public class PinballManager : MonoBehaviour
                 rb.AddForce(chute.right * force, ForceMode2D.Impulse);
             }
 
-            if (i < chutes.Length - 1)
+            if (i < currentTopicBalls - 1)
             {
-                yield return new WaitForSeconds(2.5f);
+                yield return new WaitForSeconds(7f);
             }
         }
         francineDialogue.SetActive(true);
@@ -365,7 +368,7 @@ public class PinballManager : MonoBehaviour
     public void PlayAgain()
     {
         roundEndUI.SetActive(false);
-        maxBallsPerRound = chutes.Length;
+        maxBallsPerRound = currentTopicBalls;
         destroyedBalls = 0;
         UnlockPieces();
         RestartSequence();

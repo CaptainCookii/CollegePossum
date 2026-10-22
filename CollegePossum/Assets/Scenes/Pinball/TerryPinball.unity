@@ -1208,6 +1208,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 625781621}
     - target: {fileID: 737722779714403932, guid: d9262e697c1a08a498b7aaa0e9165bd7, type: 3}
+      propertyPath: 'chutes.Array.data[4]'
+      value: 
+      objectReference: {fileID: 816859042}
+    - target: {fileID: 737722779714403932, guid: d9262e697c1a08a498b7aaa0e9165bd7, type: 3}
+      propertyPath: 'chutes.Array.data[5]'
+      value: 
+      objectReference: {fileID: 826103665}
+    - target: {fileID: 737722779714403932, guid: d9262e697c1a08a498b7aaa0e9165bd7, type: 3}
+      propertyPath: 'chutes.Array.data[6]'
+      value: 
+      objectReference: {fileID: 1778690293}
+    - target: {fileID: 737722779714403932, guid: d9262e697c1a08a498b7aaa0e9165bd7, type: 3}
+      propertyPath: 'chutes.Array.data[7]'
+      value: 
+      objectReference: {fileID: 625781621}
+    - target: {fileID: 737722779714403932, guid: d9262e697c1a08a498b7aaa0e9165bd7, type: 3}
+      propertyPath: 'chutes.Array.data[8]'
+      value: 
+      objectReference: {fileID: 816859042}
+    - target: {fileID: 737722779714403932, guid: d9262e697c1a08a498b7aaa0e9165bd7, type: 3}
+      propertyPath: 'chutes.Array.data[9]'
+      value: 
+      objectReference: {fileID: 826103665}
+    - target: {fileID: 737722779714403932, guid: d9262e697c1a08a498b7aaa0e9165bd7, type: 3}
       propertyPath: uhmDialogues.Array.size
       value: 7
       objectReference: {fileID: 0}
