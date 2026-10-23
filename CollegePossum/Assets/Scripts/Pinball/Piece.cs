@@ -22,7 +22,7 @@ public class Piece : MonoBehaviour
     private Quaternion spawnRotation;
 
     private float touchTimer = 0f;
-    private bool ballOnPiece = false;
+  
 
     [SerializeField] private EventReference[] hitSounds;
     [SerializeField] private EventReference[] placeSounds;
@@ -40,18 +40,6 @@ public class Piece : MonoBehaviour
 
     private void Update()
     {
-    
-        if (ballOnPiece)
-        {
-            touchTimer += Time.deltaTime;
-
-            if (touchTimer >= 3.5f)
-            {
-                RespawnPiece();
-                ballOnPiece = false;
-                touchTimer = 0f;
-            }
-        }
 
         // If the mouse is not in use, nothing happens.
         if (Mouse.current == null)
@@ -119,7 +107,7 @@ public class Piece : MonoBehaviour
         if (c.gameObject.CompareTag("Ball"))
         {
             touchTimer += Time.deltaTime;
-            if (touchTimer >= 10f)
+            if (touchTimer >= 3.5f)
             {
                 RespawnPiece();
                 touchTimer = 0f;
