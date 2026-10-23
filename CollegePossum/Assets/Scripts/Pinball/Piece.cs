@@ -27,11 +27,25 @@ public class Piece : MonoBehaviour
     [SerializeField] private EventReference[] hitSounds;
     [SerializeField] private EventReference[] placeSounds;
 
+    private LineRenderer indicator;
+
     // Sets and stores camera and PolygonCollider2D components for use later on.
     private void Awake()
     {
         mainCamera = Camera.main; 
         objectCollider = GetComponent<PolygonCollider2D>();
+
+        indicator = GetComponent<LineRenderer>();
+        indicator.enabled = false;
+        Vector2[] pts = objectCollider.points;
+        indicator.useWorldSpace = false;
+        indicator.loop = true;
+        indicator.positionCount = pts.Length;
+
+        for (int i = 0; i < pts.Length; i++)
+        {
+            indicator.SetPosition(i, pts[i] + objectCollider.offset);
+        }
 
         spawnPosition = transform.position;
         spawnRotation = transform.rotation;
@@ -72,6 +86,8 @@ public class Piece : MonoBehaviour
         if (draggingOn && Mouse.current.leftButton.isPressed)
         {
             transform.position = worldCoords + movementOffset;
+            indicator.enabled = IsOverlapping();
+            Debug.Log("enabled!");s
         }
 
         // If the piece is released on another piece or a part of the gameplay, 
@@ -86,6 +102,7 @@ public class Piece : MonoBehaviour
             }
             
             draggingOn = false;
+            indicator.enabled = false;
             RuntimeManager.PlayOneShot(placeSounds[Random.Range(0, placeSounds.Length)], transform.position);
 
         }
