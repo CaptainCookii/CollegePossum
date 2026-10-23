@@ -2,15 +2,35 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    private float stuckTime = 3f;
+    private float stuckSpeed = 0.1f;
+    private float unstuckForce = 10f;
+    
+    private Rigidbody2D rb;
+    private float stuckTimer = 0f;
+
+    private void Awake()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (rb.linearVelocity.magnitude < stuckSpeed)
+        {
+            stuckTimer += Time.deltaTime;
+
+            if (stuckTimer >= stuckTime)
+            {
+                Vector2 dir = Random.insideUnitCircle.normalized;
+                rb.AddForce(dir * unstuckForce, ForceMode2D.Impulse);
+                stuckTimer = 0f;
+            }
+        }
+        else
+        {
+            stuckTimer = 0f;
+        }
     }
 }

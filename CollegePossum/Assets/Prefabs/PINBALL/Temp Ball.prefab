@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 4437079757400745463}
   - component: {fileID: 7847376758918226146}
   - component: {fileID: 758091028139209133}
+  - component: {fileID: 5884942908382826992}
   m_Layer: 0
   m_Name: Temp Ball
   m_TagString: Ball
@@ -283,6 +284,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5884942908382826992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5230532946772367523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d57acdf96334402a7b071084292c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ball
 --- !u!1 &7319235693248030468
 GameObject:
   m_ObjectHideFlags: 0
