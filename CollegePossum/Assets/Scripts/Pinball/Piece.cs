@@ -87,7 +87,7 @@ public class Piece : MonoBehaviour
         {
             transform.position = worldCoords + movementOffset;
             indicator.enabled = IsOverlapping();
-            Debug.Log("enabled!");s
+            Debug.Log("Indicator enabled: " + indicator.enabled);
         }
 
         // If the piece is released on another piece or a part of the gameplay, 
