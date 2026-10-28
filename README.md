@@ -27,8 +27,8 @@ Lex - Sound
 
 Marlena (marlena-ames) - Narrative
 
-Aiko - Art
+Aiko - Art Lead
+
+Natalie (natalihern) - Art
 
 Darin - Art
-
-Natalie - Art
