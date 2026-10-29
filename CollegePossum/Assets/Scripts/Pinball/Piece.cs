@@ -103,8 +103,13 @@ public class Piece : MonoBehaviour
             
             draggingOn = false;
             indicator.enabled = false;
-            RuntimeManager.PlayOneShot(placeSounds[Random.Range(0, placeSounds.Length)], transform.position);
-
+ 
+            // this will avoid crashing while piece temporarily don't have sounds
+            if (placeSounds != null && placeSounds.Length > 0)
+            {
+                RuntimeManager.PlayOneShot(placeSounds[Random.Range(0, placeSounds.Length)], transform.position); 
+            }
+            
         }
 
     }
@@ -115,7 +120,11 @@ public class Piece : MonoBehaviour
     {
         if (c.gameObject.CompareTag("Ball"))
         {
-            RuntimeManager.PlayOneShot(hitSounds[Random.Range(0, hitSounds.Length)], transform.position);
+            if (hitSounds != null && hitSounds.Length > 0)
+            {
+                RuntimeManager.PlayOneShot(hitSounds[Random.Range(0, hitSounds.Length)], transform.position);
+            }
+            
             DealDamage(10);
         }
     }
