@@ -2499,11 +2499,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656549451}
   m_CullTransparentMesh: 1
---- !u!4 &666578779 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
-  m_PrefabInstance: {fileID: 7889310902884987485}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &678434207
 GameObject:
   m_ObjectHideFlags: 0
@@ -6049,6 +6044,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394224261}
   m_CullTransparentMesh: 1
+--- !u!1001 &1447532663
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1940683660}
+    m_Modifications:
+    - target: {fileID: 5260361026270320081, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+      propertyPath: m_SortingOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8086319519134897198, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+      propertyPath: m_Name
+      value: CharacterPiece_BeauTaurmas_LacrosseHead_Asset_0 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+--- !u!4 &1447532664 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
+  m_PrefabInstance: {fileID: 1447532663}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1513315325
 GameObject:
   m_ObjectHideFlags: 0
@@ -7284,7 +7353,7 @@ Transform:
   - {fileID: 1566157104}
   - {fileID: 409093454}
   - {fileID: 628941940}
-  - {fileID: 666578779}
+  - {fileID: 1447532664}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1960565844 stripped
@@ -8799,67 +8868,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d2b9557bddcc46a3afb1c448a9084e1, type: 3}
---- !u!1001 &7889310902884987485
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1940683660}
-    m_Modifications:
-    - target: {fileID: 5260361026270320081, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
-      propertyPath: m_SortingOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -9.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6923959375275876248, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8086319519134897198, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
-      propertyPath: m_Name
-      value: CharacterPiece_BeauTaurmas_LacrosseHead_Asset_0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a1a030b3e3fce4fb79c6daca8a59a855, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
