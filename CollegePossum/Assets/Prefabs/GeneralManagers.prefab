@@ -47,9 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   totalSocialPoints: 0
-  currSocialPoints: 0
+  currSocialPoints: 5
   totalCoolPoints: 0
-  currCoolPoints: 0
+  currCoolPoints: 5
   maxAnxiety: 250
   currAnxiety: 0
 --- !u!114 &4978655125085888714
