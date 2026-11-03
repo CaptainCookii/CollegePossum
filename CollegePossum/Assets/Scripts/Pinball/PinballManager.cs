@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,10 +23,13 @@ public class PinballManager : MonoBehaviour
     [SerializeField] private GameObject francineDialogue;
     [SerializeField] private GameObject NPCDialogue;
     [SerializeField] private GameObject[] uhmDialogues;
+    [SerializeField] private string franshoot;
+    [SerializeField] private string npcintro;
     public DidHit hit;
     private List<GameObject> activeObjects = new List<GameObject>();
     private Dictionary<GameObject, Coroutine> timers =
        new Dictionary<GameObject, Coroutine>();
+    private TextMeshProUGUI text;
 
     //Cool variables
     [SerializeField] private TMP_Text coolText;
@@ -175,6 +178,8 @@ public class PinballManager : MonoBehaviour
     private IEnumerator ShootSequence()
     {
         NPCDialogue.SetActive(true);
+        text = NPCDialogue.GetComponentInChildren<TextMeshProUGUI>();
+        text.text = text.text + npcintro;
         for (int i = 0; i < chutes.Length; i++)
         {
             Transform chute = chutes[i];
@@ -279,9 +284,12 @@ public class PinballManager : MonoBehaviour
     private IEnumerator ActivateForSeconds()
     {
         francineDialogue.SetActive(true);
+        text = francineDialogue.GetComponentInChildren<TextMeshProUGUI>();
+        text.text = text.text + franshoot;
 
         yield return new WaitForSeconds(3f);
 
+        text.text = "";
         francineDialogue.SetActive(false);
     }
 

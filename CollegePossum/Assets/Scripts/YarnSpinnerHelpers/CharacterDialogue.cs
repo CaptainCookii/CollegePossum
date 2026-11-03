@@ -33,7 +33,7 @@ public class CharacterDialogue : MonoBehaviour
         // Make sure the outline starts invisible
         character.outline.SetActive(false);
 
-        dialogue = Random.Range(0, 2);
+        dialogue = Random.Range(0, 5);
     }
 
     private void Update()
@@ -95,9 +95,13 @@ public class CharacterDialogue : MonoBehaviour
         {
             dialogueRunner.StartDialogue(character.dialogue1);
         }
-        else
+        else if (dialogue == 1)
         {
             dialogueRunner.StartDialogue(character.dialogue2);
+        }
+        else
+        {
+            dialogueRunner.StartDialogue(character.dialogueS);
         }
         interactable = false;
     }

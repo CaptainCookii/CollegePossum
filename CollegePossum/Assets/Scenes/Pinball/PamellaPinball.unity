@@ -7804,7 +7804,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 136740797496156093, guid: dc1c70228e8034f0aa7372085903908e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.8
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 136740797496156093, guid: dc1c70228e8034f0aa7372085903908e, type: 3}
       propertyPath: m_LocalRotation.w

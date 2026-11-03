@@ -1,0 +1,12 @@
+﻿title: Terry_Short
+---
+<<set_left CharacterManager Terry>>
+<<wait .15>>
+<<set_right CharacterManager Francine>>
+<<wait .15>>
+<<left CharacterManager>>
+<<wait .15>>
+Terry: I’m so amazing
+You feel it may be best to leave this conversation while he's distracted with himself
+<<ending CharacterManager Terry>>
+===

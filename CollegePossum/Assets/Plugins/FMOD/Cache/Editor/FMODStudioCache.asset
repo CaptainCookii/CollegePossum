@@ -1,6 +1,352 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9034060975531086410
+--- !u!114 &-9006490902076487947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: CollegePossumFMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639292399587538871
+  FileSizes:
+  - Name: Desktop
+    Value: 2256
+  Exists: 1
+--- !u!114 &-8493994509708055590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/pachinko_pam_flip_mirror
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/pachinko_pam_flip_mirror
+  Guid:
+    Data1: 206609446
+    Data2: 1150368255
+    Data3: -254394733
+    Data4: -1508723023
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 244
+--- !u!114 &-8336654787598463609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/pachinko_vodka_placement_1
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/pachinko_vodka_placement_1
+  Guid:
+    Data1: -530004452
+    Data2: 1314978909
+    Data3: 426159266
+    Data4: -1875677303
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 851
+--- !u!114 &-7889524932221060087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/pachinko_lacrosse_net_catch
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/pachinko_lacrosse_net_catch
+  Guid:
+    Data1: -1054947283
+    Data2: 1141631048
+    Data3: -70189155
+    Data4: 148453986
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 529
+--- !u!114 &-6355071245871020878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/pachinko_fall_in_hz
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/pachinko_fall_in_hz
+  Guid:
+    Data1: 1529389146
+    Data2: 1232665531
+    Data3: -333927806
+    Data4: -1891545382
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 730
+--- !u!114 &-5222109627346372232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/pinball_ejector
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/pinball_ejector
+  Guid:
+    Data1: -870437181
+    Data2: 1104163494
+    Data3: -1026145388
+    Data4: -839334773
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 439
+--- !u!114 &-4968478249008436930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/main_menu_sounds/menu_click_close
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/main_menu_sounds/menu_click_close
+  Guid:
+    Data1: 112302324
+    Data2: 1154808348
+    Data3: -985930617
+    Data4: 547020435
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1169
+--- !u!114 &-2387333794439997278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: CollegePossumFMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639292399587528885
+  FileSizes:
+  - Name: Desktop
+    Value: 4767648
+  Exists: 1
+--- !u!114 &-2061871514033378658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/main_menu_sounds/play_start_redux_nofizz
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/main_menu_sounds/play_start_redux_nofizz
+  Guid:
+    Data1: -1821021838
+    Data2: 1251881557
+    Data3: -1876937055
+    Data4: 133985197
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1592
+--- !u!114 &-2042283370248653139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/flipperup
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/flipperup
+  Guid:
+    Data1: -1677464968
+    Data2: 1262700504
+    Data3: 367873205
+    Data4: 810332763
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 333
+--- !u!114 &-1800524617907174698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/pachinko_clink_2
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/pachinko_clink_2
+  Guid:
+    Data1: 1824180869
+    Data2: 1127992944
+    Data3: 472356749
+    Data4: 999391275
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 3134041079076180890}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 193
+--- !u!114 &-1689432742445833251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Music
+  Guid:
+    Data1: -254230984
+    Data2: 1137975434
+    Data3: -2052029288
+    Data4: 1430716876
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5743566077053729332}
+  - {fileID: 5070735171322581621}
+  - {fileID: 8852246867087617973}
+  - {fileID: 6049582773888366193}
+  - {fileID: 6413874158688888684}
+  - {fileID: 165305366562452018}
+  - {fileID: 1919929230500234785}
+  - {fileID: -429226682839234154}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 228413
+--- !u!114 &-1408224142898686916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/main_menu_sounds/click_solo
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/main_menu_sounds/click_solo
+  Guid:
+    Data1: 1096180118
+    Data2: 1309398787
+    Data3: 540338341
+    Data4: 1242395510
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1055
+--- !u!114 &-925954710741831930
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19,44 +365,16 @@ MonoBehaviour:
     Data3: 1442339223
     Data4: -556131129
   Banks:
-  - {fileID: -2303996944428092912}
+  - {fileID: -2387333794439997278}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -6782549214139280273}
+  - {fileID: 8450096167243522119}
   MinDistance: 1
   MaxDistance: 20
-<<<<<<< Updated upstream
   Length: 305
---- !u!114 &-8270871854584104358
-=======
-  Length: 371
---- !u!114 &-7863144099562541841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Pam
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Pam
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3336904844
-    data2: 2410864520
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-7805907892819879885
+--- !u!114 &-899566042333832885
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,25 +384,52 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MainMenu
+  m_Name: event:/SFX/pachinko_sounds/pachinko_mic_placement
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/MainMenu
+  Path: event:/SFX/pachinko_sounds/pachinko_mic_placement
   Guid:
-    Data1: -1484329762
-    Data2: 1108893437
-    Data3: -2070047825
-    Data4: 295604148
+    Data1: 713049462
+    Data2: 1094075211
+    Data3: 1847053757
+    Data4: 1144958664
   Banks:
-  - {fileID: -3176906994318221121}
-  IsStream: 1
+  - {fileID: -2387333794439997278}
+  IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 104265
---- !u!114 &-7470902024006035258
->>>>>>> Stashed changes
+  Length: 1366
+--- !u!114 &-666455980056501865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/pachinko_clink_3
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/pachinko_clink_3
+  Guid:
+    Data1: -446472041
+    Data2: 1341939376
+    Data3: 1604712092
+    Data4: -1801449247
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 4309221761697547022}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 233
+--- !u!114 &-586280677901199652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,7 +453,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-8155898907336475868
+--- !u!114 &-429226682839234154
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,565 +463,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/pachinko_clink_4/pachinko_clink_param
+  m_Name: parameter:/Music/Shop
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: pachinko_clink_param
-  StudioPath: 
-  Min: 0
-  Max: 10
-  Default: 0
-  ID:
-    data1: 1980592927
-    data2: 507111843
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-7880074721882587216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/pachinko_clink_2
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/pachinko_clink_2
-  Guid:
-    Data1: 1824180869
-    Data2: 1127992944
-    Data3: 472356749
-    Data4: 999391275
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -1439368756767793694}
-  MinDistance: 1
-  MaxDistance: 20
-<<<<<<< Updated upstream
-  Length: 193
---- !u!114 &-7787119362802600885
-=======
-  Length: 740
---- !u!114 &-3984057261116501331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Terrence
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Terrence
+  Name: Shop
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 3404877629
-    data2: 4171738774
+    data1: 2884043589
+    data2: 1996258192
   Type: 1
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-3826650032522264787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/pachinko_lacrosse_net_catch
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/pachinko_lacrosse_net_catch
-  Guid:
-    Data1: -1054947283
-    Data2: 1141631048
-    Data3: -70189155
-    Data4: 148453986
-  Banks:
-  - {fileID: -3176906994318221121}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 529
---- !u!114 &-3176906994318221121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: CollegePossumFMOD/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 639281845069332375
-  FileSizes:
-  - Name: Desktop
-    Value: 4032800
-  Exists: 1
---- !u!114 &-3048276034033924619
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Hollis
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Hollis
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2755119840
-    data2: 555429665
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-6936481623324983579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/pachinko_vodka_placement_1
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/pachinko_vodka_placement_1
-  Guid:
-    Data1: -530004452
-    Data2: 1314978909
-    Data3: 426159266
-    Data4: -1875677303
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 851
---- !u!114 &-6782549214139280273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/pachinko_clink_5/pachinko_clink_param
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: pachinko_clink_param
-  StudioPath: 
-  Min: 0
-  Max: 10
-  Default: 0
-  ID:
-    data1: 1980592927
-    data2: 507111843
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-6753738444815714074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: CollegePossumFMOD/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-<<<<<<< Updated upstream
-  lastModified: 639281792977552012
-=======
-  lastModified: 639281845069352377
->>>>>>> Stashed changes
-  FileSizes:
-  - Name: Desktop
-    Value: 2220
-  Exists: 1
---- !u!114 &-5522300664578710709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/pachinko_clink_1
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/pachinko_clink_1
-  Guid:
-    Data1: 663058748
-    Data2: 1302457257
-    Data3: -1015964768
-    Data4: -1718786518
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 8289784335081367291}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 85
---- !u!114 &-4376070086332386393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/main_menu_sounds/click_solo
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/main_menu_sounds/click_solo
-  Guid:
-    Data1: 1096180118
-    Data2: 1309398787
-    Data3: 540338341
-    Data4: 1242395510
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1055
---- !u!114 &-4299481230221921235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/pachinko_fall_in
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/pachinko_fall_in
-  Guid:
-    Data1: -307060406
-    Data2: 1286972987
-    Data3: -255645554
-    Data4: -698359161
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 9025280038630861828}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 740
---- !u!114 &-2932979874522085117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/flipperup
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/flipperup
-  Guid:
-    Data1: -1677464968
-    Data2: 1262700504
-    Data3: 367873205
-    Data4: 810332763
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 333
---- !u!114 &-2578394929602406637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/pachinko_clink_6
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/pachinko_clink_6
-  Guid:
-    Data1: -1846720236
-    Data2: 1134044714
-    Data3: 1221011880
-    Data4: 1307552663
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -8270871854584104358}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 376
---- !u!114 &-2303996944428092912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: CollegePossumFMOD/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 639281792977552012
-  FileSizes:
-  - Name: Desktop
-    Value: 2796288
-  Exists: 1
---- !u!114 &-1527895939906111117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/pinball_ejector
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/pinball_ejector
-  Guid:
-    Data1: -870437181
-    Data2: 1104163494
-    Data3: -1026145388
-    Data4: -839334773
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 439
---- !u!114 &-1464155920919458144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/pachinko_clink_4
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/pachinko_clink_4
-  Guid:
-    Data1: 401798092
-    Data2: 1318127814
-    Data3: -1570409836
-    Data4: -852206582
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -8155898907336475868}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 201
---- !u!114 &-1439368756767793694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/pachinko_clink_2/pachinko_clink_param
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: pachinko_clink_param
-  StudioPath: 
-  Min: 0
-  Max: 10
-  Default: 0
-  ID:
-    data1: 1980592927
-    data2: 507111843
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-557602875926231031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/main_menu_sounds/menu_click_close
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/main_menu_sounds/menu_click_close
-  Guid:
-    Data1: 112302324
-    Data2: 1154808348
-    Data3: -985930617
-    Data4: 547020435
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1169
---- !u!114 &-399228057155634762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Anxiety
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Anxiety
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 3543409930
-    data2: 4040988586
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-218269123312280850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/main_menu_sounds/play_start_redux_nofizz
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/main_menu_sounds/play_start_redux_nofizz
-  Guid:
-    Data1: -1821021838
-    Data2: 1251881557
-    Data3: -1876937055
-    Data4: 133985197
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1592
---- !u!114 &-76244564574069860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/pachinko_lacrosse_net_catch
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/pachinko_lacrosse_net_catch
-  Guid:
-    Data1: -1054947283
-    Data2: 1141631048
-    Data3: -70189155
-    Data4: 148453986
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 529
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,68 +490,39 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EventCache
   EditorBanks:
-  - {fileID: -6753738444815714074}
-  - {fileID: -2303996944428092912}
+  - {fileID: -9006490902076487947}
+  - {fileID: -2387333794439997278}
   EditorEvents:
-<<<<<<< Updated upstream
-  - {fileID: -2578394929602406637}
-  - {fileID: -6936481623324983579}
-  - {fileID: 8475829009055768398}
-  - {fileID: -76244564574069860}
-  - {fileID: 2428228334274953881}
-  - {fileID: -5522300664578710709}
-  - {fileID: 4308266833379392756}
-  - {fileID: -4299481230221921235}
-  - {fileID: 4563624343218460759}
-  - {fileID: -218269123312280850}
-  - {fileID: 3239890659360520323}
-  - {fileID: -2932979874522085117}
-  - {fileID: 4264574373792078169}
-  - {fileID: -7880074721882587216}
-  - {fileID: 7597933141174768021}
-  - {fileID: -4376070086332386393}
-  - {fileID: 8549442973596420503}
-  - {fileID: -1527895939906111117}
-  - {fileID: -1464155920919458144}
-  - {fileID: -9034060975531086410}
-  - {fileID: -557602875926231031}
-  - {fileID: 2951123293968628953}
-=======
-  - {fileID: -2289604727749251927}
-  - {fileID: 1197483510375912}
-  - {fileID: 2547625850042342765}
-  - {fileID: -3826650032522264787}
-  - {fileID: -5471075879926925971}
-  - {fileID: 6075121634484302865}
-  - {fileID: 4902698452597914248}
-  - {fileID: -4219497371790153195}
-  - {fileID: -793418033511023088}
-  - {fileID: -5678061625552752748}
-  - {fileID: 2191125842352084603}
-  - {fileID: 5248116727166042685}
-  - {fileID: 1540061055159612550}
-  - {fileID: 1178191355152282831}
-  - {fileID: -1119352069866973557}
-  - {fileID: -4589603342658387232}
-  - {fileID: -2113547077753817776}
-  - {fileID: 7214253565732111539}
-  - {fileID: 2859991909932318012}
-  - {fileID: 7520443982896830899}
-  - {fileID: -2816601875572621195}
-  - {fileID: -8144297112473562891}
-  - {fileID: -7805907892819879885}
->>>>>>> Stashed changes
+  - {fileID: 1035982669894002272}
+  - {fileID: -8336654787598463609}
+  - {fileID: -8493994509708055590}
+  - {fileID: -7889524932221060087}
+  - {fileID: -1689432742445833251}
+  - {fileID: 8970958143675958524}
+  - {fileID: 988654902916608332}
+  - {fileID: 3375445487226476630}
+  - {fileID: -6355071245871020878}
+  - {fileID: -2061871514033378658}
+  - {fileID: -899566042333832885}
+  - {fileID: -2042283370248653139}
+  - {fileID: 1606932116708190624}
+  - {fileID: -1800524617907174698}
+  - {fileID: 7327077213888523691}
+  - {fileID: -1408224142898686916}
+  - {fileID: -666455980056501865}
+  - {fileID: -5222109627346372232}
+  - {fileID: 6136535648003765551}
+  - {fileID: -925954710741831930}
+  - {fileID: 3958006513150522162}
+  - {fileID: -4968478249008436930}
+  - {fileID: 5381987335166314357}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -2303996944428092912}
+  - {fileID: -2387333794439997278}
   StringsBanks:
-  - {fileID: -6753738444815714074}
+  - {fileID: -9006490902076487947}
   cacheVersion: 131848
-<<<<<<< Updated upstream
-  cacheTime: 639281792977552012
-=======
-  cacheTime: 639281845069352377
->>>>>>> Stashed changes
+  cacheTime: 639292399587538871
   SerializableEventsDict:
   - key: event:/SFX/pachinko_sounds/pachinko_clink_6
     index: 0
@@ -793,16 +564,37 @@ MonoBehaviour:
     index: 18
   - key: event:/SFX/pachinko_sounds/pachinko_clink_5
     index: 19
-  - key: event:/SFX/main_menu_sounds/menu_click_close
-    index: 20
-  - key: event:/Test1
-    index: 21
-<<<<<<< Updated upstream
---- !u!114 &247842036252144397
-=======
   - key: event:/MainMenu
+    index: 20
+  - key: event:/SFX/main_menu_sounds/menu_click_close
+    index: 21
+  - key: event:/Test1
     index: 22
---- !u!114 &1197483510375912
+--- !u!114 &165305366562452018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Hollis
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Hollis
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2755119840
+    data2: 555429665
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &988654902916608332
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -812,25 +604,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/pachinko_vodka_placement_1
+  m_Name: event:/SFX/main_menu_sounds/menu_click
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/pachinko_vodka_placement_1
+  Path: event:/SFX/main_menu_sounds/menu_click
   Guid:
-    Data1: -530004452
-    Data2: 1314978909
-    Data3: 426159266
-    Data4: -1875677303
+    Data1: -931409348
+    Data2: 1110699039
+    Data3: -1177059697
+    Data4: -1946061703
   Banks:
-  - {fileID: -3176906994318221121}
+  - {fileID: -2387333794439997278}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 851
---- !u!114 &673138617790267462
->>>>>>> Stashed changes
+  Length: 1058
+--- !u!114 &1035982669894002272
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -839,22 +630,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Terrence
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Terrence
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3404877629
-    data2: 4171738774
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &353902832206198524
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/pachinko_clink_6
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/pachinko_clink_6
+  Guid:
+    Data1: -1846720236
+    Data2: 1134044714
+    Data3: 1221011880
+    Data4: 1307552663
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -586280677901199652}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 376
+--- !u!114 &1606932116708190624
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -863,22 +658,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Party
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Party
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1440199474
-    data2: 1046650282
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &1090110997477994241
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/main_menu_sounds/play_start_redux_fizz_forreal
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/main_menu_sounds/play_start_redux_fizz_forreal
+  Guid:
+    Data1: -465491846
+    Data2: 1157355283
+    Data3: 778868903
+    Data4: -211377874
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3498
+--- !u!114 &1919929230500234785
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -902,7 +700,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &2171906588259244615
+--- !u!114 &3134041079076180890
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -912,21 +710,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Pachinko
+  m_Name: parameter:/pachinko_clink_2/pachinko_clink_param
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Pachinko
+  Name: pachinko_clink_param
   StudioPath: 
   Min: 0
-  Max: 1
+  Max: 10
   Default: 0
   ID:
-    data1: 1004723632
-    data2: 2267454630
-  Type: 1
+    data1: 1980592927
+    data2: 507111843
+  Type: 0
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &2428228334274953881
+--- !u!114 &3375445487226476630
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -936,190 +734,52 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music
+  m_Name: event:/SFX/pachinko_sounds/pachinko_fall_in
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Music
+  Path: event:/SFX/pachinko_sounds/pachinko_fall_in
   Guid:
-    Data1: -254230984
-    Data2: 1137975434
-    Data3: -2052029288
-    Data4: 1430716876
+    Data1: -307060406
+    Data2: 1286972987
+    Data3: -255645554
+    Data4: -698359161
   Banks:
-  - {fileID: -2303996944428092912}
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 7823745443054835818}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 740
+--- !u!114 &3958006513150522162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MainMenu
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/MainMenu
+  Guid:
+    Data1: -1484329762
+    Data2: 1108893437
+    Data3: -2070047825
+    Data4: 295604148
+  Banks:
+  - {fileID: -2387333794439997278}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters:
-  - {fileID: -399228057155634762}
-  - {fileID: 2171906588259244615}
-  - {fileID: 247842036252144397}
-  - {fileID: 353902832206198524}
-  - {fileID: 3749620158802128576}
-  - {fileID: -7787119362802600885}
-  - {fileID: 1090110997477994241}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 149092
---- !u!114 &2951123293968628953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Test1
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Test1
-  Guid:
-    Data1: 2029549815
-    Data2: 1130526324
-    Data3: -416820852
-    Data4: 383369379
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 371
---- !u!114 &3239890659360520323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/pachinko_mic_placement
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/pachinko_mic_placement
-  Guid:
-    Data1: 713049462
-    Data2: 1094075211
-    Data3: 1847053757
-    Data4: 1144958664
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1366
---- !u!114 &3749620158802128576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Pam
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Pam
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3336904844
-    data2: 2410864520
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &4264574373792078169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/main_menu_sounds/play_start_redux_fizz_forreal
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/main_menu_sounds/play_start_redux_fizz_forreal
-  Guid:
-    Data1: -465491846
-    Data2: 1157355283
-    Data3: 778868903
-    Data4: -211377874
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3498
---- !u!114 &4308266833379392756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/main_menu_sounds/menu_click
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/main_menu_sounds/menu_click
-  Guid:
-    Data1: -931409348
-    Data2: 1110699039
-    Data3: -1177059697
-    Data4: -1946061703
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1058
---- !u!114 &4563624343218460759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/pachinko_fall_in_hz
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/pachinko_fall_in_hz
-  Guid:
-    Data1: 1529389146
-    Data2: 1232665531
-    Data3: -333927806
-    Data4: -1891545382
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 730
---- !u!114 &5748124085641348093
+  Length: 104265
+--- !u!114 &4309221761697547022
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1143,7 +803,31 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &7597933141174768021
+--- !u!114 &5070735171322581621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Pachinko
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Pachinko
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1004723632
+    data2: 2267454630
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &5381987335166314357
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1153,24 +837,48 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/flipperdown
+  m_Name: event:/Test1
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/flipperdown
+  Path: event:/Test1
   Guid:
-    Data1: -1753171566
-    Data2: 1292596879
-    Data3: -266563442
-    Data4: -996550911
+    Data1: 2029549815
+    Data2: 1130526324
+    Data3: -416820852
+    Data4: 383369379
   Banks:
-  - {fileID: -2303996944428092912}
+  - {fileID: -2387333794439997278}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 407
---- !u!114 &8289784335081367291
+  Length: 371
+--- !u!114 &5743566077053729332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Anxiety
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Anxiety
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 3543409930
+    data2: 4040988586
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &6036153896221876488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1194,7 +902,31 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &8475829009055768398
+--- !u!114 &6049582773888366193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Party
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Party
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1440199474
+    data2: 1046650282
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &6136535648003765551
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1204,52 +936,76 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/pachinko_pam_flip_mirror
+  m_Name: event:/SFX/pachinko_sounds/pachinko_clink_4
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/pachinko_pam_flip_mirror
+  Path: event:/SFX/pachinko_sounds/pachinko_clink_4
   Guid:
-    Data1: 206609446
-    Data2: 1150368255
-    Data3: -254394733
-    Data4: -1508723023
+    Data1: 401798092
+    Data2: 1318127814
+    Data3: -1570409836
+    Data4: -852206582
   Banks:
-  - {fileID: -2303996944428092912}
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 9180339447702484842}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 201
+--- !u!114 &6413874158688888684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Pam
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Pam
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3336904844
+    data2: 2410864520
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &7327077213888523691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/flipperdown
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/flipperdown
+  Guid:
+    Data1: -1753171566
+    Data2: 1292596879
+    Data3: -266563442
+    Data4: -996550911
+  Banks:
+  - {fileID: -2387333794439997278}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 244
---- !u!114 &8549442973596420503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/pachinko_sounds/pachinko_clink_3
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/pachinko_sounds/pachinko_clink_3
-  Guid:
-    Data1: -446472041
-    Data2: 1341939376
-    Data3: 1604712092
-    Data4: -1801449247
-  Banks:
-  - {fileID: -2303996944428092912}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 5748124085641348093}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 233
---- !u!114 &9025280038630861828
+  Length: 407
+--- !u!114 &7823745443054835818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1269,6 +1025,106 @@ MonoBehaviour:
   ID:
     data1: 3653612376
     data2: 294362312
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8450096167243522119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/pachinko_clink_5/pachinko_clink_param
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: pachinko_clink_param
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 1980592927
+    data2: 507111843
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8852246867087617973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Terrence
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Terrence
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3404877629
+    data2: 4171738774
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8970958143675958524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/pachinko_sounds/pachinko_clink_1
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/pachinko_sounds/pachinko_clink_1
+  Guid:
+    Data1: 663058748
+    Data2: 1302457257
+    Data3: -1015964768
+    Data4: -1718786518
+  Banks:
+  - {fileID: -2387333794439997278}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 6036153896221876488}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 85
+--- !u!114 &9180339447702484842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/pachinko_clink_4/pachinko_clink_param
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: pachinko_clink_param
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 1980592927
+    data2: 507111843
   Type: 0
   IsGlobal: 0
   Labels: []

@@ -14,4 +14,5 @@ public class Character : MonoBehaviour
     public string dialogueI;
     public string dialogue1;
     public string dialogue2;
+    public string dialogueS;
 }

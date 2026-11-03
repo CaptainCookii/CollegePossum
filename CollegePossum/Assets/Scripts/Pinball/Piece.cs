@@ -3,6 +3,7 @@ using Unity.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using FMODUnity;
+using TMPro;
 
 public class Piece : MonoBehaviour
 {
@@ -17,7 +18,13 @@ public class Piece : MonoBehaviour
     [Header("Piece Health")]
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private int pieceHealth;
-    
+
+    [Header("Barks")]
+    [SerializeField] private string hitDialogue;
+    [SerializeField] private string breakDialogue;
+    [SerializeField] TextMeshProUGUI francine;
+    [SerializeField] TextMeshProUGUI npc;
+
     private Vector3 spawnPosition;
     private Quaternion spawnRotation;
 
@@ -112,6 +119,7 @@ public class Piece : MonoBehaviour
         {
             RuntimeManager.PlayOneShot(hitSounds[Random.Range(0, hitSounds.Length)], transform.position);
             DealDamage(10);
+            francine.text = francine.text + hitDialogue;
         }
     }
 
@@ -152,6 +160,8 @@ public class Piece : MonoBehaviour
     // if new round starts.
     private void RespawnPiece()
     {
+        npc.text = "";
+        npc.text = npc.text + breakDialogue;
         pieceHealth = maxHealth;
         transform.position = spawnPosition;
         transform.rotation = spawnRotation;
