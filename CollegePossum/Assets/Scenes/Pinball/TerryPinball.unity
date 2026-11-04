@@ -2640,7 +2640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5612777231195461162, guid: cbc598b0065f54dcca741782f43158b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.37
+      value: -2.57
       objectReference: {fileID: 0}
     - target: {fileID: 5612777231195461162, guid: cbc598b0065f54dcca741782f43158b7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3890,7 +3890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5612777231195461162, guid: cbc598b0065f54dcca741782f43158b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.79
+      value: 3.99
       objectReference: {fileID: 0}
     - target: {fileID: 5612777231195461162, guid: cbc598b0065f54dcca741782f43158b7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4339,6 +4339,10 @@ PrefabInstance:
     - target: {fileID: 3241486895053602841, guid: 3bf273b8d80384e0fb8068190f3a807b, type: 3}
       propertyPath: m_Name
       value: Left Lever
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241486895053602841, guid: 3bf273b8d80384e0fb8068190f3a807b, type: 3}
+      propertyPath: m_TagString
+      value: Paddle
       objectReference: {fileID: 0}
     - target: {fileID: 3416994442001569871, guid: 3bf273b8d80384e0fb8068190f3a807b, type: 3}
       propertyPath: side
@@ -4869,7 +4873,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '
 
-    Balls Launched In: 5s'
+    Balls Launched In: 3s'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5311,7 +5315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 143}
+  m_AnchoredPosition: {x: 55, y: 182.5}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1171952924
@@ -5334,9 +5338,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'SET UP YOUR PIECES
+  m_text: 'GET READY
 
-    ! Watch Your Timer !'
+    Watch Your Anxiety!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6474,7 +6478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5612777231195461162, guid: cbc598b0065f54dcca741782f43158b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.79
+      value: 3.99
       objectReference: {fileID: 0}
     - target: {fileID: 5612777231195461162, guid: cbc598b0065f54dcca741782f43158b7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7460,7 +7464,7 @@ Transform:
   m_GameObject: {fileID: 1776596072}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.2174997, y: 2.2575, z: 0}
+  m_LocalPosition: {x: 4.38, y: 2.33, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7563,7 +7567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5612777231195461162, guid: cbc598b0065f54dcca741782f43158b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.37
+      value: -2.57
       objectReference: {fileID: 0}
     - target: {fileID: 5612777231195461162, guid: cbc598b0065f54dcca741782f43158b7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9231,6 +9235,10 @@ PrefabInstance:
     - target: {fileID: 3241486895053602841, guid: 3bf273b8d80384e0fb8068190f3a807b, type: 3}
       propertyPath: m_Name
       value: Right Lever
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241486895053602841, guid: 3bf273b8d80384e0fb8068190f3a807b, type: 3}
+      propertyPath: m_TagString
+      value: Paddle
       objectReference: {fileID: 0}
     - target: {fileID: 3416994442001569871, guid: 3bf273b8d80384e0fb8068190f3a807b, type: 3}
       propertyPath: side

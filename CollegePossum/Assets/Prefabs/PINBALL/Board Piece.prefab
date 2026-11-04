@@ -144,6 +144,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bd43ab79fbb14e23b6d1ad0a47edd19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pegColor: 0
+  hitSounds: []
+  placeSounds: []
+  maxHealth: 100
+  pieceHealth: 0
+  innerCircle: {fileID: 3449585139674711660}
 --- !u!1 &6970431943421013840
 GameObject:
   m_ObjectHideFlags: 0

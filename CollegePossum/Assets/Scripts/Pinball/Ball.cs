@@ -10,6 +10,8 @@ public class Ball : MonoBehaviour
     private Rigidbody2D rb;
     private float stuckTimer = 0f;
 
+    public bool touchedByPaddle = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -31,6 +33,16 @@ public class Ball : MonoBehaviour
         else
         {
             stuckTimer = 0f;
+        }
+    }
+
+    // Checks if ball touched paddle, doesn't deduct peg HP due to the launchers
+    private void OnCollisionEnter2D(Collision2D c)
+    {
+        if (c.gameObject.CompareTag("Paddle"))
+        {
+            touchedByPaddle = true;
+            Debug.Log("ball touched paddle!");
         }
     }
 }

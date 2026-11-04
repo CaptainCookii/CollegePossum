@@ -30,9 +30,12 @@ public class Peg : MonoBehaviour
     private float touchTimer = 0f;
 
 
+
     [Header("Piece Health")]
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private int pieceHealth;
+
+    [SerializeField] private SpriteRenderer innerCircle;
 
     private void Awake()
     {
@@ -44,8 +47,10 @@ public class Peg : MonoBehaviour
         spawnPosition = transform.position;
         spawnRotation = transform.rotation;
         pieceHealth = maxHealth;
+        UpdateColor();
     }
 
+    // If piece is hit, play sounds, and deal damage.
     private void OnCollisionEnter2D(Collision2D c)
     {
         if (c.gameObject.CompareTag("Ball"))
@@ -54,12 +59,18 @@ public class Peg : MonoBehaviour
             {
                 RuntimeManager.PlayOneShot(hitSounds[Random.Range(0, hitSounds.Length)], transform.position);
             }
-            
-            DealDamage(34);
+
+            Ball ball = c.gameObject.GetComponent<Ball>();
+            if (ball.touchedByPaddle)
+            {
+                DealDamage(34);
+            }
+        
         }
     }
 
-
+    // Breaks the piece if it's stuck for too long.
+    // We have repulsion, so this is an edge case.
     private void OnCollisionStay2D(Collision2D c) {
         if (c.gameObject.CompareTag("Ball"))
         {
@@ -81,15 +92,68 @@ public class Peg : MonoBehaviour
         {
             BreakPiece();
         }
+        else
+        {
+            UpdateColor();
+        }
     }
 
-    // For now, puts piece back into playing field. Can be moved again 
-    // if new round starts.
+    // Breaks piece after (for right now) hard-coded 3 hits. 
+    // Respawn logic is commented out for the time being.
     private void BreakPiece()
     {
-        pieceHealth = maxHealth;
-        transform.position = spawnPosition;
-        transform.rotation = spawnRotation;
+        Destroy(gameObject);
+        Debug.Log("bye bye peg");
+
+        // pieceHealth = maxHealth;
+        // transform.position = spawnPosition;
+        // transform.rotation = spawnRotation;
     }
- 
+
+    // Updates peg color according to peg hp
+    private void UpdateColor()
+    {
+        string hex = "";
+
+        if (pegColor == Color.Pink)
+        {
+            if (pieceHealth > 66)
+            {
+                hex = "#FF69B4";
+            }
+            else if (pieceHealth > 32)
+            {
+                hex = "#DE688F";
+            }
+            else
+            {
+                hex = "#B65674";
+            }
+        }
+
+        if (pegColor == Color.Blue)
+        {
+            if (pieceHealth > 66)
+            {
+                hex = "#5BA8EC";
+            }
+            else if (pieceHealth > 32)
+            {
+                hex = "#4782B4";
+            }
+            else
+            {
+                hex = "#315C81";
+            }
+        }
+
+        // I have never tried this before. Converts HEX code to a color that can
+        // be used in Unity.
+        if (ColorUtility.TryParseHtmlString(hex, out UnityEngine.Color c))
+        {
+            innerCircle.color = c;
+        }
+
+    }
+
 }
