@@ -84,7 +84,7 @@ public class Peg : MonoBehaviour
     }
 
     // Does damage to a piece based on hit
-    public void DealDamage(int damage)
+    public void DealDamage(int damage) 
     {
         pieceHealth -= damage;
 
