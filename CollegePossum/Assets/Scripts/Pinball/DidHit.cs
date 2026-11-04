@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DidHit : MonoBehaviour
@@ -28,7 +29,7 @@ public class DidHit : MonoBehaviour
             Peg peg = GetComponent<Peg>();
             if (addCool)
             {
-                if (peg.pegColor == Peg.Color.Pink)
+                if (peg != null && peg.pegColor == Peg.Color.Pink)
                 {
                     PinballManager.Instance.cool++;
                     Debug.Log("+1");
