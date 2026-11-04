@@ -11,6 +11,8 @@ public class DidHit : MonoBehaviour
     private bool addCool = true;
 
     private Coroutine exitCoroutine;
+
+    [SerializeField] private GameObject popupPrefab;
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -27,17 +29,21 @@ public class DidHit : MonoBehaviour
             collided = true;
 
             Peg peg = GetComponent<Peg>();
-            if (addCool)
+            Ball ball = collision.gameObject.GetComponent<Ball>();
+
+            if (addCool && ball.touchedByPaddle)
             {
                 if (peg != null && peg.pegColor == Peg.Color.Pink)
                 {
                     PinballManager.Instance.cool++;
+                    ShowCoolPopup("+1");
                     Debug.Log("+1");
                 }
 
                 if (peg.pegColor == Peg.Color.Blue)
                 {
                     PinballManager.Instance.cool += 3;
+                    ShowCoolPopup("+3");
                     Debug.Log("+3");
                 }
             }
@@ -68,4 +74,16 @@ public class DidHit : MonoBehaviour
     {
         return collided;
     }
+
+    private void ShowCoolPopup(string s)
+    {
+        
+        GameObject c = GameObject.FindGameObjectWithTag("Cool Pop-up Canvas");
+        GameObject popup = Instantiate(popupPrefab, c.transform);
+        RectTransform popupRect = popup.GetComponent<RectTransform>();
+        Vector2 pos = Camera.main.WorldToScreenPoint(transform.position);
+        popupRect.position = pos;
+        popup.GetComponent<CoolPopup>().ShowText(s);
+    }
+
 }

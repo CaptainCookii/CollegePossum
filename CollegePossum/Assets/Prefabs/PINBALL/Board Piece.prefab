@@ -132,6 +132,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DidHit
   collided: 0
   bufferTime: 0.1
+  popupPrefab: {fileID: 9218212885802677351, guid: eca7ad4b2285b47e0aa51e49538fc7bb, type: 3}
+  canvas: {fileID: 0}
 --- !u!114 &4297616705280825624
 MonoBehaviour:
   m_ObjectHideFlags: 0
