@@ -25,9 +25,20 @@ public class DidHit : MonoBehaviour
 
             collided = true;
 
+            Peg peg = GetComponent<Peg>();
             if (addCool)
             {
-                PinballManager.Instance.cool++;
+                if (peg.pegColor == Peg.Color.Pink)
+                {
+                    PinballManager.Instance.cool++;
+                    Debug.Log("+1");
+                }
+
+                if (peg.pegColor == Peg.Color.Blue)
+                {
+                    PinballManager.Instance.cool += 3;
+                    Debug.Log("+3");
+                }
             }
         }
     }

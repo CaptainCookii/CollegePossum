@@ -3,7 +3,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
 
-    private float stuckTime = 3f;
+    private float stuckTime = 1.5f;
     private float stuckSpeed = 0.1f;
     private float unstuckForce = 10f;
     

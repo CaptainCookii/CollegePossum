@@ -6,6 +6,7 @@ using FMODUnity;
 
 public class Piece : MonoBehaviour
 {
+
     private Camera mainCamera;
     private bool draggingOn;
     private Vector3 movementOffset;
@@ -125,7 +126,7 @@ public class Piece : MonoBehaviour
                 RuntimeManager.PlayOneShot(hitSounds[Random.Range(0, hitSounds.Length)], transform.position);
             }
             
-            DealDamage(10);
+            DealDamage(34);
         }
     }
 
@@ -170,7 +171,6 @@ public class Piece : MonoBehaviour
         transform.position = spawnPosition;
         transform.rotation = spawnRotation;
         draggingOn = false;
-        
     }
 
     public void LockPiece()
