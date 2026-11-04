@@ -133,7 +133,6 @@ MonoBehaviour:
   collided: 0
   bufferTime: 0.1
   popupPrefab: {fileID: 9218212885802677351, guid: eca7ad4b2285b47e0aa51e49538fc7bb, type: 3}
-  canvas: {fileID: 0}
 --- !u!114 &4297616705280825624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +146,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Peg
   pegColor: 0
-  hitSounds: []
+  hitSounds:
+  - Guid:
+      Data1: 663058748
+      Data2: 1302457257
+      Data3: -1015964768
+      Data4: -1718786518
+    Path: event:/SFX/pachinko_sounds/pachinko_clink_1
+  - Guid:
+      Data1: 1824180869
+      Data2: 1127992944
+      Data3: 472356749
+      Data4: 999391275
+    Path: event:/SFX/pachinko_sounds/pachinko_clink_2
+  - Guid:
+      Data1: -446472041
+      Data2: 1341939376
+      Data3: 1604712092
+      Data4: -1801449247
+    Path: event:/SFX/pachinko_sounds/pachinko_clink_3
+  - Guid:
+      Data1: 401798092
+      Data2: 1318127814
+      Data3: -1570409836
+      Data4: -852206582
+    Path: event:/SFX/pachinko_sounds/pachinko_clink_4
+  - Guid:
+      Data1: 1296489677
+      Data2: 1266092830
+      Data3: 1442339223
+      Data4: -556131129
+    Path: event:/SFX/pachinko_sounds/pachinko_clink_5
+  - Guid:
+      Data1: -1846720236
+      Data2: 1134044714
+      Data3: 1221011880
+      Data4: 1307552663
+    Path: event:/SFX/pachinko_sounds/pachinko_clink_6
   placeSounds: []
   maxHealth: 100
   pieceHealth: 0
