@@ -6,6 +6,7 @@ using FMODUnity;
 
 public class Piece : MonoBehaviour
 {
+
     private Camera mainCamera;
     private bool draggingOn;
     private Vector3 movementOffset;
@@ -22,16 +23,30 @@ public class Piece : MonoBehaviour
     private Quaternion spawnRotation;
 
     private float touchTimer = 0f;
-    private bool ballOnPiece = false;
+  
 
     [SerializeField] private EventReference[] hitSounds;
     [SerializeField] private EventReference[] placeSounds;
+
+    private LineRenderer indicator;
 
     // Sets and stores camera and PolygonCollider2D components for use later on.
     private void Awake()
     {
         mainCamera = Camera.main; 
         objectCollider = GetComponent<PolygonCollider2D>();
+
+        indicator = GetComponent<LineRenderer>();
+        indicator.enabled = false;
+        Vector2[] pts = objectCollider.points;
+        indicator.useWorldSpace = false;
+        indicator.loop = true;
+        indicator.positionCount = pts.Length;
+
+        for (int i = 0; i < pts.Length; i++)
+        {
+            indicator.SetPosition(i, pts[i] + objectCollider.offset);
+        }
 
         spawnPosition = transform.position;
         spawnRotation = transform.rotation;
@@ -40,18 +55,6 @@ public class Piece : MonoBehaviour
 
     private void Update()
     {
-    
-        if (ballOnPiece)
-        {
-            touchTimer += Time.deltaTime;
-
-            if (touchTimer >= 3.5f)
-            {
-                RespawnPiece();
-                ballOnPiece = false;
-                touchTimer = 0f;
-            }
-        }
 
         // If the mouse is not in use, nothing happens.
         if (Mouse.current == null)
@@ -84,6 +87,8 @@ public class Piece : MonoBehaviour
         if (draggingOn && Mouse.current.leftButton.isPressed)
         {
             transform.position = worldCoords + movementOffset;
+            indicator.enabled = IsOverlapping();
+            Debug.Log("Indicator enabled: " + indicator.enabled);
         }
 
         // If the piece is released on another piece or a part of the gameplay, 
@@ -98,8 +103,14 @@ public class Piece : MonoBehaviour
             }
             
             draggingOn = false;
-            RuntimeManager.PlayOneShot(placeSounds[Random.Range(0, placeSounds.Length)], transform.position);
-
+            indicator.enabled = false;
+ 
+            // this will avoid crashing while piece temporarily don't have sounds
+            if (placeSounds != null && placeSounds.Length > 0)
+            {
+                RuntimeManager.PlayOneShot(placeSounds[Random.Range(0, placeSounds.Length)], transform.position); 
+            }
+            
         }
 
     }
@@ -110,8 +121,12 @@ public class Piece : MonoBehaviour
     {
         if (c.gameObject.CompareTag("Ball"))
         {
-            RuntimeManager.PlayOneShot(hitSounds[Random.Range(0, hitSounds.Length)], transform.position);
-            DealDamage(10);
+            if (hitSounds != null && hitSounds.Length > 0)
+            {
+                RuntimeManager.PlayOneShot(hitSounds[Random.Range(0, hitSounds.Length)], transform.position);
+            }
+            
+            DealDamage(34);
         }
     }
 
@@ -119,7 +134,7 @@ public class Piece : MonoBehaviour
         if (c.gameObject.CompareTag("Ball"))
         {
             touchTimer += Time.deltaTime;
-            if (touchTimer >= 10f)
+            if (touchTimer >= 3.5f)
             {
                 RespawnPiece();
                 touchTimer = 0f;
@@ -156,7 +171,6 @@ public class Piece : MonoBehaviour
         transform.position = spawnPosition;
         transform.rotation = spawnRotation;
         draggingOn = false;
-        
     }
 
     public void LockPiece()

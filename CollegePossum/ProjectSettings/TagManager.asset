@@ -9,6 +9,8 @@ TagManager:
   - AnxietyLimit
   - Piece
   - Chute
+  - Paddle
+  - Cool Pop-up Canvas
   layers:
   - Default
   - TransparentFX
