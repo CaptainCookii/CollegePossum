@@ -187,7 +187,7 @@ public class PinballManager : MonoBehaviour
             Transform chute = chutes[index];
 
             GameObject ball = Instantiate(ballPrefab, chute.position, chute.rotation);
-            RuntimeManager.PlayOneShot(chuteLaunchSound, transform.position);
+            RuntimeManager.PlayOneShot(chuteLaunchSound, chute.position);
             AddBall();
 
             Rigidbody2D rb = ball.GetComponent<Rigidbody2D>();

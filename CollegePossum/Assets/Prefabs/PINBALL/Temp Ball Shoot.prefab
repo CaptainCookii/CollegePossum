@@ -268,7 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9041533866663962422}
   m_Layer: 0
-  m_Name: ExitPoint
+  m_Name: ExitTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
