@@ -8,7 +8,9 @@ public class BoundsDetector : MonoBehaviour
     {
         // If the ball is no longer in play, inform our scripts that 
         // rely on that information.
-        if (c.CompareTag("Ball"))
+
+        Ball ball = c.gameObject.GetComponent<Ball>();
+        if (c.CompareTag("Ball") && ball.touchedByPaddle)
         {
             RuntimeManager.PlayOneShot(pinballFallSound, transform.position);
             PinballManager.Instance.RemoveBall();
