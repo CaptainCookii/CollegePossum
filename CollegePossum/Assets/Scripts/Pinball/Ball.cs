@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-
+    // Ball Variables.
     private float stuckTime = 1.5f;
     private float stuckSpeed = 0.1f;
     private float unstuckForce = 10f;
@@ -12,6 +12,7 @@ public class Ball : MonoBehaviour
 
     public bool touchedByPaddle = false;
 
+    // Finds the Ball's Rigidbody.
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,6 +20,9 @@ public class Ball : MonoBehaviour
 
     private void Update()
     {
+        // If the ball is stuck, add a force in a randomized direction until it
+        // becomes unstuck.
+
         if (rb.linearVelocity.magnitude < stuckSpeed)
         {
             stuckTimer += Time.deltaTime;
@@ -36,7 +40,8 @@ public class Ball : MonoBehaviour
         }
     }
 
-    // Checks if ball touched paddle, doesn't deduct peg HP due to the launchers
+    // Checks if ball touched paddle. This products peg HP, disables the black hole,
+    // and disables score until set as true.
     private void OnCollisionEnter2D(Collision2D c)
     {
         if (c.gameObject.CompareTag("Paddle"))

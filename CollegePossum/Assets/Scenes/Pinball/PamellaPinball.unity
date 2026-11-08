@@ -2046,7 +2046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 347867453}
   m_Layer: 0
-  m_Name: Ramps & Levers
+  m_Name: Ramps & Paddles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5195,7 +5195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 685400409}
   m_Layer: 0
-  m_Name: Left Lever Pivot
+  m_Name: Left Paddle Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7396,7 +7396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3241486895053602841, guid: 3bf273b8d80384e0fb8068190f3a807b, type: 3}
       propertyPath: m_Name
-      value: Left Lever
+      value: Left Paddle
       objectReference: {fileID: 0}
     - target: {fileID: 3241486895053602841, guid: 3bf273b8d80384e0fb8068190f3a807b, type: 3}
       propertyPath: m_TagString
@@ -13331,7 +13331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1638469975}
   m_Layer: 0
-  m_Name: Right Lever Pivot
+  m_Name: Right Paddle Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16747,7 +16747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3241486895053602841, guid: 3bf273b8d80384e0fb8068190f3a807b, type: 3}
       propertyPath: m_Name
-      value: Right Lever
+      value: Right Paddle
       objectReference: {fileID: 0}
     - target: {fileID: 3241486895053602841, guid: 3bf273b8d80384e0fb8068190f3a807b, type: 3}
       propertyPath: m_TagString

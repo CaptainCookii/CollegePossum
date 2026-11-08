@@ -6,6 +6,7 @@ using FMODUnity;
 
 public class Peg : MonoBehaviour
 {
+    // Color differentiator.
     public enum Color
     {
         Blue,

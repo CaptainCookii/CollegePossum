@@ -6,7 +6,7 @@ using UnityEngine.Rendering;
 using FMODUnity;
 
 
-public class LeverController : MonoBehaviour
+public class PaddleController : MonoBehaviour
 {
     [SerializeField] private EventReference bumperSound;
 
