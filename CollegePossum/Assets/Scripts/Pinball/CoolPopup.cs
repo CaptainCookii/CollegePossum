@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class CoolPopup : MonoBehaviour
 {
+    // Pop-up timing variables.
     [SerializeField] private float time = 2f;
     [SerializeField] private float moveSpeed = 30f;
 
@@ -15,13 +16,14 @@ public class CoolPopup : MonoBehaviour
         popupText = GetComponent<TextMeshProUGUI>();
     }
 
+    // Displays the text.
     public void ShowText(string s)
     {
         popupText.text = s;
         StartCoroutine(Animate());
     }
 
-    // Cool animation for funsies
+    // The "animate upwards" effect.
     private IEnumerator Animate()
     {
         float timer = 0f;
@@ -35,6 +37,5 @@ public class CoolPopup : MonoBehaviour
 
         Destroy(gameObject);
     }
-
-    
+ 
 }

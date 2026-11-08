@@ -11,7 +11,7 @@ using TMPro.EditorUtilities;
 
 public class PinballManager : MonoBehaviour
 {
-    //Instance and Reference variables
+    // Instance and Reference variables
     public static PinballManager Instance;
     [SerializeField] private GameObject roundEndUI;
     [SerializeField] private TMP_Text instructions;
@@ -28,16 +28,16 @@ public class PinballManager : MonoBehaviour
     private Dictionary<GameObject, Coroutine> timers =
        new Dictionary<GameObject, Coroutine>();
 
-    //Cool variables
+    // Cool variables
     [SerializeField] private TMP_Text coolText;
     public float cool;
 
-    //Anxiety variables
+    // Anxiety variables
     [SerializeField] private Image anxietyMeter;
     private float maxAnxiety;
     private float currAnxiety;
 
-    //General variables
+    // General variables
     private float timer = 0f;
     private int activeBalls = 0;
     private int destroyedBalls = 0;
@@ -210,10 +210,10 @@ public class PinballManager : MonoBehaviour
     {
         foreach (Transform chute in chutes)
         {
-            ChuteInlay inlay = chute.GetComponentInParent<ChuteInlay>();
-            if (inlay != null)
+            ChuteRetract retract = chute.GetComponentInParent<ChuteRetract>();
+            if (retract != null)
             {
-                inlay.RetractChute();
+                retract.RetractChute();
             }
             else
             {
@@ -228,10 +228,10 @@ public class PinballManager : MonoBehaviour
     {
         foreach (Transform chute in chutes)
         {
-            ChuteInlay inlay = chute.GetComponentInParent<ChuteInlay>();
-            if (inlay != null)
+            ChuteRetract retract = chute.GetComponentInParent<ChuteRetract>();
+            if (retract != null)
             {
-                inlay.ExtendChute();
+                retract.ExtendChute();
             }
             else
             {
@@ -254,6 +254,7 @@ public class PinballManager : MonoBehaviour
         activeBalls++;
     }
 
+    // Removes a ball from the active list and adds it to the destroyed list.
     public void RemoveBall()
     {
         activeBalls--;
@@ -265,7 +266,8 @@ public class PinballManager : MonoBehaviour
         }
     }
 
-    public void LeverHit()
+    // When the paddle is hit.
+    public void PaddleHit()
     {
         currAnxiety += 2;
         if (hit.collided)
@@ -278,11 +280,13 @@ public class PinballManager : MonoBehaviour
         }
     }
 
+    // Activates Fran's Text.
     public void ActivateFranText()
     {
         StartCoroutine(ActivateForSeconds());
     }
 
+    // Wait time for text activity.
     private IEnumerator ActivateForSeconds()
     {
         francineDialogue.SetActive(true);
@@ -292,6 +296,7 @@ public class PinballManager : MonoBehaviour
         francineDialogue.SetActive(false);
     }
 
+    // Activates Fran's Uhms.
     public void ActivateUhms()
     {
         // Find inactive objects
@@ -333,6 +338,7 @@ public class PinballManager : MonoBehaviour
         timers[selected] = StartCoroutine(DeactivateAfterThreeSeconds(selected));
     }
 
+    // Turns text off.
     private IEnumerator DeactivateAfterThreeSeconds(GameObject obj)
     {
         yield return new WaitForSeconds(3f);

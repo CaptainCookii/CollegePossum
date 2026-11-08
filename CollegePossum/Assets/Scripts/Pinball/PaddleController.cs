@@ -17,6 +17,7 @@ public class PaddleController : MonoBehaviour
         Right 
     }
 
+    // Paddle Variables.
     [SerializeField] private Side side;
     [SerializeField] private Transform pivot;
 
@@ -32,7 +33,7 @@ public class PaddleController : MonoBehaviour
     private Vector3 os;
 
 
-    // Stores hinge component and attacks motor to hinge.
+    // Set the paddle angles.
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -56,7 +57,7 @@ public class PaddleController : MonoBehaviour
         os = transform.position - pivot.position;
     }
 
-    // Moves the levers their respective directions with their respective forces.
+    // Moves the paddles their respective directions with their respective forces.
     // Angles are edited in Unity engine.
     void Update()
     {
@@ -78,9 +79,10 @@ public class PaddleController : MonoBehaviour
         if (keyPressedThisFrame)
         {
             RuntimeManager.PlayOneShot(bumperSound, transform.position);
-            PinballManager.Instance.LeverHit();
+            PinballManager.Instance.PaddleHit();
         }
 
+        // Changing the angle based on key pressed.
         float goalAngle;
         if (keyPressed)
         {
@@ -105,6 +107,7 @@ public class PaddleController : MonoBehaviour
 
     }
 
+    // Handles rotation.
     private void FixedUpdate()
     {
         float angleChange = currentAngle - restAngle;

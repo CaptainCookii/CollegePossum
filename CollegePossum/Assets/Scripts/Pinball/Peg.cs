@@ -13,6 +13,7 @@ public class Peg : MonoBehaviour
         Pink 
     }
 
+    // Peg variables, some of these will be deleted. 
     [SerializeField] public Color pegColor;
 
     private Camera mainCamera;
@@ -30,14 +31,15 @@ public class Peg : MonoBehaviour
 
     private float touchTimer = 0f;
 
-
-
+    // Health variables
     [Header("Piece Health")]
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private int pieceHealth;
 
     [SerializeField] private SpriteRenderer innerCircle;
 
+    // For now, finds the camera, peg collider, stores position and
+    // rotation, health, and updates the color. 
     private void Awake()
     {
         mainCamera = Camera.main; 
