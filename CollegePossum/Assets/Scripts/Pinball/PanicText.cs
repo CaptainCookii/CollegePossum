@@ -11,6 +11,7 @@ public class PanicText : MonoBehaviour
     [SerializeField] private float speed = 10f;
     private Vector2[] positions;
 
+    // Initialize starting positions for each element.
     private void OnEnable()
     {
         positions = new Vector2[texts.Length];
@@ -23,6 +24,7 @@ public class PanicText : MonoBehaviour
         StartCoroutine(MoveTexts());
     }
 
+    // Moves the text to a random position based on the parameters.
     private IEnumerator MoveTexts()
     {
         while (true)
@@ -36,6 +38,7 @@ public class PanicText : MonoBehaviour
         }
     }
 
+    // Move towards position at the given speed.
     private void Update()
     {
         for (int i = 0; i < texts.Length; i++)
@@ -44,6 +47,7 @@ public class PanicText : MonoBehaviour
         }
     }
 
+    // Creates the random positions.
     private Vector2 RandomPosition()
     {
         RectTransform rects = GetComponent<RectTransform>();
