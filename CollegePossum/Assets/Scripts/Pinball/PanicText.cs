@@ -6,9 +6,9 @@ public class PanicText : MonoBehaviour
 {
 
     [SerializeField] private RectTransform[] texts;
-    [SerializeField] private float minMoveTime = 0.1f;
-    [SerializeField] private float maxMoveTime = 0.1f;
-    [SerializeField] private float speed = 800f;
+    [SerializeField] private float minMoveTime = 0.5f;
+    [SerializeField] private float maxMoveTime = 2f;
+    [SerializeField] private float speed = 10f;
     private Vector2[] positions;
 
     private void OnEnable()
