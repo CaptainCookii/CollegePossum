@@ -45,6 +45,9 @@ public class PinballManager : MonoBehaviour
     [SerializeField] private float force = 8f;
 
     private int currentTopicBalls = 10;
+
+    [SerializeField] private GameObject panicCanvas;
+    private bool gameOver = false;
     
     // Single instance per scene, does not persist on load
     void Awake()
@@ -61,10 +64,11 @@ public class PinballManager : MonoBehaviour
 
     private void Start()
     {
+        gameOver = false;
         //Update vars from GameManager
         cool = GameManager.Instance.currCoolPoints;
         maxAnxiety = GameManager.Instance.maxAnxiety;
-        GameManager.Instance.currAnxiety *= .8f;
+        //GameManager.Instance.currAnxiety *= .8f;
         currAnxiety = GameManager.Instance.currAnxiety;
         maxBallsPerRound = currentTopicBalls;
 
@@ -89,18 +93,18 @@ public class PinballManager : MonoBehaviour
 
         // Currently: If the ball collides with a piece, increase cool.
 
-        if (activeBalls > 0)
-        {
-            // timer += Time.deltaTime;
+        // if (activeBalls > 0)
+        // {
+        //     // timer += Time.deltaTime;
 
-            // if (timer >= 1f)
-            // {
-            //     cool += activeBalls;
-            //     timer = 0f;
-            // }
+        //     // if (timer >= 1f)
+        //     // {
+        //     //     cool += activeBalls;
+        //     //     timer = 0f;
+        //     // }
 
-            currAnxiety += activeBalls * Time.deltaTime;
-        }
+        //     currAnxiety += activeBalls * Time.deltaTime;
+        // }
 
         //Update UI
         UpdateUI();
@@ -362,13 +366,55 @@ public class PinballManager : MonoBehaviour
     // This is where they lose.
     public void GameOver()
     {
+        if (gameOver)
+        {
+            return;
+        }
+
+        gameOver = true;
+        StartCoroutine(GameOverSequence());
+        // GameManager.Instance.currCoolPoints += cool;
+        // GameManager.Instance.totalCoolPoints += cool;
+        // GameManager.Instance.currAnxiety += currAnxiety;
+        // MusicManager.Instance.SetMusicLayer("Pachinko", false);
+        // SceneManager.LoadScene("YarnSpinnerPrototype");
+        // Debug.Log("game over");
+    }
+
+    // Allows for the panic screen.
+    private IEnumerator GameOverSequence()
+    {
         GameManager.Instance.currCoolPoints += cool;
         GameManager.Instance.totalCoolPoints += cool;
         GameManager.Instance.currAnxiety += currAnxiety;
         MusicManager.Instance.SetMusicLayer("Pachinko", false);
+
+        coolText.gameObject.SetActive(false);
+        francineDialogue.SetActive(false);
+        foreach (GameObject uhm in uhmDialogues)
+        {
+            uhm.SetActive(false);
+        }
+
+        DisablePaddles();
+
+        NPCDialogue.SetActive(false);
+        panicCanvas.SetActive(true);
+        yield return new WaitForSeconds(5f);
         SceneManager.LoadScene("YarnSpinnerPrototype");
-        Debug.Log("game over");
+
     }
+
+    // Disables paddles when panic screen loads.
+    private void DisablePaddles()
+    {
+        PaddleController[] paddles = FindObjectsByType<PaddleController>(FindObjectsSortMode.None);
+        foreach (PaddleController pc in paddles)
+        {
+            pc.enabled = false;
+        }
+    }
+   
 
     // If the player has not lost and chooses to play Pinball again.
     public void PlayAgain()
