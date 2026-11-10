@@ -19349,6 +19349,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5722208346533351053, guid: 90f581d5618a345c48ef4dc5040b7002, type: 3}
   m_PrefabInstance: {fileID: 932433208}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &419544086471949417
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3557311950922701801, guid: 55807bfc3433643d986bcf712edb4eab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.418
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557311950922701801, guid: 55807bfc3433643d986bcf712edb4eab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.801
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557311950922701801, guid: 55807bfc3433643d986bcf712edb4eab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557311950922701801, guid: 55807bfc3433643d986bcf712edb4eab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557311950922701801, guid: 55807bfc3433643d986bcf712edb4eab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557311950922701801, guid: 55807bfc3433643d986bcf712edb4eab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557311950922701801, guid: 55807bfc3433643d986bcf712edb4eab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557311950922701801, guid: 55807bfc3433643d986bcf712edb4eab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557311950922701801, guid: 55807bfc3433643d986bcf712edb4eab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557311950922701801, guid: 55807bfc3433643d986bcf712edb4eab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8634966759859130155, guid: 55807bfc3433643d986bcf712edb4eab, type: 3}
+      propertyPath: m_Name
+      value: Pink Pin
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 55807bfc3433643d986bcf712edb4eab, type: 3}
 --- !u!1001 &1936975528377730018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19904,3 +19961,4 @@ SceneRoots:
   - {fileID: 1839884664}
   - {fileID: 366086381}
   - {fileID: 391665172}
+  - {fileID: 419544086471949417}
