@@ -1,0 +1,2509 @@
+fileFormatVersion: 2
+guid: 0754e838a2a644f42a73451cb309b7fd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 477962595616867797
+    second: Background_LivingRoom_FairyLights_Asset_0
+  - first:
+      213: -8731332484312411650
+    second: Background_LivingRoom_FairyLights_Asset_1
+  - first:
+      213: -4186892679908788819
+    second: Background_LivingRoom_FairyLights_Asset_2
+  - first:
+      213: -498179576406787268
+    second: Background_LivingRoom_FairyLights_Asset_3
+  - first:
+      213: 7102608856385946802
+    second: Background_LivingRoom_FairyLights_Asset_4
+  - first:
+      213: 1052654238668593548
+    second: Background_LivingRoom_FairyLights_Asset_5
+  - first:
+      213: 7289465384962896633
+    second: Background_LivingRoom_FairyLights_Asset_6
+  - first:
+      213: 191476059157814623
+    second: Background_LivingRoom_FairyLights_Asset_7
+  - first:
+      213: 3269932476465874083
+    second: Background_LivingRoom_FairyLights_Asset_8
+  - first:
+      213: -1014223138324298141
+    second: Background_LivingRoom_FairyLights_Asset_9
+  - first:
+      213: 1520814244284509074
+    second: Background_LivingRoom_FairyLights_Asset_10
+  - first:
+      213: -4552214578868718878
+    second: Background_LivingRoom_FairyLights_Asset_11
+  - first:
+      213: -225984772799101497
+    second: Background_LivingRoom_FairyLights_Asset_12
+  - first:
+      213: -9073470272371234924
+    second: Background_LivingRoom_FairyLights_Asset_13
+  - first:
+      213: 6999529010426675397
+    second: Background_LivingRoom_FairyLights_Asset_14
+  - first:
+      213: -1729390684164392888
+    second: Background_LivingRoom_FairyLights_Asset_15
+  - first:
+      213: -75147400666495063
+    second: Background_LivingRoom_FairyLights_Asset_16
+  - first:
+      213: -687265872415383104
+    second: Background_LivingRoom_FairyLights_Asset_17
+  - first:
+      213: -7429645621575151610
+    second: Background_LivingRoom_FairyLights_Asset_18
+  - first:
+      213: -2756814268080429265
+    second: Background_LivingRoom_FairyLights_Asset_19
+  - first:
+      213: 1198217360232472151
+    second: Background_LivingRoom_FairyLights_Asset_20
+  - first:
+      213: 2123891991679753449
+    second: Background_LivingRoom_FairyLights_Asset_21
+  - first:
+      213: -1067827766158841219
+    second: Background_LivingRoom_FairyLights_Asset_22
+  - first:
+      213: -4800624798523729914
+    second: Background_LivingRoom_FairyLights_Asset_23
+  - first:
+      213: 145899876311909927
+    second: Background_LivingRoom_FairyLights_Asset_24
+  - first:
+      213: 6454452378117126939
+    second: Background_LivingRoom_FairyLights_Asset_25
+  - first:
+      213: 3676610281437277283
+    second: Background_LivingRoom_FairyLights_Asset_26
+  - first:
+      213: -4365606335466204420
+    second: Background_LivingRoom_FairyLights_Asset_27
+  - first:
+      213: -2037559805628457076
+    second: Background_LivingRoom_FairyLights_Asset_28
+  - first:
+      213: 8131648747157357151
+    second: Background_LivingRoom_FairyLights_Asset_29
+  - first:
+      213: 2252867247301595187
+    second: Background_LivingRoom_FairyLights_Asset_30
+  - first:
+      213: -1611588503700135861
+    second: Background_LivingRoom_FairyLights_Asset_31
+  - first:
+      213: -9025833207088297330
+    second: Background_LivingRoom_FairyLights_Asset_32
+  - first:
+      213: 7363942903036281418
+    second: Background_LivingRoom_FairyLights_Asset_33
+  - first:
+      213: 8497885417829217347
+    second: Background_LivingRoom_FairyLights_Asset_34
+  - first:
+      213: 8321823759965400330
+    second: Background_LivingRoom_FairyLights_Asset_35
+  - first:
+      213: 3623728487331877750
+    second: Background_LivingRoom_FairyLights_Asset_36
+  - first:
+      213: 6352205123361130858
+    second: Background_LivingRoom_FairyLights_Asset_37
+  - first:
+      213: 7061307021075610951
+    second: Background_LivingRoom_FairyLights_Asset_38
+  - first:
+      213: 2598083293876452888
+    second: Background_LivingRoom_FairyLights_Asset_39
+  - first:
+      213: 702940521593008623
+    second: Background_LivingRoom_FairyLights_Asset_40
+  - first:
+      213: -8495039466148053393
+    second: Background_LivingRoom_FairyLights_Asset_41
+  - first:
+      213: 5707918170089521841
+    second: Background_LivingRoom_FairyLights_Asset_42
+  - first:
+      213: -5829626976669269168
+    second: Background_LivingRoom_FairyLights_Asset_43
+  - first:
+      213: 2195213908416588899
+    second: Background_LivingRoom_FairyLights_Asset_44
+  - first:
+      213: -6323659107538745244
+    second: Background_LivingRoom_FairyLights_Asset_45
+  - first:
+      213: -8390563730663983940
+    second: Background_LivingRoom_FairyLights_Asset_46
+  - first:
+      213: 3897875938293453545
+    second: Background_LivingRoom_FairyLights_Asset_47
+  - first:
+      213: -7656359777328760180
+    second: Background_LivingRoom_FairyLights_Asset_48
+  - first:
+      213: 6177524028879702803
+    second: Background_LivingRoom_FairyLights_Asset_49
+  - first:
+      213: -8884304748489111760
+    second: Background_LivingRoom_FairyLights_Asset_50
+  - first:
+      213: -5989312839629001962
+    second: Background_LivingRoom_FairyLights_Asset_51
+  - first:
+      213: -8093010685141781198
+    second: Background_LivingRoom_FairyLights_Asset_52
+  - first:
+      213: 5507971424103566882
+    second: Background_LivingRoom_FairyLights_Asset_53
+  - first:
+      213: -7989444993024821188
+    second: Background_LivingRoom_FairyLights_Asset_54
+  - first:
+      213: 8974747624658333566
+    second: Background_LivingRoom_FairyLights_Asset_55
+  - first:
+      213: 5878582241094355203
+    second: Background_LivingRoom_FairyLights_Asset_56
+  - first:
+      213: -903554386819326085
+    second: Background_LivingRoom_FairyLights_Asset_57
+  - first:
+      213: -8040581364223556064
+    second: Background_LivingRoom_FairyLights_Asset_58
+  - first:
+      213: -911350881813247019
+    second: Background_LivingRoom_FairyLights_Asset_59
+  - first:
+      213: 1075908628048877710
+    second: Background_LivingRoom_FairyLights_Asset_60
+  - first:
+      213: -3097802934259182283
+    second: Background_LivingRoom_FairyLights_Asset_61
+  - first:
+      213: 1732605998830850916
+    second: Background_LivingRoom_FairyLights_Asset_62
+  - first:
+      213: -2629647326171831546
+    second: Background_LivingRoom_FairyLights_Asset_63
+  - first:
+      213: -8525223014571674049
+    second: Background_LivingRoom_FairyLights_Asset_64
+  - first:
+      213: 5984314102855451432
+    second: Background_LivingRoom_FairyLights_Asset_65
+  - first:
+      213: 4458027599127174213
+    second: Background_LivingRoom_FairyLights_Asset_66
+  - first:
+      213: 6923114561355813388
+    second: Background_LivingRoom_FairyLights_Asset_67
+  - first:
+      213: 7428947128427474699
+    second: Background_LivingRoom_FairyLights_Asset_68
+  - first:
+      213: -6145034329129466843
+    second: Background_LivingRoom_FairyLights_Asset_69
+  - first:
+      213: 5052084439858859670
+    second: Background_LivingRoom_FairyLights_Asset_70
+  - first:
+      213: 7505523642027310294
+    second: Background_LivingRoom_FairyLights_Asset_71
+  - first:
+      213: -7995357778747033584
+    second: Background_LivingRoom_FairyLights_Asset_72
+  - first:
+      213: -5217409798019724896
+    second: Background_LivingRoom_FairyLights_Asset_73
+  - first:
+      213: 3711107967838210545
+    second: Background_LivingRoom_FairyLights_Asset_74
+  - first:
+      213: -3698724578483240355
+    second: Background_LivingRoom_FairyLights_Asset_75
+  - first:
+      213: -6174108462467106229
+    second: Background_LivingRoom_FairyLights_Asset_76
+  - first:
+      213: -3832043921683405849
+    second: Background_LivingRoom_FairyLights_Asset_77
+  - first:
+      213: 8283845068642579145
+    second: Background_LivingRoom_FairyLights_Asset_78
+  - first:
+      213: 4370043143635380108
+    second: Background_LivingRoom_FairyLights_Asset_79
+  - first:
+      213: 8677461237384416670
+    second: Background_LivingRoom_FairyLights_Asset_80
+  - first:
+      213: 8638725136766791034
+    second: Background_LivingRoom_FairyLights_Asset_81
+  - first:
+      213: 61294706609469890
+    second: Background_LivingRoom_FairyLights_Asset_82
+  - first:
+      213: 1290855185132411160
+    second: Background_LivingRoom_FairyLights_Asset_83
+  - first:
+      213: 1877621484556659028
+    second: Background_LivingRoom_FairyLights_Asset_84
+  - first:
+      213: 392230816237984067
+    second: Background_LivingRoom_FairyLights_Asset_85
+  - first:
+      213: 6717327872219147485
+    second: Background_LivingRoom_FairyLights_Asset_86
+  - first:
+      213: -5199004696345196829
+    second: Background_LivingRoom_FairyLights_Asset_87
+  - first:
+      213: -5143136010179061803
+    second: Background_LivingRoom_FairyLights_Asset_88
+  - first:
+      213: -1991602743659243228
+    second: Background_LivingRoom_FairyLights_Asset_89
+  - first:
+      213: -6898416301903382263
+    second: Background_LivingRoom_FairyLights_Asset_90
+  - first:
+      213: -1512354260625223933
+    second: Background_LivingRoom_FairyLights_Asset_91
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_0
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 129
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5caa7c27012a600800000000000000
+      internalID: 477962595616867797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_1
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 118
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1dab8bd5314d680800000000000000
+      internalID: -8731332484312411650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_2
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 126
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da57a5d6a4b25e5c0800000000000000
+      internalID: -4186892679908788819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_3
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 108
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b3be1905c1619f0800000000000000
+      internalID: -498179576406787268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_4
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 95
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b48d67af19819260800000000000000
+      internalID: 7102608856385946802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_5
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 104
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89962fe377cb9e00800000000000000
+      internalID: 1052654238668593548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 89
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f238397522692560800000000000000
+      internalID: 7289465384962896633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_7
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 79
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5dd719167248a200800000000000000
+      internalID: 191476059157814623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_8
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 80
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a403433342216d20800000000000000
+      internalID: 3269932476465874083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_9
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 85
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366c235ed61cce1f0800000000000000
+      internalID: -1014223138324298141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_10
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 87
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29baeef5f740b1510800000000000000
+      internalID: 1520814244284509074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_11
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 88
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2fc2d85f843d0c0800000000000000
+      internalID: -4552214578868718878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_12
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 91
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c589a4eb042ddcf0800000000000000
+      internalID: -225984772799101497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_13
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 86
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497ee3f4cde841280800000000000000
+      internalID: -9073470272371234924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_14
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 84
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c00685cc82532160800000000000000
+      internalID: 6999529010426675397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 70
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848f280e558fff7e0800000000000000
+      internalID: -1729390684164392888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_16
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 65
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a7ca7556d505fef0800000000000000
+      internalID: -75147400666495063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 65
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1ae6094575676f0800000000000000
+      internalID: -687265872415383104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_18
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 75
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6001afecba894e890800000000000000
+      internalID: -7429645621575151610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_19
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 69
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2766578704ddb9d0800000000000000
+      internalID: -2756814268080429265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_20
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 70
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75edc58375ce0a010800000000000000
+      internalID: 1198217360232472151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_21
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 63
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec5e597384997d10800000000000000
+      internalID: 2123891991679753449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_22
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 63
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7aadc4ed405e21f0800000000000000
+      internalID: -1067827766158841219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_23
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 74
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608df083e21c06db0800000000000000
+      internalID: -4800624798523729914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_24
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 63
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726485c1a27560200800000000000000
+      internalID: 145899876311909927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_25
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 56
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1bb851ad32d29950800000000000000
+      internalID: 6454452378117126939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_26
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 45
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c2e9a4291f50330800000000000000
+      internalID: 3676610281437277283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_27
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 42
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf29759fa204a63c0800000000000000
+      internalID: -4365606335466204420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_28
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 46
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8fd6e8f62229b3e0800000000000000
+      internalID: -2037559805628457076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_29
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 51
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f528094c37b69d070800000000000000
+      internalID: 8131648747157357151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_30
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 52
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330168143dac34f10800000000000000
+      internalID: 2252867247301595187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_31
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40a9d06bcc72a9e0800000000000000
+      internalID: -1611588503700135861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_32
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 23
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ac391e48ccdb280800000000000000
+      internalID: -9025833207088297330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_33
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 23
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a428cb1fd0bf13660800000000000000
+      internalID: 7363942903036281418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_34
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 21
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 344bea783cd8ee570800000000000000
+      internalID: 8497885417829217347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_35
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 23
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0da4286e9e0d7370800000000000000
+      internalID: 8321823759965400330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_36
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 20
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67351e12cd11a4230800000000000000
+      internalID: 3623728487331877750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_37
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 22
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a694b5e77e0972850800000000000000
+      internalID: 6352205123361130858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_38
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 16
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74dfe21c25dcef160800000000000000
+      internalID: 7061307021075610951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_39
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 22
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ef1649dfe3e0420800000000000000
+      internalID: 2598083293876452888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_40
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 21
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe177c71ea851c900800000000000000
+      internalID: 702940521593008623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_41
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 21
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e325b3d9e8b1a80800000000000000
+      internalID: -8495039466148053393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_42
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 19
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b20f277559963f40800000000000000
+      internalID: 5707918170089521841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_43
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 24
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0530892c621091fa0800000000000000
+      internalID: -5829626976669269168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_44
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 17
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36cea214b67f67e10800000000000000
+      internalID: 2195213908416588899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_45
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 30
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4684d7ebb89dd38a0800000000000000
+      internalID: -6323659107538745244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_46
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 35
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb43f78fdbabe8b80800000000000000
+      internalID: -8390563730663983940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_47
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 30
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e216889389081630800000000000000
+      internalID: 3897875938293453545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_48
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 16
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8afabff8552fb590800000000000000
+      internalID: -7656359777328760180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_49
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 19
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b80d4df59fab550800000000000000
+      internalID: 6177524028879702803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_50
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 15
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0378dfdf6eb94b480800000000000000
+      internalID: -8884304748489111760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_51
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 11
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b2a3184bfa1eca0800000000000000
+      internalID: -5989312839629001962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_52
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 20
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235fea419a9dfaf80800000000000000
+      internalID: -8093010685141781198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_53
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 12
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e02b6e3de307c40800000000000000
+      internalID: 5507971424103566882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_54
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 11
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c387b36db1acf1190800000000000000
+      internalID: -7989444993024821188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_55
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 18
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f6a841a65bc8c70800000000000000
+      internalID: 8974747624658333566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_56
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 18
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3094957f66be49150800000000000000
+      internalID: 5878582241094355203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_57
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 16
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f536a821ee573f0800000000000000
+      internalID: -903554386819326085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_58
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 10
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02644dd99dd1a6090800000000000000
+      internalID: -8040581364223556064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_59
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 16
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db48c7933b3a53f0800000000000000
+      internalID: -911350881813247019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_60
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 19
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8891a162356eee00800000000000000
+      internalID: 1075908628048877710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_61
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 12
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5359157e4a46205d0800000000000000
+      internalID: -3097802934259182283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_62
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4631608e9f37b0810800000000000000
+      internalID: 1732605998830850916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_63
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 6
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603e8f670bd918bd0800000000000000
+      internalID: -2629647326171831546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_64
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 16
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36787936d250b980800000000000000
+      internalID: -8525223014571674049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_65
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 13
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8234f0568fd8c0350800000000000000
+      internalID: 5984314102855451432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_66
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 6
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54cdcd45b781edd30800000000000000
+      internalID: 4458027599127174213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_67
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 20
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0292f86308d31060800000000000000
+      internalID: 6923114561355813388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_68
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 7
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0fe3159d0ce81760800000000000000
+      internalID: 7428947128427474699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_69
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 16
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52448afd5d378baa0800000000000000
+      internalID: -6145034329129466843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_70
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 7
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ec01de70c9c1640800000000000000
+      internalID: 5052084439858859670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_71
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 14
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dc75588cf9f82860800000000000000
+      internalID: 7505523642027310294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_72
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 9
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01870a12678ca0190800000000000000
+      internalID: -7995357778747033584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_73
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 18
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a944658e690897b0800000000000000
+      internalID: -5217409798019724896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_74
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 13
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f94e12d801808330800000000000000
+      internalID: 3711107967838210545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_75
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 18
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d520081b79d7bacc0800000000000000
+      internalID: -3698724578483240355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_76
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 12
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a3ae1b019215aa0800000000000000
+      internalID: -6174108462467106229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_77
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 16
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3ad543b58d1dac0800000000000000
+      internalID: -3832043921683405849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_78
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 12
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2ffc2433126f270800000000000000
+      internalID: 8283845068642579145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_79
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 19
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87a48de51385ac30800000000000000
+      internalID: 4370043143635380108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_80
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 6
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d058e25098c6870800000000000000
+      internalID: 8677461237384416670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_81
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 14
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7de831fdbae2e770800000000000000
+      internalID: 8638725136766791034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_82
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 9
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9b11ef533c9d000800000000000000
+      internalID: 61294706609469890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_83
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 19
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819d94e93f90ae110800000000000000
+      internalID: 1290855185132411160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_84
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 13
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45924a9cac6ae0a10800000000000000
+      internalID: 1877621484556659028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_85
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 18
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34993d769db717500800000000000000
+      internalID: 392230816237984067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_86
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 0
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddce37f1c1eb83d50800000000000000
+      internalID: 6717327872219147485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_87
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 5
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e6c1c036cc69d7b0800000000000000
+      internalID: -5199004696345196829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_88
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7d1c95c09ef98b0800000000000000
+      internalID: -5143136010179061803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_89
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 5
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4295f7a4bd76c54e0800000000000000
+      internalID: -1991602743659243228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_90
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 4
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909f84c3ce6e340a0800000000000000
+      internalID: -6898416301903382263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background_LivingRoom_FairyLights_Asset_91
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 3
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f82e010d9030be0800000000000000
+      internalID: -1512354260625223933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Background_LivingRoom_FairyLights_Asset_0: 477962595616867797
+      Background_LivingRoom_FairyLights_Asset_1: -8731332484312411650
+      Background_LivingRoom_FairyLights_Asset_10: 1520814244284509074
+      Background_LivingRoom_FairyLights_Asset_11: -4552214578868718878
+      Background_LivingRoom_FairyLights_Asset_12: -225984772799101497
+      Background_LivingRoom_FairyLights_Asset_13: -9073470272371234924
+      Background_LivingRoom_FairyLights_Asset_14: 6999529010426675397
+      Background_LivingRoom_FairyLights_Asset_15: -1729390684164392888
+      Background_LivingRoom_FairyLights_Asset_16: -75147400666495063
+      Background_LivingRoom_FairyLights_Asset_17: -687265872415383104
+      Background_LivingRoom_FairyLights_Asset_18: -7429645621575151610
+      Background_LivingRoom_FairyLights_Asset_19: -2756814268080429265
+      Background_LivingRoom_FairyLights_Asset_2: -4186892679908788819
+      Background_LivingRoom_FairyLights_Asset_20: 1198217360232472151
+      Background_LivingRoom_FairyLights_Asset_21: 2123891991679753449
+      Background_LivingRoom_FairyLights_Asset_22: -1067827766158841219
+      Background_LivingRoom_FairyLights_Asset_23: -4800624798523729914
+      Background_LivingRoom_FairyLights_Asset_24: 145899876311909927
+      Background_LivingRoom_FairyLights_Asset_25: 6454452378117126939
+      Background_LivingRoom_FairyLights_Asset_26: 3676610281437277283
+      Background_LivingRoom_FairyLights_Asset_27: -4365606335466204420
+      Background_LivingRoom_FairyLights_Asset_28: -2037559805628457076
+      Background_LivingRoom_FairyLights_Asset_29: 8131648747157357151
+      Background_LivingRoom_FairyLights_Asset_3: -498179576406787268
+      Background_LivingRoom_FairyLights_Asset_30: 2252867247301595187
+      Background_LivingRoom_FairyLights_Asset_31: -1611588503700135861
+      Background_LivingRoom_FairyLights_Asset_32: -9025833207088297330
+      Background_LivingRoom_FairyLights_Asset_33: 7363942903036281418
+      Background_LivingRoom_FairyLights_Asset_34: 8497885417829217347
+      Background_LivingRoom_FairyLights_Asset_35: 8321823759965400330
+      Background_LivingRoom_FairyLights_Asset_36: 3623728487331877750
+      Background_LivingRoom_FairyLights_Asset_37: 6352205123361130858
+      Background_LivingRoom_FairyLights_Asset_38: 7061307021075610951
+      Background_LivingRoom_FairyLights_Asset_39: 2598083293876452888
+      Background_LivingRoom_FairyLights_Asset_4: 7102608856385946802
+      Background_LivingRoom_FairyLights_Asset_40: 702940521593008623
+      Background_LivingRoom_FairyLights_Asset_41: -8495039466148053393
+      Background_LivingRoom_FairyLights_Asset_42: 5707918170089521841
+      Background_LivingRoom_FairyLights_Asset_43: -5829626976669269168
+      Background_LivingRoom_FairyLights_Asset_44: 2195213908416588899
+      Background_LivingRoom_FairyLights_Asset_45: -6323659107538745244
+      Background_LivingRoom_FairyLights_Asset_46: -8390563730663983940
+      Background_LivingRoom_FairyLights_Asset_47: 3897875938293453545
+      Background_LivingRoom_FairyLights_Asset_48: -7656359777328760180
+      Background_LivingRoom_FairyLights_Asset_49: 6177524028879702803
+      Background_LivingRoom_FairyLights_Asset_5: 1052654238668593548
+      Background_LivingRoom_FairyLights_Asset_50: -8884304748489111760
+      Background_LivingRoom_FairyLights_Asset_51: -5989312839629001962
+      Background_LivingRoom_FairyLights_Asset_52: -8093010685141781198
+      Background_LivingRoom_FairyLights_Asset_53: 5507971424103566882
+      Background_LivingRoom_FairyLights_Asset_54: -7989444993024821188
+      Background_LivingRoom_FairyLights_Asset_55: 8974747624658333566
+      Background_LivingRoom_FairyLights_Asset_56: 5878582241094355203
+      Background_LivingRoom_FairyLights_Asset_57: -903554386819326085
+      Background_LivingRoom_FairyLights_Asset_58: -8040581364223556064
+      Background_LivingRoom_FairyLights_Asset_59: -911350881813247019
+      Background_LivingRoom_FairyLights_Asset_6: 7289465384962896633
+      Background_LivingRoom_FairyLights_Asset_60: 1075908628048877710
+      Background_LivingRoom_FairyLights_Asset_61: -3097802934259182283
+      Background_LivingRoom_FairyLights_Asset_62: 1732605998830850916
+      Background_LivingRoom_FairyLights_Asset_63: -2629647326171831546
+      Background_LivingRoom_FairyLights_Asset_64: -8525223014571674049
+      Background_LivingRoom_FairyLights_Asset_65: 5984314102855451432
+      Background_LivingRoom_FairyLights_Asset_66: 4458027599127174213
+      Background_LivingRoom_FairyLights_Asset_67: 6923114561355813388
+      Background_LivingRoom_FairyLights_Asset_68: 7428947128427474699
+      Background_LivingRoom_FairyLights_Asset_69: -6145034329129466843
+      Background_LivingRoom_FairyLights_Asset_7: 191476059157814623
+      Background_LivingRoom_FairyLights_Asset_70: 5052084439858859670
+      Background_LivingRoom_FairyLights_Asset_71: 7505523642027310294
+      Background_LivingRoom_FairyLights_Asset_72: -7995357778747033584
+      Background_LivingRoom_FairyLights_Asset_73: -5217409798019724896
+      Background_LivingRoom_FairyLights_Asset_74: 3711107967838210545
+      Background_LivingRoom_FairyLights_Asset_75: -3698724578483240355
+      Background_LivingRoom_FairyLights_Asset_76: -6174108462467106229
+      Background_LivingRoom_FairyLights_Asset_77: -3832043921683405849
+      Background_LivingRoom_FairyLights_Asset_78: 8283845068642579145
+      Background_LivingRoom_FairyLights_Asset_79: 4370043143635380108
+      Background_LivingRoom_FairyLights_Asset_8: 3269932476465874083
+      Background_LivingRoom_FairyLights_Asset_80: 8677461237384416670
+      Background_LivingRoom_FairyLights_Asset_81: 8638725136766791034
+      Background_LivingRoom_FairyLights_Asset_82: 61294706609469890
+      Background_LivingRoom_FairyLights_Asset_83: 1290855185132411160
+      Background_LivingRoom_FairyLights_Asset_84: 1877621484556659028
+      Background_LivingRoom_FairyLights_Asset_85: 392230816237984067
+      Background_LivingRoom_FairyLights_Asset_86: 6717327872219147485
+      Background_LivingRoom_FairyLights_Asset_87: -5199004696345196829
+      Background_LivingRoom_FairyLights_Asset_88: -5143136010179061803
+      Background_LivingRoom_FairyLights_Asset_89: -1991602743659243228
+      Background_LivingRoom_FairyLights_Asset_9: -1014223138324298141
+      Background_LivingRoom_FairyLights_Asset_90: -6898416301903382263
+      Background_LivingRoom_FairyLights_Asset_91: -1512354260625223933
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
