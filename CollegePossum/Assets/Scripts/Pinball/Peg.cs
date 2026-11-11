@@ -33,10 +33,12 @@ public class Peg : MonoBehaviour
 
     // Health variables
     [Header("Piece Health")]
-    [SerializeField] private int maxHealth = 100;
-    [SerializeField] private int pieceHealth;
+    
+    [SerializeField] private GameObject crack1;
+    [SerializeField] private GameObject crack2;
+    [SerializeField] private GameObject crack3;
 
-    [SerializeField] private SpriteRenderer innerCircle;
+    private int crackCount = 0;
 
     // For now, finds the camera, peg collider, stores position and
     // rotation, health, and updates the color. 
@@ -49,8 +51,11 @@ public class Peg : MonoBehaviour
 
         spawnPosition = transform.position;
         spawnRotation = transform.rotation;
-        pieceHealth = maxHealth;
-        UpdateColor();
+
+        crack1.SetActive(false);
+        crack2.SetActive(false);
+        crack3.SetActive(false);
+       
     }
 
     // If piece is hit, play sounds, and deal damage.
@@ -66,7 +71,7 @@ public class Peg : MonoBehaviour
             Ball ball = c.gameObject.GetComponent<Ball>();
             if (ball.touchedByPaddle)
             {
-                DealDamage(34);
+                AddCrack();
             }
         
         }
@@ -87,19 +92,28 @@ public class Peg : MonoBehaviour
     }
 
     // Does damage to a piece based on hit
-    public void DealDamage(int damage) 
+    private void AddCrack()
     {
-        pieceHealth -= damage;
+        crackCount++;
 
-        if (pieceHealth <= 0)
+        if (crackCount == 1)
         {
-            BreakPiece();
+            crack1.SetActive(true);
+        }
+        else if (crackCount == 2)
+        {
+            crack2.SetActive(true);
+        }
+        else if (crackCount == 3)
+        {
+            crack3.SetActive(true);
         }
         else
         {
-            UpdateColor();
+            BreakPiece();
         }
     }
+
 
     // Breaks piece after (for right now) hard-coded 3 hits. 
     // Respawn logic is commented out for the time being.
@@ -113,50 +127,5 @@ public class Peg : MonoBehaviour
         // transform.rotation = spawnRotation;
     }
 
-    // Updates peg color according to peg hp
-    private void UpdateColor()
-    {
-        string hex = "";
-
-        if (pegColor == Color.Pink)
-        {
-            if (pieceHealth > 66)
-            {
-                hex = "#FF69B4";
-            }
-            else if (pieceHealth > 32)
-            {
-                hex = "#DE688F";
-            }
-            else
-            {
-                hex = "#B65674";
-            }
-        }
-
-        if (pegColor == Color.Blue)
-        {
-            if (pieceHealth > 66)
-            {
-                hex = "#5BA8EC";
-            }
-            else if (pieceHealth > 32)
-            {
-                hex = "#4782B4";
-            }
-            else
-            {
-                hex = "#315C81";
-            }
-        }
-
-        // I have never tried this before. Converts HEX code to a color that can
-        // be used in Unity.
-        if (ColorUtility.TryParseHtmlString(hex, out UnityEngine.Color c))
-        {
-            innerCircle.color = c;
-        }
-
-    }
 
 }

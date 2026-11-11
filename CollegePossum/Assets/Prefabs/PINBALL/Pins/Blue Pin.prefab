@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5164188931691657223
 Transform:
   m_ObjectHideFlags: 0
@@ -107,7 +107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1213038756308588114
 Transform:
   m_ObjectHideFlags: 0
@@ -193,6 +193,8 @@ GameObject:
   - component: {fileID: 8758669346066989433}
   - component: {fileID: 5876851589191990057}
   - component: {fileID: -1274786390415229288}
+  - component: {fileID: -3408112215902827979}
+  - component: {fileID: 1341786214245559102}
   m_Layer: 0
   m_Name: Blue Pin
   m_TagString: Untagged
@@ -290,11 +292,150 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Peg
   pegColor: 0
-  hitSounds: []
+  hitSounds:
+  - Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  - Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  - Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  - Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  - Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  - Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   placeSounds: []
-  maxHealth: 100
-  pieceHealth: 0
-  innerCircle: {fileID: 0}
+  crack1: {fileID: 4232340179770663455}
+  crack2: {fileID: 340520310675439400}
+  crack3: {fileID: 5124801714559996133}
+--- !u!60 &-3408112215902827979
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4823028823049644752}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.94, y: -0.89}
+      - {x: 1.13, y: -0.63}
+      - {x: 1.2099999, y: -0.42}
+      - {x: 1.25, y: -0.29}
+      - {x: 1.27, y: -0.22}
+      - {x: 1.27, y: 0.14}
+      - {x: 1.26, y: 0.29}
+      - {x: 1.1899999, y: 0.51}
+      - {x: 1.04, y: 0.77}
+      - {x: 0.90999997, y: 0.90999997}
+      - {x: 0.81, y: 1}
+      - {x: 0.66999996, y: 1.1}
+      - {x: 0.57, y: 1.15}
+      - {x: 0.48, y: 1.1899999}
+      - {x: 0.37, y: 1.23}
+      - {x: 0.29999998, y: 1.26}
+      - {x: 0.14999999, y: 1.28}
+      - {x: -0.14, y: 1.28}
+      - {x: -0.26999998, y: 1.26}
+      - {x: -0.44, y: 1.2099999}
+      - {x: -0.68, y: 1.1}
+      - {x: -0.83, y: 0.98999995}
+      - {x: -1.03, y: 0.78}
+      - {x: -1.0799999, y: 0.71}
+      - {x: -1.17, y: 0.55}
+      - {x: -1.26, y: 0.32}
+      - {x: -1.28, y: 0.21}
+      - {x: -1.28, y: -0.17999999}
+      - {x: -1.23, y: -0.39999998}
+      - {x: -1.18, y: -0.53}
+      - {x: -1.14, y: -0.61}
+      - {x: -1.03, y: -0.78999996}
+      - {x: -0.84999996, y: -0.96999997}
+      - {x: -0.69, y: -1.09}
+      - {x: -0.5, y: -1.1999999}
+      - {x: -0.39, y: -1.23}
+      - {x: -0.21, y: -1.28}
+      - {x: 0.13, y: -1.28}
+      - {x: 0.25, y: -1.26}
+      - {x: 0.42999998, y: -1.22}
+      - {x: 0.72999996, y: -1.0699999}
+  m_UseDelaunayMesh: 1
+--- !u!114 &1341786214245559102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4823028823049644752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a0140d526a483f469529bb0e2c65a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DidHit
+  collided: 0
+  bufferTime: 0.1
+  popupPrefab: {fileID: 9218212885802677351, guid: eca7ad4b2285b47e0aa51e49538fc7bb, type: 3}
 --- !u!1 &5124801714559996133
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5609763389106551839
 Transform:
   m_ObjectHideFlags: 0
