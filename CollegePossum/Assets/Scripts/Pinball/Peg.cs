@@ -10,7 +10,10 @@ public class Peg : MonoBehaviour
     public enum Color
     {
         Blue,
-        Pink 
+        Pink,
+        Green,
+        Orange,
+        Purple
     }
 
     // Peg variables, some of these will be deleted. 

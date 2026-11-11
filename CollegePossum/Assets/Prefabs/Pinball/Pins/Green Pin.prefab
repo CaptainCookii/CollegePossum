@@ -101,6 +101,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3021320939967784944}
   - component: {fileID: 488110829158001218}
+  - component: {fileID: 5352696913453793385}
+  - component: {fileID: 4525241399502255686}
+  - component: {fileID: 1826989310535177763}
   m_Layer: 0
   m_Name: Green Pin
   m_TagString: Untagged
@@ -185,6 +188,163 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!60 &5352696913453793385
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6899317563477615077}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.94, y: -0.89}
+      - {x: 1.13, y: -0.63}
+      - {x: 1.2099999, y: -0.42}
+      - {x: 1.25, y: -0.29}
+      - {x: 1.27, y: -0.22}
+      - {x: 1.27, y: 0.14}
+      - {x: 1.26, y: 0.29}
+      - {x: 1.1899999, y: 0.51}
+      - {x: 1.04, y: 0.77}
+      - {x: 0.90999997, y: 0.90999997}
+      - {x: 0.81, y: 1}
+      - {x: 0.66999996, y: 1.1}
+      - {x: 0.57, y: 1.15}
+      - {x: 0.48, y: 1.1899999}
+      - {x: 0.37, y: 1.23}
+      - {x: 0.29999998, y: 1.26}
+      - {x: 0.14999999, y: 1.28}
+      - {x: -0.14, y: 1.28}
+      - {x: -0.26999998, y: 1.26}
+      - {x: -0.44, y: 1.2099999}
+      - {x: -0.68, y: 1.1}
+      - {x: -0.83, y: 0.98999995}
+      - {x: -1.03, y: 0.78}
+      - {x: -1.0799999, y: 0.71}
+      - {x: -1.17, y: 0.55}
+      - {x: -1.26, y: 0.32}
+      - {x: -1.28, y: 0.21}
+      - {x: -1.28, y: -0.17999999}
+      - {x: -1.23, y: -0.39999998}
+      - {x: -1.18, y: -0.53}
+      - {x: -1.14, y: -0.61}
+      - {x: -1.03, y: -0.78999996}
+      - {x: -0.84999996, y: -0.96999997}
+      - {x: -0.69, y: -1.09}
+      - {x: -0.5, y: -1.1999999}
+      - {x: -0.39, y: -1.23}
+      - {x: -0.21, y: -1.28}
+      - {x: 0.13, y: -1.28}
+      - {x: 0.25, y: -1.26}
+      - {x: 0.42999998, y: -1.22}
+      - {x: 0.72999996, y: -1.0699999}
+  m_UseDelaunayMesh: 1
+--- !u!114 &4525241399502255686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6899317563477615077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bd43ab79fbb14e23b6d1ad0a47edd19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Peg
+  pegColor: 2
+  hitSounds:
+  - Guid:
+      Data1: 663058748
+      Data2: 1302457257
+      Data3: -1015964768
+      Data4: -1718786518
+    Path: event:/SFX/pachinko_sounds/pachinko_clink_1
+  - Guid:
+      Data1: 1824180869
+      Data2: 1127992944
+      Data3: 472356749
+      Data4: 999391275
+    Path: event:/SFX/pachinko_sounds/pachinko_clink_2
+  - Guid:
+      Data1: -446472041
+      Data2: 1341939376
+      Data3: 1604712092
+      Data4: -1801449247
+    Path: event:/SFX/pachinko_sounds/pachinko_clink_3
+  - Guid:
+      Data1: 401798092
+      Data2: 1318127814
+      Data3: -1570409836
+      Data4: -852206582
+    Path: event:/SFX/pachinko_sounds/pachinko_clink_4
+  - Guid:
+      Data1: 1296489677
+      Data2: 1266092830
+      Data3: 1442339223
+      Data4: -556131129
+    Path: event:/SFX/pachinko_sounds/pachinko_clink_5
+  - Guid:
+      Data1: -1846720236
+      Data2: 1134044714
+      Data3: 1221011880
+      Data4: 1307552663
+    Path: event:/SFX/pachinko_sounds/pachinko_clink_6
+  placeSounds: []
+  crack1: {fileID: 8802022524129655571}
+  crack2: {fileID: 8999357971296526874}
+  crack3: {fileID: 4633068243445665243}
+--- !u!114 &1826989310535177763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6899317563477615077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a0140d526a483f469529bb0e2c65a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DidHit
+  collided: 0
+  bufferTime: 0.1
+  popupPrefab: {fileID: 9218212885802677351, guid: eca7ad4b2285b47e0aa51e49538fc7bb, type: 3}
 --- !u!1 &8802022524129655571
 GameObject:
   m_ObjectHideFlags: 0
