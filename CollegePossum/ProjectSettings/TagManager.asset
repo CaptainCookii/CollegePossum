@@ -11,6 +11,7 @@ TagManager:
   - Chute
   - Paddle
   - Cool Pop-up Canvas
+  - PopZone
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - SpeechBubbles
+  - PopZone
   - 
   - 
   - 
