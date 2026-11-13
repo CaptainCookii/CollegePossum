@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Runtime.CompilerServices;
 using UnityEditor.Tilemaps;
 using UnityEngine;
@@ -8,6 +9,9 @@ public class Bubble : MonoBehaviour
 
     [SerializeField] private float floatSpeed = 1f;
     [SerializeField] private GameObject ball;
+    [SerializeField] private Transform bubbleSprite;
+
+
 
     private Vector2 spawnVector;
     private bool popped = false;
@@ -17,6 +21,7 @@ public class Bubble : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.gravityScale = 0;
 
         spawnVector = new Vector2(UnityEngine.Random.Range(0.7f, 1f), UnityEngine.Random.Range(0f, 1f));
 
@@ -44,16 +49,14 @@ public class Bubble : MonoBehaviour
     {
         if (c.CompareTag("PopZone") && !popped)
         {
-        Pop();
+            Destroy(gameObject);
+            Pop();
         }
     }
 
     private void Pop()
     { 
         popped = true;
-
-        Instantiate(ball, transform.position, Quaternion.identity);
-        Destroy(gameObject);
-
+        Instantiate(ball, bubbleSprite.position, Quaternion.identity);
     }
 }

@@ -38,7 +38,7 @@ public class PinballManager : MonoBehaviour
     private float currAnxiety;
 
     // General variables
-    private float timer = 0f;
+    
     private int activeBalls = 0;
     private int destroyedBalls = 0;
     private int maxBallsPerRound = 0;
