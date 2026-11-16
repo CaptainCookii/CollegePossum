@@ -29,6 +29,7 @@ public class PaddleController : MonoBehaviour
     private float restAngle;
     private float movementAngle;
     private float currentAngle;
+    private bool wasKeyPressed;
 
     private Vector3 os;
 
@@ -66,14 +67,15 @@ public class PaddleController : MonoBehaviour
 
         if (side == Side.Left)
         {
-            keyPressed = Keyboard.current.leftArrowKey.isPressed;
-            keyPressedThisFrame = Keyboard.current.leftArrowKey.wasPressedThisFrame;
+            keyPressed = Keyboard.current.leftArrowKey.isPressed || Keyboard.current.aKey.isPressed;
         }
         else if (side == Side.Right)
         {
-            keyPressed = Keyboard.current.rightArrowKey.isPressed;
-            keyPressedThisFrame = Keyboard.current.rightArrowKey.wasPressedThisFrame;
+            keyPressed = Keyboard.current.rightArrowKey.isPressed || Keyboard.current.dKey.isPressed;
         }
+
+        keyPressedThisFrame = keyPressed && !wasKeyPressed;
+        wasKeyPressed = keyPressed;
 
         // Adds to anxiety per lever hit.
         if (keyPressedThisFrame)
