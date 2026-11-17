@@ -11,6 +11,8 @@ TagManager:
   - Chute
   - Paddle
   - Cool Pop-up Canvas
+  - Panel
+  - Door
   layers:
   - Default
   - TransparentFX

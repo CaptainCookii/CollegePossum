@@ -1,3 +1,4 @@
+using System.Linq;
 using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -51,10 +52,10 @@ public class CharacterDialogue : MonoBehaviour
 
             Collider2D hit = Physics2D.OverlapPoint(worldPosition);
 
-            if (hit != null && hit.gameObject == gameObject && !dialogueRunner.IsDialogueRunning && interactable)
+            if (hit != null && hit.gameObject == gameObject && !dialogueRunner.IsDialogueRunning && interactable && !PanelBlocker.AnyOpen)
             {
                 MusicManager.Instance.SetMusicLayer(character.characterMusicRef, true);
-                dialogueRunner.StartDialogue(character.dialogueI);
+                dialogueRunner.StartDialogue(character.dialogueI[Random.Range(0, character.dialogueI.Length)]);
             }
 
             if (dialogueRunner.IsDialogueRunning)
@@ -81,7 +82,7 @@ public class CharacterDialogue : MonoBehaviour
         bool mouseOver = hit != null && hit.gameObject == gameObject;
 
         character.outline.SetActive(false);
-        if (interactable && !dialogueRunner.IsDialogueRunning)
+        if (interactable && !dialogueRunner.IsDialogueRunning && !PanelBlocker.AnyOpen)
         {
             character.outline.SetActive(mouseOver);
         }
@@ -91,14 +92,7 @@ public class CharacterDialogue : MonoBehaviour
 
     public void StartDialogue()
     {
-        if (dialogue == 0)
-        {
-            dialogueRunner.StartDialogue(character.dialogue1);
-        }
-        else
-        {
-            dialogueRunner.StartDialogue(character.dialogue2);
-        }
+        dialogueRunner.StartDialogue(character.dialogueP[Random.Range(0, character.dialogueP.Length)]);
         interactable = false;
     }
 }

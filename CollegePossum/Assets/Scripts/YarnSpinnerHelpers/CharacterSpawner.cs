@@ -23,9 +23,27 @@ public class CharacterSpawner : MonoBehaviour
     public GameObject playerCharacter;
     public List<GameObject> spawnedNPCs = new List<GameObject>();
 
+    [Header("Rooms")]
+    [SerializeField] private GameObject[] roomScenery;
+
     private void Awake()
     {
         SpawnCharacters();
+    }
+
+    public int RoomCount => npcSpawnPoints.Length;
+
+    public void ShowRoom(int room)
+    {
+        room = Mathf.Clamp(room, 0, spawnedNPCs.Count - 1);
+        GameState.currentRoom = room;
+
+        for (int i = 0; i < spawnedNPCs.Count; i++)
+            spawnedNPCs[i].SetActive(i == room);
+
+        for (int i = 0; i < roomScenery.Length; i++)
+            if (roomScenery[i] != null)
+                roomScenery[i].SetActive(i == room);
     }
 
     public void SpawnCharacters()
@@ -79,6 +97,8 @@ public class CharacterSpawner : MonoBehaviour
             PositionDialogueAvatars(npc);
             spawnedNPCs.Add(npc);
         }
+
+        ShowRoom(GameState.currentRoom);
     }
 
     private void PositionDialogueAvatars(GameObject character)

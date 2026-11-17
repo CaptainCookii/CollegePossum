@@ -4509,6 +4509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DidHit
   collided: 0
   bufferTime: 0.1
+  popupPrefab: {fileID: 0}
 --- !u!61 &1256263962
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6300,7 +6301,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 30
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -703665196563478195, guid: 7a839ee2374fc6f439688d5f5cf1a5a5, type: 3}
+  m_Sprite: {fileID: -143944298476217403, guid: 492c124e4f4ae8045b3f29d2a67452f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

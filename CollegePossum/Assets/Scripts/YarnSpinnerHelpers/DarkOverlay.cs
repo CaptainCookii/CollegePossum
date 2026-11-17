@@ -18,6 +18,11 @@ public class DarkOverlay : MonoBehaviour
         StartCoroutine(FadeTo(0.85f));
     }
 
+    public void FadeBlack()
+    {
+        StartCoroutine(FadeTo(1f));
+    }
+
     //returns it to normal
     public void FadeOut()
     {

@@ -23,6 +23,7 @@ public class MainMenuManager : MonoBehaviour
         if (CharacterSpawnManager.Instance != null)
         {
             CharacterSpawnManager.Instance.StartNewRun();
+            GameState.ResetRun();
         }
         SceneManager.LoadScene("YarnSpinnerPrototype");
     }

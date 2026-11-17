@@ -88,6 +88,26 @@ PrefabInstance:
       propertyPath: characterMusicRef
       value: Pam
       objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: dialogueI.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: dialogueP.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: 'dialogueI.Array.data[0]'
+      value: Pam_Intro
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: 'dialogueP.Array.data[0]'
+      value: Pam_Boots
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: 'dialogueP.Array.data[1]'
+      value: Pam_Dumpster
+      objectReference: {fileID: 0}
     - target: {fileID: 2668797374239059930, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
       propertyPath: m_Size.x
       value: 4.3
@@ -106,7 +126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2668797374239059930, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 4.3
+      value: 3.81
       objectReference: {fileID: 0}
     - target: {fileID: 2668797374239059930, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
@@ -127,7 +147,7 @@ PrefabInstance:
     - target: {fileID: 6195690321285044473, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -703665196563478195, guid: 7a839ee2374fc6f439688d5f5cf1a5a5, type: 3}
+      objectReference: {fileID: -143944298476217403, guid: 492c124e4f4ae8045b3f29d2a67452f7, type: 3}
     - target: {fileID: 6883610980212438754, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.02
@@ -135,15 +155,15 @@ PrefabInstance:
     - target: {fileID: 7650298954033419517, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -703665196563478195, guid: 7a839ee2374fc6f439688d5f5cf1a5a5, type: 3}
+      objectReference: {fileID: -143944298476217403, guid: 492c124e4f4ae8045b3f29d2a67452f7, type: 3}
     - target: {fileID: 8213941472292843916, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -703665196563478195, guid: 7a839ee2374fc6f439688d5f5cf1a5a5, type: 3}
+      objectReference: {fileID: -143944298476217403, guid: 492c124e4f4ae8045b3f29d2a67452f7, type: 3}
     - target: {fileID: 8588932275564097776, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -703665196563478195, guid: 7a839ee2374fc6f439688d5f5cf1a5a5, type: 3}
+      objectReference: {fileID: -143944298476217403, guid: 492c124e4f4ae8045b3f29d2a67452f7, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
