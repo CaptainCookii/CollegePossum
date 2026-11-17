@@ -72,6 +72,16 @@ public class PinballManager : MonoBehaviour
 
     private void Start()
     {
+        if (GameManager.Instance.currAnxiety > maxAnxiety)
+        {
+            instructions.enabled = false;
+            instructions.transform.GetChild(0).gameObject.SetActive(false);
+            coolText.enabled = false;
+            timerUI.enabled = false;
+            StartCoroutine(GameOverSequence());
+            return;
+        }
+
         gameOver = false;
         //Update vars from GameManager
         cool = GameManager.Instance.currCoolPoints;
@@ -390,6 +400,15 @@ public class PinballManager : MonoBehaviour
         maxBallsPerRound = currentTopicBalls;
         destroyedBalls = 0;
         RestartSequence();
+    }
+
+    public void ExitConversation()
+    {
+        GameManager.Instance.currCoolPoints += cool;
+        GameManager.Instance.totalCoolPoints += cool;
+        GameManager.Instance.currAnxiety += currAnxiety;
+        MusicManager.Instance.SetMusicLayer("Pachinko", false);
+        SceneManager.LoadScene("YarnSpinnerPrototype");
     }
 
 }

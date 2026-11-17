@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PanicText : MonoBehaviour
 {
-
     [SerializeField] private RectTransform[] texts;
     [SerializeField] private float minMoveTime = 0.5f;
     [SerializeField] private float maxMoveTime = 2f;

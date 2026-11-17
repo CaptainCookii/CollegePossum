@@ -210,6 +210,14 @@ MonoBehaviour:
   floatSpeed: 2
   ball: {fileID: 5230532946772367523, guid: 014bf1696738f469fa9f24a57d25c234, type: 3}
   bubbleSprite: {fileID: 7311498795888303305}
+  launchForce: 8
+  bubbleSound:
+    Guid:
+      Data1: -870437181
+      Data2: 1104163494
+      Data3: -1026145388
+      Data4: -839334773
+    Path: event:/SFX/pachinko_sounds/pinball_ejector
 --- !u!60 &1853227927787371772
 PolygonCollider2D:
   m_ObjectHideFlags: 0

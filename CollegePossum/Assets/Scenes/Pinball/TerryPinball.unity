@@ -6934,7 +6934,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 428993395}
         m_TargetAssemblyTypeName: PinballManager, Assembly-CSharp
-        m_MethodName: GameOver
+        m_MethodName: ExitConversation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

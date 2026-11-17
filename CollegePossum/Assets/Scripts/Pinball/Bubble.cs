@@ -3,6 +3,7 @@ using System.Collections;
 using System.Runtime.CompilerServices;
 using UnityEditor.Tilemaps;
 using UnityEngine;
+using FMODUnity;
 
 public class Bubble : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Bubble : MonoBehaviour
     [SerializeField] private GameObject ball;
     [SerializeField] private Transform bubbleSprite;
     [SerializeField] private float launchForce = 8f;
+    [SerializeField] private EventReference bubbleSound;
 
     private Vector2 spawnVector;
     private bool popped = false;
@@ -60,5 +62,6 @@ public class Bubble : MonoBehaviour
         GameObject nb = Instantiate(ball, bubbleSprite.position, Quaternion.identity);
         Rigidbody2D ballrb = nb.GetComponent<Rigidbody2D>();
         ballrb.AddForce(Vector2.right * horizontal * launchForce, ForceMode2D.Impulse);
+        RuntimeManager.PlayOneShot(bubbleSound, bubbleSprite.position);
     }
 }
