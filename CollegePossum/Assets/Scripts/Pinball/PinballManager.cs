@@ -23,6 +23,14 @@ public class PinballManager : MonoBehaviour
     [SerializeField] private GameObject francineDialogue;
     [SerializeField] private GameObject NPCDialogue;
     [SerializeField] private GameObject[] uhmDialogues;
+
+    [SerializeField] private Transform leftSpawn;
+    [SerializeField] private Transform rightSpawn;
+
+    [SerializeField] private GameObject leftBubble;
+    [SerializeField] private GameObject rightBubble;
+
+    [SerializeField] private float spawnInterval = 7f;
     public DidHit hit;
     private List<GameObject> activeObjects = new List<GameObject>();
     private Dictionary<GameObject, Coroutine> timers =
@@ -44,7 +52,7 @@ public class PinballManager : MonoBehaviour
     private int maxBallsPerRound = 0;
     [SerializeField] private float force = 8f;
 
-    private int currentTopicBalls = 10;
+    [SerializeField] private int currentTopicBalls = 5;
 
     [SerializeField] private GameObject panicCanvas;
     private bool gameOver = false;
@@ -158,25 +166,14 @@ public class PinballManager : MonoBehaviour
         // Ball timerUI that ticks down one number per second.
         for (int i = 3; i > 0; i--)
         {
-            timerUI.text = "Balls Launched In: " + i + "s";
+            timerUI.text = "Conversation Begins In: " + i + "s";
             yield return new WaitForSeconds(1f);
         }
 
         // Removes timerUI from visibility once it hits 0 seconds.
         timerUI.gameObject.SetActive(false);
 
-        LockPieces();
         yield return StartCoroutine(ShootSequence());
-    }
-
-    // Locks pieces when timerUI ends and disables the dragging of them.
-    private void LockPieces()
-    {
-        Piece[] pieces = FindObjectsByType<Piece>(FindObjectsSortMode.None);
-        foreach (Piece piece in pieces)
-        {
-            piece.LockPiece();
-        }
     }
 
     // Shoot sequence!! For now, it shoots the first ball when the timerUI ends.
@@ -187,67 +184,37 @@ public class PinballManager : MonoBehaviour
         NPCDialogue.SetActive(true);
         for (int i = 0; i < currentTopicBalls; i++)
         {
-            int index = i % chutes.Length;
-            Transform chute = chutes[index];
+            bool left = Random.Range(0, 2) == 0;
 
-            GameObject ball = Instantiate(ballPrefab, chute.position, chute.rotation);
-            RuntimeManager.PlayOneShot(chuteLaunchSound, chute.position);
-            AddBall();
+            GameObject p;
+            Transform s;
 
-            Rigidbody2D rb = ball.GetComponent<Rigidbody2D>();
-            if (rb != null)
+            if (left)
             {
-                rb.AddForce(chute.right * force, ForceMode2D.Impulse);
+                p = leftBubble;
+                s = leftSpawn;
             }
+            else
+            {
+                p = rightBubble;
+                s = rightSpawn;
+            }
+
+            Instantiate(p, s.position, Quaternion.identity);
 
             if (i < currentTopicBalls - 1)
             {
-                yield return new WaitForSeconds(7f);
+                yield return new WaitForSeconds(spawnInterval);
             }
+    
         }
+
         francineDialogue.SetActive(true);
-        RetractChutes();
-    }
-
-    // Tells the chutes to retract.
-    private void RetractChutes()
-    {
-        foreach (Transform chute in chutes)
-        {
-            ChuteRetract retract = chute.GetComponentInParent<ChuteRetract>();
-            if (retract != null)
-            {
-                retract.RetractChute();
-            }
-            else
-            {
-                Debug.Log("no script found");
-            }
-            ;
-        }
-    }
-
-    // Tells the chutes to extend.
-    private void ExtendChutes()
-    {
-        foreach (Transform chute in chutes)
-        {
-            ChuteRetract retract = chute.GetComponentInParent<ChuteRetract>();
-            if (retract != null)
-            {
-                retract.ExtendChute();
-            }
-            else
-            {
-                Debug.Log("no script found");
-            }
-        }
     }
 
     // Restarts the game when called, currently when "Play Again" is selected.
     public void RestartSequence()
     {
-        ExtendChutes();
         StartCoroutine(Sequence());
     }
 
@@ -422,17 +389,7 @@ public class PinballManager : MonoBehaviour
         roundEndUI.SetActive(false);
         maxBallsPerRound = currentTopicBalls;
         destroyedBalls = 0;
-        UnlockPieces();
         RestartSequence();
     }
 
-    // Unlocks pieces when sequence is restarted.
-    private void UnlockPieces()
-    {
-        Piece[] pieces = FindObjectsByType<Piece>(FindObjectsSortMode.None);
-        foreach (Piece piece in pieces)
-        {
-            piece.enabled = true;
-        }
-    }
 }

@@ -67,11 +67,11 @@ public class PaddleController : MonoBehaviour
 
         if (side == Side.Left)
         {
-            keyPressed = Keyboard.current.leftArrowKey.isPressed || Keyboard.current.aKey.isPressed;
+            keyPressed = Keyboard.current.leftArrowKey.isPressed || Keyboard.current.aKey.isPressed || Mouse.current.leftButton.isPressed;
         }
         else if (side == Side.Right)
         {
-            keyPressed = Keyboard.current.rightArrowKey.isPressed || Keyboard.current.dKey.isPressed;
+            keyPressed = Keyboard.current.rightArrowKey.isPressed || Keyboard.current.dKey.isPressed || Mouse.current.rightButton.isPressed;
         }
 
         keyPressedThisFrame = keyPressed && !wasKeyPressed;

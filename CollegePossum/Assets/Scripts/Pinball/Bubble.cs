@@ -10,8 +10,7 @@ public class Bubble : MonoBehaviour
     [SerializeField] private float floatSpeed = 1f;
     [SerializeField] private GameObject ball;
     [SerializeField] private Transform bubbleSprite;
-
-
+    [SerializeField] private float launchForce = 8f;
 
     private Vector2 spawnVector;
     private bool popped = false;
@@ -57,6 +56,9 @@ public class Bubble : MonoBehaviour
     private void Pop()
     { 
         popped = true;
-        Instantiate(ball, bubbleSprite.position, Quaternion.identity);
+
+        GameObject nb = Instantiate(ball, bubbleSprite.position, Quaternion.identity);
+        Rigidbody2D ballrb = nb.GetComponent<Rigidbody2D>();
+        ballrb.AddForce(Vector2.right * horizontal * launchForce, ForceMode2D.Impulse);
     }
 }
