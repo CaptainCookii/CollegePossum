@@ -1,0 +1,10 @@
+{
+"version":3,
+"commands":[
+{"yarnName":"hide_dialogue","definitionName":"global::Yarn.Unity.Addons.ClassicRPG.RPGDialoguePresenter.HideDialogueBoxes","fileName":"CollegePossum\\Packages\\dev.yarnspinner.unity.addons.classicrpg\\Runtime\\Scripts\\RPGDialoguePresenter.cs","language":"csharp","async":false,"containsErrors":false,"location":{"start":{"line":329,"character":27},"end":{"line":329,"character":44}},"parameters":[]},
+{"yarnName":"set_dialogue_style","definitionName":"global::Yarn.Unity.Addons.ClassicRPG.RPGDialoguePresenter.SetDialogueBoxStyle","fileName":"CollegePossum\\Packages\\dev.yarnspinner.unity.addons.classicrpg\\Runtime\\Scripts\\RPGDialoguePresenter.cs","language":"csharp","async":false,"containsErrors":false,"location":{"start":{"line":311,"character":27},"end":{"line":311,"character":46}},"parameters":[{"name":"style","isParamsArray":false,"type":"string"}]}
+],
+"functions":[
+
+]
+}

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 706b1dac2a0fc48d6912a3a87ae9b958
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267061
+  packageName: Yarn Spinner+ for Unity, the friendly dialogue and narrative tool
+  packageVersion: 3.3.2
+  assetPath: Packages/dev.yarnspinner.unity/Runtime/Commands/taskgyb.py
+  uploadId: 1052726

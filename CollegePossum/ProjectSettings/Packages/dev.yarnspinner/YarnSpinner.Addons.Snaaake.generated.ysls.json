@@ -1,0 +1,9 @@
+{
+"version":3,
+"commands":[
+{"yarnName":"set_slot","definitionName":"global::Yarn.Unity.Addons.Snaaake.TalkingHeadDialoguePresenter.SetCharacterToSlot","fileName":"CollegePossum\\Packages\\dev.yarnspinner.unity.addons.snaaake\\Runtime\\Scripts\\TalkingHeadDialoguePresenter.cs","language":"csharp","async":false,"containsErrors":false,"location":{"start":{"line":121,"character":27},"end":{"line":121,"character":45}},"parameters":[{"name":"characterName","isParamsArray":false,"type":"string","documentation":"The character name to associate."},{"name":"slotName","isParamsArray":false,"type":"string","documentation":"The name of the slot to associate the character with."}],"documentation":"Associates a character name with a slot."}
+],
+"functions":[
+
+]
+}

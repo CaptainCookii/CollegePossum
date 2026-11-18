@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 37d84b29c36f4d7ea5fe28a179b2471d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341308
+  packageName: Text Animator for Unity | UI Toolkit and Text Mesh Pro
+  packageVersion: 3.24.0
+  assetPath: Packages/com.febucci.text-animator-unity/Scripts/Runtime/Components/Animator/TextMeshPro/NaninovelExpressionTagParser.cs
+  uploadId: 1049220

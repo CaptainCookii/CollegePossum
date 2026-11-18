@@ -1,0 +1,15 @@
+{
+"version":3,
+"commands":[
+{"yarnName":"beginning","definitionName":"global::CharacterManager.Beginning","fileName":"CollegePossum\\Assets\\YarnSpinnerHelpers\\CharacterManager.cs","language":"csharp","async":false,"containsErrors":false,"location":{"start":{"line":92,"character":16},"end":{"line":92,"character":25}},"parameters":[{"name":"target","type":"instance","subtype":"CharacterManager","isParamsArray":false},{"name":"charactered","isParamsArray":false,"type":"string"}]},
+{"yarnName":"ending","definitionName":"global::CharacterManager.Ending","fileName":"CollegePossum\\Assets\\YarnSpinnerHelpers\\CharacterManager.cs","language":"csharp","async":false,"containsErrors":false,"location":{"start":{"line":82,"character":16},"end":{"line":82,"character":22}},"parameters":[{"name":"target","type":"instance","subtype":"CharacterManager","isParamsArray":false},{"name":"name","isParamsArray":false,"type":"string"}]},
+{"yarnName":"left","definitionName":"global::CharacterManager.LeftTalk","fileName":"CollegePossum\\Assets\\YarnSpinnerHelpers\\CharacterManager.cs","language":"csharp","async":false,"containsErrors":false,"location":{"start":{"line":64,"character":16},"end":{"line":64,"character":24}},"parameters":[{"name":"target","type":"instance","subtype":"CharacterManager","isParamsArray":false}]},
+{"yarnName":"right","definitionName":"global::CharacterManager.RightTalk","fileName":"CollegePossum\\Assets\\YarnSpinnerHelpers\\CharacterManager.cs","language":"csharp","async":false,"containsErrors":false,"location":{"start":{"line":73,"character":16},"end":{"line":73,"character":25}},"parameters":[{"name":"target","type":"instance","subtype":"CharacterManager","isParamsArray":false}]},
+{"yarnName":"set_left","definitionName":"global::CharacterManager.Set_Left","fileName":"CollegePossum\\Assets\\YarnSpinnerHelpers\\CharacterManager.cs","language":"csharp","async":false,"containsErrors":false,"location":{"start":{"line":26,"character":16},"end":{"line":26,"character":24}},"parameters":[{"name":"target","type":"instance","subtype":"CharacterManager","isParamsArray":false},{"name":"character","isParamsArray":false,"type":"string"}]},
+{"yarnName":"set_music_theme","definitionName":"global::CharacterManager.SetMusicTheme","fileName":"CollegePossum\\Assets\\YarnSpinnerHelpers\\CharacterManager.cs","language":"csharp","async":false,"containsErrors":false,"location":{"start":{"line":105,"character":16},"end":{"line":105,"character":29}},"parameters":[{"name":"target","type":"instance","subtype":"CharacterManager","isParamsArray":false},{"name":"theme","isParamsArray":false,"type":"string"},{"name":"active","isParamsArray":false,"type":"bool"}]},
+{"yarnName":"set_right","definitionName":"global::CharacterManager.Set_Right","fileName":"CollegePossum\\Assets\\YarnSpinnerHelpers\\CharacterManager.cs","language":"csharp","async":false,"containsErrors":false,"location":{"start":{"line":45,"character":16},"end":{"line":45,"character":25}},"parameters":[{"name":"target","type":"instance","subtype":"CharacterManager","isParamsArray":false},{"name":"character","isParamsArray":false,"type":"string"}]}
+],
+"functions":[
+
+]
+}

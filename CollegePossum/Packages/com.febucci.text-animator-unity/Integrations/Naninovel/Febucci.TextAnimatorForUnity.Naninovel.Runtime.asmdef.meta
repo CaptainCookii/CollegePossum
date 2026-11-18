@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 75f54c09936e4135b8511277e89dc54c
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 341308
+  packageName: Text Animator for Unity | UI Toolkit and Text Mesh Pro
+  packageVersion: 3.24.0
+  assetPath: Packages/com.febucci.text-animator-unity/Integrations/Naninovel/Febucci.TextAnimatorForUnity.Naninovel.Runtime.asmdef
+  uploadId: 1049220

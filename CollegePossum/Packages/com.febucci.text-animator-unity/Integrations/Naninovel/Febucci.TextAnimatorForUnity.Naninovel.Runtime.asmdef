@@ -1,0 +1,25 @@
+{
+    "name": "Febucci.TextAnimatorForUnity.Naninovel.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "Febucci.TextAnimatorForUnity.TMP.Runtime",
+        "Elringus.Naninovel.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "NANINOVEL_PRESENT"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.elringus.naninovel",
+            "expression": "1.21.0",
+            "define": "NANINOVEL_PRESENT"
+        }
+    ],
+    "noEngineReferences": false
+}
