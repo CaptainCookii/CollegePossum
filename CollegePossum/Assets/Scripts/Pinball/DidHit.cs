@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class DidHit : MonoBehaviour
 {
+    // Collision Variables.
     public bool collided;
     public float bufferTime = 0.1f;
 
@@ -14,6 +15,7 @@ public class DidHit : MonoBehaviour
 
     [SerializeField] private GameObject popupPrefab;
     
+    // If the ball has collided with a peg, award the correct amount of cool.
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Cancel the countdown if we touch something again
@@ -50,6 +52,7 @@ public class DidHit : MonoBehaviour
         }
     }
 
+    // After the collision has been exited.
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
@@ -62,6 +65,7 @@ public class DidHit : MonoBehaviour
         }
     }
 
+    // Resets collision state.
     private IEnumerator ResetCollision()
     {
         yield return new WaitForSeconds(bufferTime);
@@ -70,14 +74,15 @@ public class DidHit : MonoBehaviour
         exitCoroutine = null;
     }
 
+    // Has there been a collision?
     public bool GetCollided()
     {
         return collided;
     }
 
+    // Call the cool pop-up if a ball has hit a peg.
     private void ShowCoolPopup(string s)
     {
-        
         GameObject c = GameObject.FindGameObjectWithTag("Cool Pop-up Canvas");
         GameObject popup = Instantiate(popupPrefab, c.transform);
         RectTransform popupRect = popup.GetComponent<RectTransform>();

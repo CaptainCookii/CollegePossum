@@ -11,7 +11,7 @@ using TMPro.EditorUtilities;
 
 public class PinballManager : MonoBehaviour
 {
-    //Instance and Reference variables
+    // Instance and Reference variables
     public static PinballManager Instance;
     [SerializeField] private GameObject roundEndUI;
     [SerializeField] private TMP_Text instructions;
@@ -23,28 +23,39 @@ public class PinballManager : MonoBehaviour
     [SerializeField] private GameObject francineDialogue;
     [SerializeField] private GameObject NPCDialogue;
     [SerializeField] private GameObject[] uhmDialogues;
+
+    [SerializeField] private Transform leftSpawn;
+    [SerializeField] private Transform rightSpawn;
+
+    [SerializeField] private GameObject leftBubble;
+    [SerializeField] private GameObject rightBubble;
+
+    [SerializeField] private float spawnInterval = 7f;
     public DidHit hit;
     private List<GameObject> activeObjects = new List<GameObject>();
     private Dictionary<GameObject, Coroutine> timers =
        new Dictionary<GameObject, Coroutine>();
 
-    //Cool variables
+    // Cool variables
     [SerializeField] private TMP_Text coolText;
     public float cool;
 
-    //Anxiety variables
+    // Anxiety variables
     [SerializeField] private Image anxietyMeter;
     private float maxAnxiety;
     private float currAnxiety;
 
-    //General variables
-    private float timer = 0f;
+    // General variables
+    
     private int activeBalls = 0;
     private int destroyedBalls = 0;
     private int maxBallsPerRound = 0;
     [SerializeField] private float force = 8f;
 
-    private int currentTopicBalls = 10;
+    [SerializeField] private int currentTopicBalls = 5;
+
+    [SerializeField] private GameObject panicCanvas;
+    private bool gameOver = false;
     
     // Single instance per scene, does not persist on load
     void Awake()
@@ -61,10 +72,21 @@ public class PinballManager : MonoBehaviour
 
     private void Start()
     {
+        if (GameManager.Instance.currAnxiety > maxAnxiety)
+        {
+            instructions.enabled = false;
+            instructions.transform.GetChild(0).gameObject.SetActive(false);
+            coolText.enabled = false;
+            timerUI.enabled = false;
+            StartCoroutine(GameOverSequence());
+            return;
+        }
+
+        gameOver = false;
         //Update vars from GameManager
         cool = GameManager.Instance.currCoolPoints;
         maxAnxiety = GameManager.Instance.maxAnxiety;
-        GameManager.Instance.currAnxiety *= .8f;
+        //GameManager.Instance.currAnxiety *= .8f;
         currAnxiety = GameManager.Instance.currAnxiety;
         maxBallsPerRound = currentTopicBalls;
 
@@ -89,18 +111,18 @@ public class PinballManager : MonoBehaviour
 
         // Currently: If the ball collides with a piece, increase cool.
 
-        if (activeBalls > 0)
-        {
-            // timer += Time.deltaTime;
+        // if (activeBalls > 0)
+        // {
+        //     // timer += Time.deltaTime;
 
-            // if (timer >= 1f)
-            // {
-            //     cool += activeBalls;
-            //     timer = 0f;
-            // }
+        //     // if (timer >= 1f)
+        //     // {
+        //     //     cool += activeBalls;
+        //     //     timer = 0f;
+        //     // }
 
-            currAnxiety += activeBalls * Time.deltaTime;
-        }
+        //     currAnxiety += activeBalls * Time.deltaTime;
+        // }
 
         //Update UI
         UpdateUI();
@@ -154,25 +176,14 @@ public class PinballManager : MonoBehaviour
         // Ball timerUI that ticks down one number per second.
         for (int i = 3; i > 0; i--)
         {
-            timerUI.text = "Balls Launched In: " + i + "s";
+            timerUI.text = "Conversation Begins In: " + i + "s";
             yield return new WaitForSeconds(1f);
         }
 
         // Removes timerUI from visibility once it hits 0 seconds.
         timerUI.gameObject.SetActive(false);
 
-        LockPieces();
         yield return StartCoroutine(ShootSequence());
-    }
-
-    // Locks pieces when timerUI ends and disables the dragging of them.
-    private void LockPieces()
-    {
-        Piece[] pieces = FindObjectsByType<Piece>(FindObjectsSortMode.None);
-        foreach (Piece piece in pieces)
-        {
-            piece.LockPiece();
-        }
     }
 
     // Shoot sequence!! For now, it shoots the first ball when the timerUI ends.
@@ -183,67 +194,37 @@ public class PinballManager : MonoBehaviour
         NPCDialogue.SetActive(true);
         for (int i = 0; i < currentTopicBalls; i++)
         {
-            int index = i % chutes.Length;
-            Transform chute = chutes[index];
+            bool left = Random.Range(0, 2) == 0;
 
-            GameObject ball = Instantiate(ballPrefab, chute.position, chute.rotation);
-            RuntimeManager.PlayOneShot(chuteLaunchSound, chute.position);
-            AddBall();
+            GameObject p;
+            Transform s;
 
-            Rigidbody2D rb = ball.GetComponent<Rigidbody2D>();
-            if (rb != null)
+            if (left)
             {
-                rb.AddForce(chute.right * force, ForceMode2D.Impulse);
+                p = leftBubble;
+                s = leftSpawn;
             }
+            else
+            {
+                p = rightBubble;
+                s = rightSpawn;
+            }
+
+            Instantiate(p, s.position, Quaternion.identity);
 
             if (i < currentTopicBalls - 1)
             {
-                yield return new WaitForSeconds(7f);
+                yield return new WaitForSeconds(spawnInterval);
             }
+    
         }
+
         francineDialogue.SetActive(true);
-        RetractChutes();
-    }
-
-    // Tells the chutes to retract.
-    private void RetractChutes()
-    {
-        foreach (Transform chute in chutes)
-        {
-            ChuteInlay inlay = chute.GetComponentInParent<ChuteInlay>();
-            if (inlay != null)
-            {
-                inlay.RetractChute();
-            }
-            else
-            {
-                Debug.Log("no script found");
-            }
-            ;
-        }
-    }
-
-    // Tells the chutes to extend.
-    private void ExtendChutes()
-    {
-        foreach (Transform chute in chutes)
-        {
-            ChuteInlay inlay = chute.GetComponentInParent<ChuteInlay>();
-            if (inlay != null)
-            {
-                inlay.ExtendChute();
-            }
-            else
-            {
-                Debug.Log("no script found");
-            }
-        }
     }
 
     // Restarts the game when called, currently when "Play Again" is selected.
     public void RestartSequence()
     {
-        ExtendChutes();
         StartCoroutine(Sequence());
     }
 
@@ -254,6 +235,7 @@ public class PinballManager : MonoBehaviour
         activeBalls++;
     }
 
+    // Removes a ball from the active list and adds it to the destroyed list.
     public void RemoveBall()
     {
         activeBalls--;
@@ -265,7 +247,8 @@ public class PinballManager : MonoBehaviour
         }
     }
 
-    public void LeverHit()
+    // When the paddle is hit.
+    public void PaddleHit()
     {
         currAnxiety += 2;
         if (hit.collided)
@@ -278,11 +261,13 @@ public class PinballManager : MonoBehaviour
         }
     }
 
+    // Activates Fran's Text.
     public void ActivateFranText()
     {
         StartCoroutine(ActivateForSeconds());
     }
 
+    // Wait time for text activity.
     private IEnumerator ActivateForSeconds()
     {
         francineDialogue.SetActive(true);
@@ -292,6 +277,7 @@ public class PinballManager : MonoBehaviour
         francineDialogue.SetActive(false);
     }
 
+    // Activates Fran's Uhms.
     public void ActivateUhms()
     {
         // Find inactive objects
@@ -333,6 +319,7 @@ public class PinballManager : MonoBehaviour
         timers[selected] = StartCoroutine(DeactivateAfterThreeSeconds(selected));
     }
 
+    // Turns text off.
     private IEnumerator DeactivateAfterThreeSeconds(GameObject obj)
     {
         yield return new WaitForSeconds(3f);
@@ -356,13 +343,55 @@ public class PinballManager : MonoBehaviour
     // This is where they lose.
     public void GameOver()
     {
+        if (gameOver)
+        {
+            return;
+        }
+
+        gameOver = true;
+        StartCoroutine(GameOverSequence());
+        // GameManager.Instance.currCoolPoints += cool;
+        // GameManager.Instance.totalCoolPoints += cool;
+        // GameManager.Instance.currAnxiety += currAnxiety;
+        // MusicManager.Instance.SetMusicLayer("Pachinko", false);
+        // SceneManager.LoadScene("YarnSpinnerPrototype");
+        // Debug.Log("game over");
+    }
+
+    // Allows for the panic screen.
+    private IEnumerator GameOverSequence()
+    {
         GameManager.Instance.currCoolPoints += cool;
         GameManager.Instance.totalCoolPoints += cool;
         GameManager.Instance.currAnxiety += currAnxiety;
         MusicManager.Instance.SetMusicLayer("Pachinko", false);
+
+        coolText.gameObject.SetActive(false);
+        francineDialogue.SetActive(false);
+        foreach (GameObject uhm in uhmDialogues)
+        {
+            uhm.SetActive(false);
+        }
+
+        DisablePaddles();
+
+        NPCDialogue.SetActive(false);
+        panicCanvas.SetActive(true);
+        yield return new WaitForSeconds(5f);
         SceneManager.LoadScene("YarnSpinnerPrototype");
-        Debug.Log("game over");
+
     }
+
+    // Disables paddles when panic screen loads.
+    private void DisablePaddles()
+    {
+        PaddleController[] paddles = FindObjectsByType<PaddleController>(FindObjectsSortMode.None);
+        foreach (PaddleController pc in paddles)
+        {
+            pc.enabled = false;
+        }
+    }
+   
 
     // If the player has not lost and chooses to play Pinball again.
     public void PlayAgain()
@@ -370,17 +399,16 @@ public class PinballManager : MonoBehaviour
         roundEndUI.SetActive(false);
         maxBallsPerRound = currentTopicBalls;
         destroyedBalls = 0;
-        UnlockPieces();
         RestartSequence();
     }
 
-    // Unlocks pieces when sequence is restarted.
-    private void UnlockPieces()
+    public void ExitConversation()
     {
-        Piece[] pieces = FindObjectsByType<Piece>(FindObjectsSortMode.None);
-        foreach (Piece piece in pieces)
-        {
-            piece.enabled = true;
-        }
+        GameManager.Instance.currCoolPoints += cool;
+        GameManager.Instance.totalCoolPoints += cool;
+        GameManager.Instance.currAnxiety += currAnxiety;
+        MusicManager.Instance.SetMusicLayer("Pachinko", false);
+        SceneManager.LoadScene("YarnSpinnerPrototype");
     }
+
 }

@@ -6,7 +6,7 @@ using UnityEngine.Rendering;
 using FMODUnity;
 
 
-public class LeverController : MonoBehaviour
+public class PaddleController : MonoBehaviour
 {
     [SerializeField] private EventReference bumperSound;
 
@@ -17,6 +17,7 @@ public class LeverController : MonoBehaviour
         Right 
     }
 
+    // Paddle Variables.
     [SerializeField] private Side side;
     [SerializeField] private Transform pivot;
 
@@ -28,11 +29,12 @@ public class LeverController : MonoBehaviour
     private float restAngle;
     private float movementAngle;
     private float currentAngle;
+    private bool wasKeyPressed;
 
     private Vector3 os;
 
 
-    // Stores hinge component and attacks motor to hinge.
+    // Set the paddle angles.
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -56,7 +58,7 @@ public class LeverController : MonoBehaviour
         os = transform.position - pivot.position;
     }
 
-    // Moves the levers their respective directions with their respective forces.
+    // Moves the paddles their respective directions with their respective forces.
     // Angles are edited in Unity engine.
     void Update()
     {
@@ -65,22 +67,24 @@ public class LeverController : MonoBehaviour
 
         if (side == Side.Left)
         {
-            keyPressed = Keyboard.current.leftArrowKey.isPressed;
-            keyPressedThisFrame = Keyboard.current.leftArrowKey.wasPressedThisFrame;
+            keyPressed = Keyboard.current.leftArrowKey.isPressed || Keyboard.current.aKey.isPressed || Mouse.current.leftButton.isPressed;
         }
         else if (side == Side.Right)
         {
-            keyPressed = Keyboard.current.rightArrowKey.isPressed;
-            keyPressedThisFrame = Keyboard.current.rightArrowKey.wasPressedThisFrame;
+            keyPressed = Keyboard.current.rightArrowKey.isPressed || Keyboard.current.dKey.isPressed || Mouse.current.rightButton.isPressed;
         }
+
+        keyPressedThisFrame = keyPressed && !wasKeyPressed;
+        wasKeyPressed = keyPressed;
 
         // Adds to anxiety per lever hit.
         if (keyPressedThisFrame)
         {
             RuntimeManager.PlayOneShot(bumperSound, transform.position);
-            PinballManager.Instance.LeverHit();
+            PinballManager.Instance.PaddleHit();
         }
 
+        // Changing the angle based on key pressed.
         float goalAngle;
         if (keyPressed)
         {
@@ -105,6 +109,7 @@ public class LeverController : MonoBehaviour
 
     }
 
+    // Handles rotation.
     private void FixedUpdate()
     {
         float angleChange = currentAngle - restAngle;
