@@ -1,12 +1,11 @@
 using System.Collections;
 using UnityEngine;
 
-public class ChuteInlay : MonoBehaviour
+public class ChuteRetract : MonoBehaviour
 {
+    // Chute retracting variables.
     private float retractDist = 2f;
     private float moveTime = 0.5f;
-
-    // I have never used this before, had to look up documentation. Could change this?
     private AnimationCurve moveCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
     private Vector3 outPosition;
