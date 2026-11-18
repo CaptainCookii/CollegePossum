@@ -28,7 +28,7 @@ public class MainMenuManager : MonoBehaviour
             CharacterSpawnManager.Instance.StartNewRun();
             GameState.ResetRun();
         }
-        SceneManager.LoadScene("YarnSpinnerPrototype");
+        SceneManager.LoadScene("ClassesMenu");
     }
 
     public void Settings()

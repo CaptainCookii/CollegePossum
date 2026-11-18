@@ -1,5 +1,6 @@
 ﻿title: Beau_Fnname
 ---
+<<set_music_theme CharacterManager Beau true>>
 <<set_left CharacterManager Beau>>
 <<wait .15>>
 <<set_right CharacterManager Francine>>

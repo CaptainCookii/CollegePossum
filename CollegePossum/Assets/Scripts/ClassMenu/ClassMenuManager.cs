@@ -18,7 +18,7 @@ public class ClassMenuManager : MonoBehaviour
 
     public void ExitClasses()
     {
-        SceneManager.LoadScene("PartyRoom2D");
+        SceneManager.LoadScene("YarnSpinnerPrototype");
     }
 
     public void MathUp()
