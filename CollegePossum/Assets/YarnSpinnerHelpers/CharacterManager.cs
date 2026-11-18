@@ -154,13 +154,15 @@ public class CharacterManager : MonoBehaviour
 
     private void Start()
     {
-        characters = FindObjectsByType<Character>(FindObjectsSortMode.None);
+        characters = FindObjectsByType<Character>(
+    FindObjectsInactive.Include, FindObjectsSortMode.None);
 
-        CharacterDialogue characterDialogue = new CharacterDialogue();
+        CharacterDialogue characterDialogue = null; // don't use `new` on a MonoBehaviour
 
         foreach (Character name in characters)
         {
-            if (GameState.pinballScene == name.pinballScene)
+            if (!string.IsNullOrEmpty(GameState.pinballScene) &&
+                GameState.pinballScene == name.pinballScene)
             {
                 characterDialogue = name.character.GetComponent<CharacterDialogue>();
                 GameState.SetInteractable(name.characterName, false);
@@ -174,6 +176,6 @@ public class CharacterManager : MonoBehaviour
             }
         }
 
-        Debug.Log(characters.Length);
+        GameState.pinballScene = null;
     }
 }

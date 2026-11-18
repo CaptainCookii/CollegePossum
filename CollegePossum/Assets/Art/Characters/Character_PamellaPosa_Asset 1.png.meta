@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7a839ee2374fc6f439688d5f5cf1a5a5
+guid: 492c124e4f4ae8045b3f29d2a67452f7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -703665196563478195
-    second: Character_PamellaPosa_Asset_0
+      213: -143944298476217403
+    second: Character_PamellaPosa_Asset 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,12 +100,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character_PamellaPosa_Asset_0
+      name: Character_PamellaPosa_Asset 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 430
+        width: 381
         height: 1130
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d49470e5b341c36f0800000000000000
-      internalID: -703665196563478195
+      spriteID: 5cbd1e55c6b900ef0800000000000000
+      internalID: -143944298476217403
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Character_PamellaPosa_Asset_0: -703665196563478195
+      Character_PamellaPosa_Asset 1_0: -143944298476217403
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

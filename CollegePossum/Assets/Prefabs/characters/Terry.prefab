@@ -88,6 +88,26 @@ PrefabInstance:
       propertyPath: characterMusicRef
       value: Terrence
       objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: dialogueI.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: dialogueP.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: 'dialogueI.Array.data[0]'
+      value: Terry_Intro
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: 'dialogueP.Array.data[0]'
+      value: Terry_Advisor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075756980971501237, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
+      propertyPath: 'dialogueP.Array.data[1]'
+      value: Terry_IR
+      objectReference: {fileID: 0}
     - target: {fileID: 5853841517756235867, guid: 25e701807979cff4b840151e2ea3f54a, type: 3}
       propertyPath: m_Name
       value: Terry

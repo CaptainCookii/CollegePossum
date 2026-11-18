@@ -33,4 +33,13 @@ public static class GameState
     {
         characterInteractable.Clear();
     }
+
+    public static int currentRoom = 0;
+
+    public static void ResetRun()
+    {
+        currentRoom = 0;
+        pinballScene = null;
+        characterInteractable.Clear();
+    }
 }
