@@ -62,7 +62,7 @@ public class Door : MonoBehaviour
 
     public void EndRun()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("ClassesMenu");
         GameState.ResetRun();
     }
 

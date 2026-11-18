@@ -108,7 +108,7 @@ public class MusicManager : MonoBehaviour
             return;
 
         musicInstance.setParameterByName("Anxiety", level);
-        Debug.Log("Anxiety Level: " + level);
+        //Debug.Log("Anxiety Level: " + level);
     }
 
     // -------------------------

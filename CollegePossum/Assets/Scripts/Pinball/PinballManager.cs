@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
 using UnityEngine.InputSystem;
 using FMODUnity;
-using TMPro.EditorUtilities;
 
 public class PinballManager : MonoBehaviour
 {
@@ -72,8 +71,18 @@ public class PinballManager : MonoBehaviour
 
     private void Start()
     {
+        gameOver = false;
+
+        //Update vars from GameManager
+        cool = GameManager.Instance.currCoolPoints;
+        maxAnxiety = GameManager.Instance.maxAnxiety;
+        currAnxiety = GameManager.Instance.currAnxiety;
+        maxBallsPerRound = currentTopicBalls;
+
+        // Check if the player has already lost before starting the game
         if (GameManager.Instance.currAnxiety > maxAnxiety)
         {
+            Debug.Log("Game Over from start: " + currAnxiety / maxAnxiety);
             instructions.enabled = false;
             instructions.transform.GetChild(0).gameObject.SetActive(false);
             coolText.enabled = false;
@@ -81,14 +90,6 @@ public class PinballManager : MonoBehaviour
             StartCoroutine(GameOverSequence());
             return;
         }
-
-        gameOver = false;
-        //Update vars from GameManager
-        cool = GameManager.Instance.currCoolPoints;
-        maxAnxiety = GameManager.Instance.maxAnxiety;
-        //GameManager.Instance.currAnxiety *= .8f;
-        currAnxiety = GameManager.Instance.currAnxiety;
-        maxBallsPerRound = currentTopicBalls;
 
         //Update cool UI text
         UpdateUI();
@@ -363,6 +364,9 @@ public class PinballManager : MonoBehaviour
         }
 
         gameOver = true;
+
+        Debug.Log("Game Over from function: " + currAnxiety/maxAnxiety);
+
         StartCoroutine(GameOverSequence());
         // GameManager.Instance.currCoolPoints += cool;
         // GameManager.Instance.totalCoolPoints += cool;
@@ -377,7 +381,7 @@ public class PinballManager : MonoBehaviour
     {
         GameManager.Instance.currCoolPoints += cool;
         GameManager.Instance.totalCoolPoints += cool;
-        GameManager.Instance.currAnxiety += currAnxiety;
+        GameManager.Instance.currAnxiety = 0;
         MusicManager.Instance.SetMusicLayer("Pachinko", false);
         MusicManager.Instance.SetAnxietyLayer(0);
 
@@ -393,7 +397,7 @@ public class PinballManager : MonoBehaviour
         NPCDialogue.SetActive(false);
         panicCanvas.SetActive(true);
         yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene("YarnSpinnerPrototype");
+        SceneManager.LoadScene("ClassesMenu");
 
     }
 
@@ -423,6 +427,7 @@ public class PinballManager : MonoBehaviour
         GameManager.Instance.totalCoolPoints += cool;
         GameManager.Instance.currAnxiety += currAnxiety;
         MusicManager.Instance.SetMusicLayer("Pachinko", false);
+        Debug.Log("Exiting conversation, " + "Cool: " + cool + " Anxiety: " + currAnxiety);
         SceneManager.LoadScene("YarnSpinnerPrototype");
     }
 
