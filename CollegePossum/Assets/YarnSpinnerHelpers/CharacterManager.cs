@@ -102,6 +102,12 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
+    [YarnCommand("set_music_theme")]
+    public void SetMusicTheme(string theme, bool active)
+    {
+        MusicManager.Instance.SetMusicLayer(theme, active);
+    }
+
     // a function which edits the alpha values
 
     private IEnumerator FadeTo(float targetAlpha, SpriteRenderer overlay)

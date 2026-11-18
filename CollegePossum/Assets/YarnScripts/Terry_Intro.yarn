@@ -1,5 +1,6 @@
 ﻿title: Terry_Intro
 ---
+<<set_music_theme CharacterManager FCE true>>
 <<set_left CharacterManager Francine>>
 <<wait .15>>
 <<set_right CharacterManager Francine>>
@@ -32,6 +33,8 @@ Fran: .....with how much you talk about him maybe you're the one that likes him
 <<wait .15>>
 Cine: Fran.....
 <<set_left CharacterManager Terry>>
+<<set_music_theme CharacterManager FCE false>>
+<<set_music_theme CharacterManager Terrence true>>
 <<wait .15>>
 <<right CharacterManager>>
 <<wait .15>>

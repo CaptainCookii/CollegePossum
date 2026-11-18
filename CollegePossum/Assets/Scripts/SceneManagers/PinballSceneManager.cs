@@ -4,7 +4,7 @@ public class PinballSceneManager : MonoBehaviour
 {
     void Start()
     {
-        MusicManager.Instance.SetMusicLayer("Pachinko", true);
+        //MusicManager.Instance.SetMusicLayer("Pachinko", true);
     }
 
 }

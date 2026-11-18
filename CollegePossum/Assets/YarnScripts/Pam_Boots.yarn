@@ -31,5 +31,6 @@ Pam sighs, frowning down at her feet.
 <<left CharacterManager>>
 <<wait .15>>
 Pamella: Thanks, France. I’m not sure how I’ll recover, though.
+<<set_music_theme CharacterManager Pam false>>
 <<ending CharacterManager Pam>>
 ===

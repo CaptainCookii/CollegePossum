@@ -9,13 +9,12 @@ public class PartySceneManager : MonoBehaviour
 
     public void Start()
     {
-        Invoke(nameof(StartMusic), .2f);
+        Invoke(nameof(StartMusic), .1f);
     }
 
     private void StartMusic()
     {
-        MusicManager.Instance.ClearInstance();
-        MusicManager.Instance.StartMusic(partyEvent);
+        MusicManager.Instance.SwitchMusic(MusicManager.MusicEvent.Party);
         MusicManager.Instance.SetMusicLayer("Party", true);
     }
 }

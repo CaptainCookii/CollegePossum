@@ -54,7 +54,7 @@ public class CharacterDialogue : MonoBehaviour
 
             if (hit != null && hit.gameObject == gameObject && !dialogueRunner.IsDialogueRunning && interactable && !PanelBlocker.AnyOpen)
             {
-                MusicManager.Instance.SetMusicLayer(character.characterMusicRef, true);
+                //MusicManager.Instance.SetMusicLayer("FCE", true);
                 dialogueRunner.StartDialogue(character.dialogueI[Random.Range(0, character.dialogueI.Length)]);
             }
 
@@ -92,6 +92,8 @@ public class CharacterDialogue : MonoBehaviour
 
     public void StartDialogue()
     {
+        //MusicManager.Instance.SetMusicLayer(character.characterMusicRef, true);
+        //MusicManager.Instance.SetMusicLayer("FCE", false);
         dialogueRunner.StartDialogue(character.dialogueP[Random.Range(0, character.dialogueP.Length)]);
         interactable = false;
     }

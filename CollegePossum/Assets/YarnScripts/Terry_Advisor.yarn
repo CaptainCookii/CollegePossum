@@ -20,5 +20,6 @@ Francine: Are you not going to graduate on time?
 <<left CharacterManager>>
 <<wait .15>>
 Terry: I don’t know, because as established, I’m not a nerd. This is what’s wrong with education, man. You’re so obsessed with grades. You’re just like my advisor.
+<<set_music_theme CharacterManager Terrence false>>
 <<ending CharacterManager Terrence>>
 ===

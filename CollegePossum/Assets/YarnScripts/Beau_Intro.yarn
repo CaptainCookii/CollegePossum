@@ -1,5 +1,6 @@
 ﻿title: Beau_Intro
 ---
+<<set_music_theme CharacterManager FCE true>>
 <<set_left CharacterManager Francine>>
 <<wait .15>>
 <<set_right CharacterManager Francine>>
@@ -24,6 +25,8 @@ Ellis: <b>OH MY GOD JUST TALK TO HIM!</b>
 <<wait .15>>
 Fran: <b>FINE!</b>
 <<set_left CharacterManager Beau>>
+<<set_music_theme CharacterManager FCE false>>
+<<set_music_theme CharacterManager Beau true>>
 <<wait .15>>
 <<right CharacterManager>>
 <<wait .15>>

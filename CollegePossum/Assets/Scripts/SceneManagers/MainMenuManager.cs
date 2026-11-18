@@ -16,8 +16,7 @@ public class MainMenuManager : MonoBehaviour
 
     private void StartMusic()
     {
-        MusicManager.Instance.StartMusic(mainMenuEvent);
-        MusicManager.Instance.SetMusicLayer("MainMenu", true);
+        MusicManager.Instance.SwitchMusic(MusicManager.MusicEvent.Home);
     }
 
     public void PlayGame()

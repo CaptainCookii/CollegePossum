@@ -31,5 +31,6 @@ Francine: I mean, I go by Fran sometimes?
 <<wait .15>>
 Beau: Oh, that’s actually pretty good.
 Beau: But NOT GOOD ENOUGH. I’m gonna sleep on it. I’m gonna let it marinate. On my life, you will be nicknamed. 
+<<set_music_theme CharacterManager Beau false>>
 <<ending CharacterManager Beau>>
 ===

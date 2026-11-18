@@ -1963,6 +1963,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: homeMusic.Path
+      value: event:/MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: partyMusic.Path
+      value: event:/Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: homeMusic.Guid.Data1
+      value: -1484329762
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: homeMusic.Guid.Data2
+      value: 1108893437
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: homeMusic.Guid.Data3
+      value: -2070047825
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: homeMusic.Guid.Data4
+      value: 295604148
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: partyMusic.Guid.Data1
+      value: -254230984
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: partyMusic.Guid.Data2
+      value: 1137975434
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: partyMusic.Guid.Data3
+      value: -2052029288
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: partyMusic.Guid.Data4
+      value: 1430716876
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

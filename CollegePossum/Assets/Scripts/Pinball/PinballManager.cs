@@ -124,8 +124,22 @@ public class PinballManager : MonoBehaviour
         //     currAnxiety += activeBalls * Time.deltaTime;
         // }
 
-        //Update UI
-        UpdateUI();
+        if (currAnxiety/maxAnxiety > .25)
+        {
+            MusicManager.Instance.SetAnxietyLayer(1);
+        } else if (currAnxiety/maxAnxiety > .5)
+        {
+            MusicManager.Instance.SetAnxietyLayer(2);
+        } else if (currAnxiety/maxAnxiety > .75)
+        {
+            MusicManager.Instance.SetAnxietyLayer(3);
+        } else
+        {
+            MusicManager.Instance.SetAnxietyLayer(0);
+        }
+
+            //Update UI
+            UpdateUI();
 
         //Check to see if round should end
         checkGameState();
@@ -365,6 +379,7 @@ public class PinballManager : MonoBehaviour
         GameManager.Instance.totalCoolPoints += cool;
         GameManager.Instance.currAnxiety += currAnxiety;
         MusicManager.Instance.SetMusicLayer("Pachinko", false);
+        MusicManager.Instance.SetAnxietyLayer(0);
 
         coolText.gameObject.SetActive(false);
         francineDialogue.SetActive(false);

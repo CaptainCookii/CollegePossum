@@ -7,7 +7,20 @@ public class MusicManager : MonoBehaviour
 {
     public static MusicManager Instance { get; private set; }
 
+    [Header("Music Events")]
+    [SerializeField] private EventReference homeMusic;
+    [SerializeField] private EventReference partyMusic;
+
     private EventInstance musicInstance;
+
+    public enum MusicEvent
+    {
+        None,
+        Home,
+        Party
+    }
+
+    public MusicEvent CurrentMusic { get; private set; } = MusicEvent.None;
 
     private void Awake()
     {
@@ -22,13 +35,58 @@ public class MusicManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void StartMusic(EventReference currentEvent)
+    // =========================================================
+    // MUSIC EVENT CONTROL
+    // =========================================================
+
+    public void SwitchMusic(MusicEvent newMusic)
     {
-        if (musicInstance.isValid())
+        // Don't restart the same music.
+        if (CurrentMusic == newMusic && musicInstance.isValid())
             return;
 
-        musicInstance = RuntimeManager.CreateInstance(currentEvent);
+        StopCurrentMusic();
+
+        EventReference newEvent = GetEventReference(newMusic);
+
+        if (newEvent.IsNull)
+        {
+            CurrentMusic = MusicEvent.None;
+            return;
+        }
+
+        musicInstance = RuntimeManager.CreateInstance(newEvent);
+
         musicInstance.start();
+
+        CurrentMusic = newMusic;
+    }
+
+    private EventReference GetEventReference(MusicEvent music)
+    {
+        switch (music)
+        {
+            case MusicEvent.Home:
+                return homeMusic;
+
+            case MusicEvent.Party:
+                return partyMusic;
+
+            default:
+                return default;
+        }
+    }
+
+    public void StopCurrentMusic()
+    {
+        if (!musicInstance.isValid())
+            return;
+
+        musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        musicInstance.release();
+        musicInstance.clearHandle();
+
+        CurrentMusic = MusicEvent.None;
     }
 
     // -------------------------
@@ -44,13 +102,13 @@ public class MusicManager : MonoBehaviour
         Debug.Log("Music Layer: " + musicLayer + " Active: " +  active);
     }
 
-    public void SetAnxietyLayer(string musicLayer, bool active)
+    public void SetAnxietyLayer(int level)
     {
         if (!musicInstance.isValid())
             return;
 
-        musicInstance.setParameterByName(musicLayer, active ? 1f : 0f);
-        Debug.Log("Music Layer: " + musicLayer + " Active: " + active);
+        musicInstance.setParameterByName("Anxiety", level);
+        Debug.Log("Anxiety Level: " + level);
     }
 
     // -------------------------
