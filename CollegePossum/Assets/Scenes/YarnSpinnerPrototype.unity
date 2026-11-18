@@ -960,6 +960,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DarkOverlay
   overlay: {fileID: 1263498283}
   fadeDuration: 0.5
+--- !u!1 &1265286382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1265286383}
+  - component: {fileID: 1265286384}
+  m_Layer: 0
+  m_Name: PartySceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1265286383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265286382}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2072078196}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1265286384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265286382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f1c571bedcc634189691638a2bf624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartySceneManager
+  partyEvent:
+    Guid:
+      Data1: -254230984
+      Data2: 1137975434
+      Data3: -2052029288
+      Data4: 1430716876
+    Path: event:/Music
 --- !u!1001 &1281882554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1011,6 +1062,26 @@ PrefabInstance:
     - target: {fileID: 1747948259366188922, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: partyEvent.Path
+      value: event:/MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: partyEvent.Guid.Data1
+      value: -1484329762
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: partyEvent.Guid.Data2
+      value: 1108893437
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: partyEvent.Guid.Data3
+      value: -2070047825
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978655125085888714, guid: 757d8036a77b6f94baac4bef335899f7, type: 3}
+      propertyPath: partyEvent.Guid.Data4
+      value: 295604148
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1406,6 +1477,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1265286383}
   - {fileID: 1281882555}
   - {fileID: 1642860527}
   - {fileID: 347928825}

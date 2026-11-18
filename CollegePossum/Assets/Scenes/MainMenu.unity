@@ -1358,6 +1358,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuButtonController
   settingsMenu: {fileID: 1228280894}
+  mainMenuEvent:
+    Guid:
+      Data1: -1484329762
+      Data2: 1108893437
+      Data3: -2070047825
+      Data4: 295604148
+    Path: event:/MainMenu
 --- !u!1 &1562867525
 GameObject:
   m_ObjectHideFlags: 0

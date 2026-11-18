@@ -7,10 +7,6 @@ public class MusicManager : MonoBehaviour
 {
     public static MusicManager Instance { get; private set; }
 
-    [Header("FMOD Music Event")]
-    [SerializeField]
-    private EventReference musicEvent;
-
     private EventInstance musicInstance;
 
     private void Awake()
@@ -26,17 +22,12 @@ public class MusicManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    private void Start()
-    {
-        StartMusic();
-    }
-
-    private void StartMusic()
+    public void StartMusic(EventReference currentEvent)
     {
         if (musicInstance.isValid())
             return;
 
-        musicInstance = RuntimeManager.CreateInstance(musicEvent);
+        musicInstance = RuntimeManager.CreateInstance(currentEvent);
         musicInstance.start();
     }
 
@@ -53,16 +44,30 @@ public class MusicManager : MonoBehaviour
         Debug.Log("Music Layer: " + musicLayer + " Active: " +  active);
     }
 
+    public void SetAnxietyLayer(string musicLayer, bool active)
+    {
+        if (!musicInstance.isValid())
+            return;
+
+        musicInstance.setParameterByName(musicLayer, active ? 1f : 0f);
+        Debug.Log("Music Layer: " + musicLayer + " Active: " + active);
+    }
+
     // -------------------------
     // CLEANUP
     // -------------------------
 
-    private void OnDestroy()
+    public void ClearInstance()
     {
         if (!musicInstance.isValid())
             return;
 
         musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+
+    private void OnDestroy()
+    {
+        ClearInstance();
         musicInstance.release();
     }
 }

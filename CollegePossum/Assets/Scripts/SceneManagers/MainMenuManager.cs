@@ -1,11 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMOD.Studio;
+using FMODUnity;
 
 public class MainMenuManager : MonoBehaviour
 {
 
     [SerializeField] private GameObject settingsMenu;
-    
+    [SerializeField] private EventReference mainMenuEvent;
+
     public void Start()
     {
         Invoke(nameof(StartMusic), .1f);
@@ -13,7 +16,8 @@ public class MainMenuManager : MonoBehaviour
 
     private void StartMusic()
     {
-        MusicManager.Instance.SetMusicLayer("Party", true);
+        MusicManager.Instance.StartMusic(mainMenuEvent);
+        MusicManager.Instance.SetMusicLayer("MainMenu", true);
     }
 
     public void PlayGame()
