@@ -57,10 +57,9 @@ public class CharacterDialogue : MonoBehaviour
                 //MusicManager.Instance.SetMusicLayer("FCE", true);
                 dialogueRunner.StartDialogue(character.dialogueI[Random.Range(0, character.dialogueI.Length)]);
             }
-
-            if (dialogueRunner.IsDialogueRunning)
+            else if (dialogueRunner.IsDialogueRunning)
             {
-                lineAdvancer.OnInputHurryUpLines();
+                lineAdvancer.RequestLineHurryUp();
             }
         }
     }
